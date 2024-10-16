@@ -1,5 +1,10 @@
 import java.util.Scanner;
-
+/**
+ * Permite saber a partir de la nota numerica saber si esta suspenso, si es suficiente si esta aprobado o tiene notable
+ * o sobresaliente
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Notas {
     public static void main(String[] args) {
         Scanner valorN = new Scanner(System.in);

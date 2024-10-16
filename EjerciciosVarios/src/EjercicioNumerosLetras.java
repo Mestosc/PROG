@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * Este programa nos permite si tenemos numeros del 1 al 99 pasarlos de numero a letra tenemos tres
+ * Este programa nos permite si tenemos numeros del 0 al 99 pasarlos de numero a letra tenemos tres
  * casos a contemplar los exclusivos que se escriben de forma diferente, las decenas y las unidades luego
  * si tenemos decenas de 20 tenemos que escribir Veinti y luego si tenemos mayores a 20 debemos hacer con numero y numero
  * y en el caso de los exclusivos mostramos por pantalla directamente.
