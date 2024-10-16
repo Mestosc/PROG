@@ -52,8 +52,10 @@ public class NumerosLetras {
                 System.out.println("Veinte");
                 break;
         }}
+
         // Si no esta comprendido en ese intervalo de 10 y 20 aplicaremos lo siguiente
         else {
+
         // Primero guardaremos el valor de las decenas y las unidades en dos variables
         int decenas = valor/10;
         int unidades = valor%10;
