@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * Si introducimos la cantidad total nos dice cuantos billetes tenemos de cada tipo
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio4 {
     public static void main(String[] args) {
         int B100, B50, B20, B10, B5;

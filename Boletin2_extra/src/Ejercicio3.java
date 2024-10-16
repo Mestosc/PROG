@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * Programa que te dice cuanto dinero tienes si introduces la cantidad de billetes que tienes de cada tipo
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio3 {
     public static void main(String[] args) {
         double B100, B50, B20, B10, B5, M1;
