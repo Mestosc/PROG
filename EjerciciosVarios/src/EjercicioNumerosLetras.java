@@ -112,11 +112,14 @@ public class EjercicioNumerosLetras {
         }
         if (unidades==0 && decenas!=0) {
             System.out.println(resultadoD);
-        } else if (valor>=20 && valor<=29) {
+        }
+        else if (valor>=20 && valor<=29) {
             System.out.println(resultadoD + resultadoU);
-        } else if (valor>=30) {
+        }
+        else if (valor>=30) {
             System.out.println(resultadoD + " y " + resultadoU);
-        } else {
+        }
+        else {
             System.out.println(resultadoU);
         }
     } }
