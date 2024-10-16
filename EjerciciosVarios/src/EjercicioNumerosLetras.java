@@ -6,7 +6,7 @@ import java.util.Scanner;
  * y en el caso de los exclusivos mostramos por pantalla directamente.
  * @author oscar
  * **/
-public class Ejercicio2switch {
+public class EjercicioNumerosLetras {
     public static void main(String[] args) {
         String resultadoD = "";
         String resultadoU = "";
