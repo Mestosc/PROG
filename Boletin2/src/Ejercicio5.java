@@ -1,4 +1,9 @@
 import java.util.Scanner;
+/**
+ * Este programa transforma de millas nauticas a metros
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio5 {
     public static void main(String[] args) {
         //Creamos objeto millasNauticas para recibir datos
