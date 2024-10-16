@@ -4,7 +4,8 @@ import java.util.Scanner;
  * casos a contemplar los exclusivos que se escriben de forma diferente, las decenas y las unidades luego
  * si tenemos decenas de 20 tenemos que escribir Veinti y luego si tenemos mayores a 20 debemos hacer con numero y numero
  * y en el caso de los exclusivos mostramos por pantalla directamente.
- * @author oscar
+ * @version 1.0
+ * @author Oscar Rodriguez
  * **/
 public class EjercicioNumerosLetras {
     public static void main(String[] args) {
