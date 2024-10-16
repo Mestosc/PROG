@@ -1,5 +1,5 @@
-# Boletines Programacion
-
+# Ejercicios Programacion
+Aqui estoy incluyendo los ejercicios más pequeños que nos manda hacer el profesor, si son ejercicios más grande se hara en un proyecto en especifico
 ## Boletines realizados
 Estos son los boletines que han sido realizados
 
