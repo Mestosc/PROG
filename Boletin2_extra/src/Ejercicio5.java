@@ -2,6 +2,7 @@ import java.util.Scanner;
 /**
  * Primero solicitamos entrada sobre los elementos, que requerimos saber para hacer los calculos
  * @author oscar
+ * @version 1.0
  * **/
 public class Ejercicio5 {
     public static void main(String[] args) {

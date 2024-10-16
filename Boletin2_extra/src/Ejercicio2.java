@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * Nos permite introducir temperatura en Celsius y a partir de eso pasar a Farenhit y Kelvin
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio2 {
     public static void main(String[] args) {
         Scanner temper = new Scanner(System.in);
