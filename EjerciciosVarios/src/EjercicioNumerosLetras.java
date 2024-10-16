@@ -49,9 +49,6 @@ public class EjercicioNumerosLetras {
                 System.out.println("Veinte");
                 break;
         }}
-        else if (valor==0) {
-            System.out.println("cero");
-        }
         else {
         int decenas = valor/10;
         int unidades = valor%10;
@@ -82,6 +79,9 @@ public class EjercicioNumerosLetras {
                 break;
         }
         switch (unidades) {
+            case 0:
+                resultadoU = "Cero";
+                break;
             case 1:
                 resultadoU = "uno";
                 break;
@@ -110,7 +110,7 @@ public class EjercicioNumerosLetras {
                 resultadoU = "nueve";
                 break;
         }
-        if (unidades==0) {
+        if (unidades==0 && decenas!=0) {
             System.out.println(resultadoD);
         } else if (valor>=20 && valor<=29) {
             System.out.println(resultadoD + resultadoU);
