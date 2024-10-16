@@ -1,20 +1,22 @@
 import java.util.Scanner;
 /**
- * Este programa nos permite si tenemos numeros del 0 al 99 pasarlos de numero a letra tenemos tres
- * casos a contemplar los exclusivos que se escriben de forma diferente, las decenas y las unidades luego
- * si tenemos decenas de 20 tenemos que escribir Veinti y luego si tenemos mayores a 20 debemos hacer con numero y numero
- * y en el caso de los exclusivos mostramos por pantalla directamente.
+ * Nos permite si tenemos numeros del 0 al 99 pasarlos de numero a letra usando tres casos en especifico
+ * para realizar el proceso
  * @version 1.0
  * @author Oscar Rodriguez
  * **/
-public class EjercicioNumerosLetras {
+public class NumerosLetras {
     public static void main(String[] args) {
         String resultadoD = "";
         String resultadoU = "";
         Scanner input = new Scanner(System.in);
         System.out.print("Introduzca un valor entre 0 e 99:");
         int valor = input.nextInt();
+
+        // Condicional para saber si el numero esta entre 10 y 20
         if (valor>=10 && valor<=20) {
+
+        // Sirve para hacer los casos de los exclusivos que no se pueden hacer solo uniendo palabras
         switch (valor) {
             case 10:
                 System.out.println("Diez");
@@ -50,9 +52,13 @@ public class EjercicioNumerosLetras {
                 System.out.println("Veinte");
                 break;
         }}
+        // Si no esta comprendido en ese intervalo de 10 y 20 aplicaremos lo siguiente
         else {
+        // Primero guardaremos el valor de las decenas y las unidades en dos variables aqui explicadas
         int decenas = valor/10;
         int unidades = valor%10;
+
+        //
         switch (decenas) {
             case 2:
                 resultadoD = "Veinti";
