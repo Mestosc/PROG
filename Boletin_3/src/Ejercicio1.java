@@ -3,6 +3,7 @@ import java.util.Scanner;
  * Este codigo nos solicitara un numero por teclado si el valor es positivo lo imprimira por pantalla
  * y dira que es positivo sino no lo hara
  * @author oscar
+ * @version 1.0
 **/
 public class Ejercicio1 {
     public static void main(String[] args) {
