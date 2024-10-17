@@ -8,12 +8,16 @@ public class Ejercicio5 {
         int DNI = numero.nextInt();
         int valorLetra = DNI % 22;
         letra = switch (valorLetra) {
-           case 0->  "T";
-           case 1->  "R";
-           case 2->  "W";
-           case 3->  "A";
-           case 4->
+           case 0-> "T";
+           case 1-> "R";
+           case 2-> "W";
+           case 3-> "A";
+           case 4-> "G";
+           case 5-> "M";
+           case 6-> "Y";
+           case 7-> "F";
            default -> "";
         };
+        System.out.println("La letra para el siguiente" + DNI + "es" + letra);
     }
 }
