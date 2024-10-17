@@ -18,7 +18,7 @@ public class Ejercicio4 {
         int valor = input.nextInt();
 
         // Condicional para saber si el numero esta entre 10 y 20
-        if (valor>=10 && valor<=20) {
+        if (valor >= 10 && valor <= 20) {
 
             // Sirve para hacer los casos de los exclusivos que no se pueden hacer solo uniendo palabras
             switch (valor) {
@@ -55,14 +55,15 @@ public class Ejercicio4 {
                 case 20:
                     System.out.println("Veinte");
                     break;
-        }}
+            }
+        }
 
         // Si no esta comprendido en ese intervalo de 10 y 20 aplicaremos los casos para decenas y unidades
         else {
 
             // Primero guardaremos el valor de las decenas y las unidades en dos variables
-            int decenas = valor/10;
-            int unidades = valor%10;
+            int decenas = valor / 10;
+            int unidades = valor % 10;
 
             // Nos permite saber las decenas en letras
             resultadoD = switch (decenas) {
@@ -93,30 +94,26 @@ public class Ejercicio4 {
             };
 
             // Comprobar si el valor es valido
-            if (valor<=99 && !(valor<=-1)) {
+            if (valor <= 99 && !(valor <= -1)) {
                 // Si las unidades son 0 y las decenas no lo son imprime solo el numero para los que es valido
-                if (unidades==0 && decenas!=0) {
-                System.out.println(resultadoD);
+                if (unidades == 0 && decenas != 0) {
+                    System.out.println(resultadoD);
                 }
 
                 // Todos los numeros entre el 20 y 29 se escriben de forma particular por lo que simplemente los imprimimos asi
-                else if (valor>=20 && valor<=29) {
+                else if (valor >= 20 && valor <= 29) {
                     System.out.println(resultadoD + resultadoU);
                 }
 
                 // Todos los numeros mayores a treinta se imprimen de la siguiente manera por lo que hacemos que se represente asi
-                else if (valor>=30) {
-                System.out.println(resultadoD + " y " + resultadoU);
+                else if (valor >= 30) {
+                    System.out.println(resultadoD + " y " + resultadoU);
                 }
 
                 //Si no hay decenas, no es mayor que 30 y no esta entre 20 y 29 es decir son solo unidades, se refleja aqui
-             else {
-                System.out.println(resultadoU);
+                else {
+                    System.out.println(resultadoU);
                 }
-             }
-
-            else if (valor<=-1) {
-                System.out.println("Has introducido un valor no valido");
             } else {
                 System.out.println("Has introducido un valor no valido");
             }
