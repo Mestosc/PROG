@@ -6,7 +6,7 @@ public class Ejercicio5 {
         Scanner numero = new Scanner(System.in);
         System.out.println("Introduzca su numero de DNI:");
         int DNI = numero.nextInt();
-        int valorLetra = DNI % 22;
+        int valorLetra = DNI % 23;
         letra = switch (valorLetra) {
            case 0-> "T";
            case 1-> "R";
@@ -18,6 +18,6 @@ public class Ejercicio5 {
            case 7-> "F";
            default -> "";
         };
-        System.out.println("La letra para el siguiente" + DNI + "es" + letra);
+        System.out.println("La letra para el siguiente " + DNI + " es " + letra);
     }
 }
