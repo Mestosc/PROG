@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class NumerosLetras {
     public static void main(String[] args) {
         // Incializamos el resultado de las decenas y las unidades
-        String resultadoD = "";
-        String resultadoU = "";
+        String resultadoD;
+        String resultadoU;
         //Incializamos el Scanner para poder reccibir input
         Scanner input = new Scanner(System.in);
         // Indicamos que queremos que se introduzcan valores entre el 0 y 99
@@ -74,9 +74,7 @@ public class NumerosLetras {
                 case 7 -> "Setenta";
                 case 8 -> "Ochenta";
                 case 9 -> "Noventa";
-                default -> {
-                    yield "";
-                }
+                default -> "";
             };
 
             // Nos permite saber las unidades en letras
@@ -91,9 +89,7 @@ public class NumerosLetras {
                 case 7 -> "siete";
                 case 8 -> "ocho";
                 case 9 -> "nueve";
-                default -> {
-                    yield "";
-                }
+                default -> "";
             };
 
             // Comprobar si el valor es valido
