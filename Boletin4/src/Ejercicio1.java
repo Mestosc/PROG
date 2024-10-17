@@ -12,6 +12,7 @@ public class Ejercicio1 {
         int numeroVentas;
         String nombreProducto;
         Scanner informacion = new Scanner(System.in);
+        // Indicar que
         System.out.print("Digame el nombre del producto:");
         nombreProducto = informacion.next();
         System.out.print("Digame cuantas ventas ha tenido el producto:");
@@ -19,11 +20,14 @@ public class Ejercicio1 {
         if (numeroVentas<=100) {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de consumo bajo");
         }
-        else if (100>numeroVentas && numeroVentas<=500) {
+        else if (numeroVentas<=500) {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de consumo medio");
         }
-        else if (numeroVentas>500 & numeroVentas<=1000) {
+        else if (numeroVentas<=1000) {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de consumo alto");
+        }
+        else if (numeroVentas>1000) {
+            System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de primera necesidad");
         }
 
     }
