@@ -74,7 +74,9 @@ public class NumerosLetras {
                 case 7 -> "Setenta";
                 case 8 -> "Ochenta";
                 case 9 -> "Noventa";
-                default -> resultadoD;
+                default -> {
+                    yield "";
+                }
             };
 
             // Nos permite saber las unidades en letras
@@ -89,10 +91,13 @@ public class NumerosLetras {
                 case 7 -> "siete";
                 case 8 -> "ocho";
                 case 9 -> "nueve";
-                default -> resultadoU;
+                default -> {
+                    yield "";
+                }
             };
 
              // Si las unidades son 0 y las decenas no lo son imprime solo el numero para los que es valido
+            if (valor<=99) {
              if (unidades==0 && decenas!=0) {
                 System.out.println(resultadoD);
             }
@@ -107,11 +112,15 @@ public class NumerosLetras {
             System.out.println(resultadoD + " y " + resultadoU);
             }
 
-        //Si no hay decenas, no es mayor que 30 y no esta entre 20 y 29 es decir son solo unidades, se refleja aqui
+            //Si no hay decenas, no es mayor que 30 y no esta entre 20 y 29 es decir son solo unidades, se refleja aqui
             else {
             System.out.println(resultadoU);
             }
     }
+            else {
+                System.out.println("Has introducido un valor no valido");
+            }
+        }
         input.close();
     }
 }
