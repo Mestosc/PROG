@@ -10,5 +10,8 @@ Estos son los boletines que han sido realizados
 - [Boletin 2 extra](Boletin2_extra/src)
   
 ## Boletines en proceso...
-Estos son los boletines que han sido subidos pero no han sido finalizados 
+Estos son los boletines que han sido subidos pero no han sido finalizados.
+- [Boletin 4](Boletin4/src)
+
+## Ejercicios aparte
 
