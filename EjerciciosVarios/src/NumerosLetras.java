@@ -7,10 +7,14 @@ import java.util.Scanner;
  * **/
 public class NumerosLetras {
     public static void main(String[] args) {
+        // Incializamos el resultado de las decenas y las unidades
         String resultadoD = "";
         String resultadoU = "";
+        //Incializamos el Scanner para poder reccibir input
         Scanner input = new Scanner(System.in);
+        // Indicamos que queremos que se introduzcan valores entre el 0 y 99
         System.out.print("Introduzca un valor entre 0 e 99:");
+        // Indicamos el valor a introducir
         int valor = input.nextInt();
 
         // Condicional para saber si el numero esta entre 10 y 20
