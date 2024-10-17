@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        final double PI = 3.1415926;
+        final double PI = 3.14;
         double radio;
         int base;
         int altura;
@@ -14,7 +14,7 @@ public class Ejercicio2 {
             case 1-> {
                 System.out.print("Digame cuanto mide un lado:");
                 lado = cosas.nextInt();
-                System.out.println("El area de este cuadrado es de " + lado*lado);
+                System.out.print("El area de este cuadrado es de " + lado*lado);
             }
             case 2-> {
                 System.out.print("Digame de cuanto es la base:");
@@ -24,7 +24,7 @@ public class Ejercicio2 {
                 System.out.println("El area de este triangulo es de " + (base*altura/2));
             }
             case 3-> {
-                System.out.println("Digame de cuanto es el radio:");
+                System.out.print("Digame de cuanto es el radio:");
                 radio = cosas.nextDouble();
                 System.out.println("El area del circulo es de " + (PI*(radio*radio)));
             }
