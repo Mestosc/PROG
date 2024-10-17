@@ -65,66 +65,32 @@ public class NumerosLetras {
             int unidades = valor%10;
 
         // Nos permite saber las decenas en letras
-            switch (decenas) {
-                  case 2:
-                    resultadoD = "Veinti";
-                    break;
-                  case 3:
-                    resultadoD = "Treinta";
-                    break;
-                  case 4:
-                    resultadoD = "Cuarenta";
-                    break;
-                  case 5:
-                    resultadoD = "Cincuenta";
-                    break;
-                  case 6:
-                    resultadoD = "Sesenta";
-                    break;
-                  case 7:
-                    resultadoD = "Setenta";
-                    break;
-                  case 8:
-                    resultadoD = "Ochenta";
-                    break;
-                  case 9:
-                    resultadoD = "Noventa";
-                    break;
-            }
+            resultadoD = switch (decenas) {
+                case 2 -> "Veinti";
+                case 3 -> "Treinta";
+                case 4 -> "Cuarenta";
+                case 5 -> "Cincuenta";
+                case 6 -> "Sesenta";
+                case 7 -> "Setenta";
+                case 8 -> "Ochenta";
+                case 9 -> "Noventa";
+                default -> resultadoD;
+            };
 
         // Nos permite saber las unidades en letras
-            switch (unidades) {
-                case 0:
-                    resultadoU = "Cero";
-                    break;
-                case 1:
-                    resultadoU = "uno";
-                    break;
-                case 2:
-                    resultadoU = "dos";
-                    break;
-                case 3:
-                    resultadoU = "tres";
-                    break;
-                case 4:
-                    resultadoU = "cuatro";
-                    break;
-                case 5:
-                    resultadoU = "cinco";
-                    break;
-                case 6:
-                    resultadoU = "seis";
-                    break;
-                case 7:
-                    resultadoU = "siete";
-                    break;
-                case 8:
-                    resultadoU = "ocho";
-                    break;
-                case 9:
-                    resultadoU = "nueve";
-                    break;
-            }
+            resultadoU = switch (unidades) {
+                case 0 -> "Cero";
+                case 1 -> "uno";
+                case 2 -> "dos";
+                case 3 -> "tres";
+                case 4 -> "cuatro";
+                case 5 -> "cinco";
+                case 6 -> "seis";
+                case 7 -> "siete";
+                case 8 -> "ocho";
+                case 9 -> "nueve";
+                default -> resultadoU;
+            };
 
              // Si las unidades son 0 y las decenas no lo son imprime solo el numero para los que es valido
              if (unidades==0 && decenas!=0) {
