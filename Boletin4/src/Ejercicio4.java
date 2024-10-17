@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @version 1.0
  * @author Oscar Rodriguez
  * **/
-public class NumerosLetras {
+public class Ejercicio4 {
     public static void main(String[] args) {
         // Incializamos el resultado de las decenas y las unidades
         String resultadoD;
