@@ -93,7 +93,7 @@ public class NumerosLetras {
             };
 
             // Comprobar si el valor es valido
-            if (valor<=99) {
+            if (valor<=99 && !(valor<=-1)) {
                 // Si las unidades son 0 y las decenas no lo son imprime solo el numero para los que es valido
                 if (unidades==0 && decenas!=0) {
                 System.out.println(resultadoD);
@@ -114,7 +114,10 @@ public class NumerosLetras {
                 System.out.println(resultadoU);
                 }
              }
-        else {
+
+            else if (valor<=-1) {
+                System.out.println("Has introducido un valor no valido");
+            } else {
                 System.out.println("Has introducido un valor no valido");
             }
         }
