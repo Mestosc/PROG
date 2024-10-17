@@ -64,7 +64,7 @@ public class NumerosLetras {
             int decenas = valor/10;
             int unidades = valor%10;
 
-        // Nos permite saber las decenas en letras
+            // Nos permite saber las decenas en letras
             resultadoD = switch (decenas) {
                 case 2 -> "Veinti";
                 case 3 -> "Treinta";
@@ -77,7 +77,7 @@ public class NumerosLetras {
                 default -> resultadoD;
             };
 
-        // Nos permite saber las unidades en letras
+            // Nos permite saber las unidades en letras
             resultadoU = switch (unidades) {
                 case 0 -> "Cero";
                 case 1 -> "uno";
