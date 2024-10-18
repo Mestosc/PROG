@@ -1,7 +1,12 @@
 //Importacion de librerias
 
 import java.util.Scanner;
-
+/**
+ * Nos permite introducir el valor de un dolar en euro y a partir de eso convertir
+ * de una divisa a otra
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio3 {
     public static void main(String[] args) {
         double Euros,valorDolar,cantDolares;
