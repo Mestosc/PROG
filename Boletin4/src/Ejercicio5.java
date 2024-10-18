@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/** Permite a traves del numero del DNI sacar la letra correspondiente
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio5 {
     public static void main(String[] args) {
         String letra;
