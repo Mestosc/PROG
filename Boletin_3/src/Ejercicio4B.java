@@ -7,7 +7,8 @@ public class Ejercicio4B {
      * siendo relativamente parecido al 4a, pero el 4a es mas sencillo ya que no requiere añadir nuevas variables que ocupen espacio en memoria
      * además es más intuitivo en el aspecto logico
      * esto era de ejemplo de uso del condicional ternario
-     * @author oscar
+     * @author Oscar Rodriguez
+     * @version 1.0
      * **/
     public static void main(String[] args) {
         String nombre1 = "Pitagoras";
