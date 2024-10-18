@@ -14,4 +14,7 @@ Estos son los boletines que han sido subidos pero no han sido finalizados.
 - [Boletin 4](Boletin4/src)
 
 ## Ejercicios aparte
+Aqui van los ejercicios hechos que no son boletines pero no son tan grandes como para
+ser un proyecto aparte.
 
+- [Ejercicios Varios](EjerciciosVarios/src)
