@@ -1,7 +1,10 @@
 //import Math Esto no funciona
 
 import static java.lang.Math.pow;
-
+/** Otro programa más que hacen diversas operaciones
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class ejercicio3 {
 
     public static void main(String[] args) {

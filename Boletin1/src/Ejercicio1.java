@@ -1,4 +1,9 @@
 public class Ejercicio1 {
+    /**
+     * Un programa que hace diversas operaciones
+     * @author Oscar
+     * @version 1.0
+     * **/
     public static void main(String[] args) {
         // Primera operacion
         int resultado1 = ((3+2) % 2 -15) / 2 * 5;
