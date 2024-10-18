@@ -1,6 +1,11 @@
 // Importando librerias
 import java.util.Scanner;
-
+/**
+ * Introduciendo dos numeros se realizan las siguientes operaciones:
+ * suma, resta, multiplicacion y division
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio4 {
     public static void main(String[] args) {
         double primer, segundo;
