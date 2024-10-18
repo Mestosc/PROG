@@ -1,5 +1,10 @@
 import java.util.Scanner;
-
+/**
+ * Nos permite calcular el area de tres figuras geometricas especificas, que son Cuadrado, Triangulo
+ * y obtener su area
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio2 {
     public static void main(String[] args) {
         final double PI = 3.14;
