@@ -13,7 +13,7 @@ public class Ejercicio2 {
         int altura;
         int lado;
         Scanner cosas = new Scanner(System.in);
-        System.out.println("1. Cuadrado\n2. Triangulo\n3. Circulo ");
+        System.out.println("1. Cuadrado\n2. Triangulo\n3. Circulo\n\nIntroduzca el numero que corresponda a la figura de la que quiera calcular el area ");
         int opcion = cosas.nextInt();
         switch (opcion) {
             case 1-> {
