@@ -93,14 +93,14 @@ public class Ejercicio4 {
                 default -> "";
             };
 
-            // Comprobar si el valor es valido
-            if ((valor <= 99) && !(valor <= -1)) {
-                // Si las unidades son 0 y las decenas no lo son imprime solo el numero para los que es valido
+            // Comprobar si el valor es valido, los valores validos son aquellos iguales a 99 y aquellos que no son menores a menor que 0
+            if ((valor <= 99) && !(valor < 0)) {
+                // Si las unidades son 0 y las decenas no lo son, imprime solo el numero de las decenas
                 if (unidades == 0 && decenas != 0) {
                     System.out.println(resultadoD);
                 }
 
-                // Todos los numeros entre el 20 y 29 se escriben de forma particular por lo que simplemente los imprimimos asi
+                // Todos los numeros entre el 20 y 29 se escriben de forma particular por lo que simplemente los imprimimos de esa manera
                 else if (valor >= 20 && valor <= 29) {
                     System.out.println(resultadoD + resultadoU);
                 }
@@ -110,14 +110,19 @@ public class Ejercicio4 {
                     System.out.println(resultadoD + " y " + resultadoU);
                 }
 
-                //Si no hay decenas, no es mayor que 30 y no esta entre 20 y 29 es decir son solo unidades, se refleja aqui
+                //Si no hay decenas, no es mayor que 30 y no esta entre 20 y 29, solo son solo unidades, se refleja aqui
                 else {
                     System.out.println(resultadoU);
                 }
-            } else {
+            }
+
+            // Este else hace referencia al if de los valores validos es decir indica los valores no validos
+            else {
                 System.out.println("Has introducido un valor no valido");
             }
         }
+
+        // Cerramos el Scanner
         input.close();
     }
 }
