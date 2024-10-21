@@ -88,7 +88,7 @@ public class Ejercicio4 {
                     System.out.println(resultadoU);
                 }
 
-                //Si no hay decenas, no es mayor que 30 y no esta entre 20 y 29, solo son solo unidades, se refleja aqui
+                // Si no esta entre 20 y 29 y no es menor que 10 es decenas + y + unidades
                 else {
                     System.out.println(resultadoD + " y " + resultadoU);
                 }
