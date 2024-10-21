@@ -74,7 +74,7 @@ public class Ejercicio4 {
             // Comprobar si el valor es valido, los valores validos son aquellos iguales a 99 y aquellos que no son menores a menor que 0
             if ((valor <= 99) && !(valor < 0)) {
                 // Si las unidades son 0 y las decenas no lo son, imprime solo el numero de las decenas
-                if (unidades == 0 && decenas != 0) {
+                 if (unidades == 0 && decenas != 0) {
                     System.out.println(resultadoD);
                 }
 
@@ -83,14 +83,14 @@ public class Ejercicio4 {
                     System.out.println(resultadoD + resultadoU);
                 }
 
-                // Todos los numeros mayores a treinta se imprimen de la siguiente manera por lo que hacemos que se represente asi
-                else if (valor >= 30) {
-                    System.out.println(resultadoD + " y " + resultadoU);
+                // Los numeros menores que 10 no tienen decenas por tanto imprimimos solo unidades
+                else if (valor < 10) {
+                    System.out.println(resultadoU);
                 }
 
                 //Si no hay decenas, no es mayor que 30 y no esta entre 20 y 29, solo son solo unidades, se refleja aqui
                 else {
-                    System.out.println(resultadoU);
+                    System.out.println(resultadoD + " y " + resultadoU);
                 }
             }
 
