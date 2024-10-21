@@ -33,7 +33,6 @@ public class Ejercicio4 {
                 case 18 -> System.out.println("Dieciocho");
                 case 19 -> System.out.println("Diecinueve");
                 case 20 -> System.out.println("Veinte");
-                default -> System.out.println();
             }
         }
 
