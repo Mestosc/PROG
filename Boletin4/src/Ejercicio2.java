@@ -24,7 +24,7 @@ public class Ejercicio2 {
             case 2-> {
                 System.out.print("Digame de cuanto es la base:");
                 base = cosas.nextInt();
-                System.out.print("Digame de cuanto es la altura");
+                System.out.print("Digame de cuanto es la altura:");
                 altura = cosas.nextInt();
                 System.out.println("El area de este triangulo es de " + (base*altura/2));
             }
