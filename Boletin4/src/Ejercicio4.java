@@ -22,39 +22,18 @@ public class Ejercicio4 {
 
             // Sirve para hacer los casos de los exclusivos que no se pueden hacer solo uniendo palabras
             switch (valor) {
-                case 10:
-                    System.out.println("Diez");
-                    break;
-                case 11:
-                    System.out.println("Once");
-                    break;
-                case 12:
-                    System.out.println("Doce");
-                    break;
-                case 13:
-                    System.out.println("Trece");
-                    break;
-                case 14:
-                    System.out.println("Catorce");
-                    break;
-                case 15:
-                    System.out.println("Quince");
-                    break;
-                case 16:
-                    System.out.println("Dieciseis");
-                    break;
-                case 17:
-                    System.out.println("Diecisiete");
-                    break;
-                case 18:
-                    System.out.println("Dieciocho");
-                    break;
-                case 19:
-                    System.out.println("Diecinueve");
-                    break;
-                case 20:
-                    System.out.println("Veinte");
-                    break;
+                case 10 -> System.out.println("Diez");
+                case 11 -> System.out.println("Once");
+                case 12 -> System.out.println("Doce");
+                case 13 -> System.out.println("Trece");
+                case 14 -> System.out.println("Catorce");
+                case 15 -> System.out.println("Quince");
+                case 16 -> System.out.println("Dieciseis");
+                case 17 -> System.out.println("Diecisiete");
+                case 18 -> System.out.println("Dieciocho");
+                case 19 -> System.out.println("Diecinueve");
+                case 20 -> System.out.println("Veinte");
+                default -> System.out.println();
             }
         }
 
@@ -97,12 +76,12 @@ public class Ejercicio4 {
             if ((valor <= 99) && !(valor < 0)) {
                 // Si las unidades son 0 y las decenas no lo son, imprime solo el numero de las decenas
                 if (unidades == 0 && decenas != 0) {
-                    System.out.println(resultadoD);
+                    System.out.println("El numero es:" + resultadoD);
                 }
 
                 // Todos los numeros entre el 20 y 29 se escriben de forma particular por lo que simplemente los imprimimos de esa manera
                 else if (valor >= 20 && valor <= 29) {
-                    System.out.println(resultadoD + resultadoU);
+                    System.out.println("El numero es:" +(resultadoD + resultadoU));
                 }
 
                 // Todos los numeros mayores a treinta se imprimen de la siguiente manera por lo que hacemos que se represente asi
@@ -122,7 +101,7 @@ public class Ejercicio4 {
             }
         }
 
-        // Cerramos el Scanner
+        // Cerramos el Scanner input
         input.close();
     }
 }
