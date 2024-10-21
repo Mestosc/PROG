@@ -9,7 +9,11 @@ public class Ejercicio5 {
         Scanner numero = new Scanner(System.in);
         System.out.println("Introduzca su numero de DNI:");
         int DNI = numero.nextInt();
+
+        // Hacemos el modulo(resto) al DNI, y almacenamos eso en valorLetra
         int valorLetra = DNI % 23;
+
+        // Se almacenara en la variable letra una letra segun el valorLetra
         letra = switch (valorLetra) {
            case 0-> "T";
            case 1-> "R";
