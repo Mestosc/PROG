@@ -80,7 +80,7 @@ public class Ejercicio4 {
 
             // Nos permite saber las unidades en letras
             resultadoU = switch (unidades) {
-                case 0 -> "Cero";
+                case 0 -> "cero";
                 case 1 -> "uno";
                 case 2 -> "dos";
                 case 3 -> "tres";
