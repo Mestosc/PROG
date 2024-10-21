@@ -76,12 +76,12 @@ public class Ejercicio4 {
             if ((valor <= 99) && !(valor < 0)) {
                 // Si las unidades son 0 y las decenas no lo son, imprime solo el numero de las decenas
                 if (unidades == 0 && decenas != 0) {
-                    System.out.println("El numero es:" + resultadoD);
+                    System.out.println(resultadoD);
                 }
 
                 // Todos los numeros entre el 20 y 29 se escriben de forma particular por lo que simplemente los imprimimos de esa manera
                 else if (valor >= 20 && valor <= 29) {
-                    System.out.println("El numero es:" +(resultadoD + resultadoU));
+                    System.out.println(resultadoD + resultadoU);
                 }
 
                 // Todos los numeros mayores a treinta se imprimen de la siguiente manera por lo que hacemos que se represente asi
