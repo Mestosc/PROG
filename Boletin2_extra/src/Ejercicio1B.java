@@ -2,7 +2,8 @@ import java.util.Scanner;
 /**
  * Este codigo nos pedira el precio con el descuento y sin el descuento, y a partir de eso calcula el porcentaje
  * de descuento
- * @author oscar
+ * @author Oscar Rodriguez
+ * @version 1.0
  * **/
 public class Ejercicio1B {
     public static void main(String[] args) {
