@@ -15,7 +15,7 @@ public class Ejercicio1B {
             System.out.println("Eso es imposible, vuelve a estuidiar");
         }
         else {
-            System.out.println("El descuento es del " + ((precio-precioDescontado)/precio) * 100 + "%");
+            System.out.printf("El porcentaje descontado es: %.2f%%\n", ((precio-precioDescontado)/precio) * 100);
         }
     }
 }
