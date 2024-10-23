@@ -1,9 +1,9 @@
+/**
+ * Esta clase nos permite saber multiplos de 7 menores que 100
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Multiplos7 {
-    /**
-     * Esta clase nos permite saber multiplos de 7 menores que 100
-     * @author Oscar Rodriguez
-     * @version 1.0
-     * **/
     public static void main(String[] args) {
 
         /* Al dividir 100/numero usando enteros
