@@ -1,7 +1,7 @@
 import java.util.Scanner; // Importamos la clase Scanner para poder leer lo que el usuario escribe
 
 public class Numerosprimos { // Definimos nuestra clase principal, que se llama "Numerosprimos"
-    public static void main(String[] args) { // Este es el método principal donde empieza a ejecutarse el programa
+    public static void main(String[] args) { // Este es el métod principal donde empieza a ejecutarse el programa
         Scanner dato = new Scanner(System.in); // Creamos un objeto scanner para leer datos del teclado
 
         System.out.print("Introduce un número: "); // Pedimos al usuario que escriba un número
