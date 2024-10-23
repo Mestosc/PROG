@@ -32,7 +32,7 @@ public class Ejercicio1 {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de consumo bajo");
         }
 
-        /* Como es un else if ya sabemos que la primera no se cumple asi que solo necesitamos
+        /* Como es un else if sabemos que la anterior no se cumple asi que solo necesitamos
         * saber si es menor o igual a 500, imprimimos que es de Consumo medio */
         else if (numeroVentas<=500) {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de consumo medio");
@@ -44,8 +44,8 @@ public class Ejercicio1 {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de consumo alto");
         }
 
-        // Aqui solo necesitamos saber que es mayor que 1000, e imprimimos el mensaje de que es de Primera necesidad
-        else if (numeroVentas>1000) {
+        // Aqui solo necesitamos saber que es mayor que 1000 que en este caso es por descarte, e imprimimos el mensaje de que es de Primera necesidad
+        else {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de primera necesidad");
         }
 
