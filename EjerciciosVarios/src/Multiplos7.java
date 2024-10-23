@@ -12,7 +12,7 @@ public class Multiplos7 {
         se consigue saber el numero por el que se puede multiplicar ese numero sin que sobrepase el 100*/
 
         for (int numero = 1;numero<=100/multiplosDe; numero++) {
-            System.out.println("Los multiplos de +" + multiplosDe + "menores que 100 son:"  + numero*multiplosDe);
+            System.out.println("Los multiplos de " + multiplosDe + " menores que 100 son:"  + numero*multiplosDe);
         }
     }
 }
