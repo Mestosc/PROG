@@ -44,7 +44,7 @@ public class Ejercicio1 {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de consumo alto");
         }
 
-        // Aqui solo necesitamos saber que es mayor que 1000 que en este caso es por descarte, e imprimimos el mensaje de que es de Primera necesidad
+        // Por descarte sabemos que es mayor que 1000 que en este caso es por descarte, e imprimimos el mensaje de que es de Primera necesidad
         else {
             System.out.println("El producto " + nombreProducto + " ha tenido " + numeroVentas + " ventas" + " es un articulo de primera necesidad");
         }
