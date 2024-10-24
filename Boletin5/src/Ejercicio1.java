@@ -1,5 +1,10 @@
 
 public class Ejercicio1 {
+    /**
+     * Sirve para iterar un conjunto de numeros y saber si es positivo o negativo o cero
+     * @author Oscar Rodriguez
+     * @version 1.0
+     * **/
     public static void main(String[] args) {
         // Creamos variables para definir la cantidad de los tipos de valores que en principio es 0
         int valoresNegativos = 0;
