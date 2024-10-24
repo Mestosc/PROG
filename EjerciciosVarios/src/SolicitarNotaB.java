@@ -29,6 +29,6 @@ public class SolicitarNotaB {
         cantidadAlumnos++;
 
     }
-    media = sumaNotas/cantidadAlumnos;
-        System.out.println("La media de notas de los alumnos es " + media);
+   media = sumaNotas/cantidadAlumnos;
+   System.out.println("La media de notas de los alumnos es " + media);
 }}
