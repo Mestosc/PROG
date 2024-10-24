@@ -4,7 +4,7 @@ public class SolicitarNota {
     public static void main(String[] args) {
 
         //Declaramos las variables de la nota, la suma de las varias notas y por ultimo la media de las varias notas
-        double nota = 0, sumaNotas = 0, cantidadAlumnos = 0, media;
+        double nota, sumaNotas = 0, cantidadAlumnos = 0;
 
         // Declaramos Scanner
         Scanner input = new Scanner(System.in);
