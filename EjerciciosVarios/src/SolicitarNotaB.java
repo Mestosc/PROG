@@ -4,7 +4,7 @@ public class SolicitarNotaB {
     public static void main(String[] args) {
 
 
-    double nota, sumaNotas = 0, cantidadAlumnos = 0, media;
+    double nota, sumaNotas = 0, cantidadAlumnos = 0;
 
     // Declaramos Scanner
     Scanner input = new Scanner(System.in);
@@ -30,6 +30,5 @@ public class SolicitarNotaB {
         cantidadAlumnos++;
 
     }
-   media = sumaNotas/cantidadAlumnos;
-   System.out.println("La media de notas de los alumnos es " + media);
+   System.out.println("La media de notas de los alumnos es " + sumaNotas/cantidadAlumnos);
 }}
