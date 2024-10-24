@@ -4,7 +4,7 @@ public class SolicitarNotaB {
     public static void main(String[] args) {
 
 
-    int nota, sumaNotas = 0, cantidadAlumnos = 0, media;
+    double nota, sumaNotas = 0, cantidadAlumnos = 0, media;
 
     // Declaramos Scanner
     Scanner input = new Scanner(System.in);
