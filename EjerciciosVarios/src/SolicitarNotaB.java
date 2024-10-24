@@ -16,6 +16,7 @@ public class SolicitarNotaB {
         // Para poder actualizar la cantidad desde el bucle necesitamos tener una seccion de entrada que referencie a notas dentro del mismo
         nota = input.nextInt();
 
+        // Aqui veremos si la nota es -1 en cuyo caso salimos del bucle como aqui la evaluacion se hace despues justo de introducir la nota desde dentro del bucle no hay que repetirlo fuera y funciona
         if (nota==-1) {
             break;
         }
