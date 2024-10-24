@@ -8,9 +8,10 @@ public class SolicitarNotaB {
 
     // Declaramos Scanner
     Scanner input = new Scanner(System.in);
-    System.out.print("Indicame la nota que tiene cada alumno se sale con -1: ");
 
    while (true) {
+
+        System.out.print("Indicame la nota que tiene cada alumno se sale con -1: ");
 
         // Para poder actualizar la cantidad desde el bucle necesitamos tener una seccion de entrada que referencie a notas dentro del mismo
         nota = input.nextInt();

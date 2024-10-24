@@ -12,7 +12,7 @@ public class SolicitarNota {
 
         nota = input.nextInt();
 
-        while (nota!=-1) {
+        do {
 
             // Igualamos la suma a la nota más si misma esto hara que cuando añadamos más notas se nos acumule
             sumaNotas = nota + sumaNotas;
@@ -24,7 +24,7 @@ public class SolicitarNota {
              * más concretamente si añadimos más notas se refiere a más alumnos*/
             cantidadAlumnos++;
 
-        }
+        }while (nota!=-1);
         media = sumaNotas/cantidadAlumnos;
         System.out.println("La media de notas de los alumnos es " + media);
     }}
