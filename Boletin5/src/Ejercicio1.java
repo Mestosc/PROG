@@ -15,11 +15,11 @@ public class Ejercicio1 {
         int[] valores = {20, -56, 43, -3, 0, -10, 67, 10, -6, 100};
 
         /* Introduzco un bucle for que itere cada elemento de la lista, luego usamos un condicional*/
-        for(int cantNum = 0; cantNum<valores.length;cantNum++) {
-            if (valores[cantNum] < 0) {
+        for(int posicionEnLista = 0; posicionEnLista <valores.length; posicionEnLista++) {
+            if (valores[posicionEnLista] < 0) {
                 valoresNegativos++;
             }
-            else if (valores[cantNum] == 0) {
+            else if (valores[posicionEnLista] == 0) {
                 valorCero++;
             }
             else {
