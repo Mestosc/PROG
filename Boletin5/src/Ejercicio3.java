@@ -8,6 +8,8 @@ public class Ejercicio3 {
         // Introduccion de datos
         Scanner datos = new Scanner(System.in);
 
+        // Asumimos que el bucle es siempre verdad para poder recibir dentro el input y colocar la evaluacion para salir donde nos sea conveniente
+
         while (true){
             System.out.print("Introduzca la base del rectangulo (solo numeros positivos):");
             base = datos.nextInt();
