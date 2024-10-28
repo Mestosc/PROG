@@ -33,7 +33,7 @@ public class Ejercicio5 {
                 System.out.printf("El porcentaje de trabajadores que cobran entre 1.000 y 1.750 es: %.2f%%\n", ((double) cantTrabajadoresMas1000 / (double) trabajdoresTotal) * 100);
                 System.out.printf("El porcentaje de trabajadores que cobran entre que cobran menos de 1.000 es: %.2f%%\n", (cantTrabajadoresMenos1000 / (double) trabajdoresTotal) * 100);
             } else {
-                System.out.println("No se han introducido trabajadores es imposible hacer un calculo");
+                System.out.println("No hay trabajadores con sueldo es imposible hacer algo");
             }
         }
     }
