@@ -23,16 +23,13 @@ public class Ejercicio5 {
             if (sueldo > 0) { // Verifica que el 'sueldo' sea positivo.
                 if (sueldo >= 1000 && sueldo <= 1750) { // Comprueba si el sueldo está entre 1000 y 1750.
                     cantTrabajadoresMas1000++; // Incrementa el contador de trabajadores que ganan entre 1000 y 1750.
-                    trabajdoresTotal++; // Incrementa el contador total de trabajadores.
-                    sueldo = recibir.nextDouble(); // Solicita el siguiente sueldo.
                 } else if (sueldo < 1000) { // Si el sueldo es positivo pero menor a 1000:
                     cantTrabajadoresMenos1000++; // Incrementa el contador de trabajadores que ganan menos de 1000.
-                    trabajdoresTotal++; // Incrementa el contador total de trabajadores.
-                    sueldo = recibir.nextDouble(); // Solicita el siguiente sueldo.
                 }
-            } else { // Este else corresponde al primer if si el numero es negativo vuelve a pedirlo
-                sueldo = recibir.nextDouble(); // Vuelve a pedir el sueldo:
+                trabajdoresTotal++; //Incrmenta el valor total de trabajadores
             }
+            sueldo = recibir.nextDouble(); // Solicita el siguiente sueldo.
+        }
             if (trabajdoresTotal > 0) {
                 System.out.printf("El porcentaje de trabajadores que cobran entre 1.000 y 1.750 es: %.2f%%\n", ((double) cantTrabajadoresMas1000 / (double) trabajdoresTotal) * 100);
                 System.out.printf("El porcentaje de trabajadores que cobran entre que cobran menos de 1.000 es: %.2f%%\n", (cantTrabajadoresMenos1000 / (double) trabajdoresTotal) * 100);
@@ -41,4 +38,3 @@ public class Ejercicio5 {
             }
         }
     }
-}
