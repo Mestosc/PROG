@@ -5,7 +5,7 @@ public class Ejercicio5 {
         double sueldo;
         int cantTrabajadoresMas1000=0, cantTrabajadoresMenos1000=0, trabajdoresTotal=0;
         Scanner recibir = new Scanner(System.in);
-        System.out.print("Introduzca sueldo:");
+        System.out.print("Introduzca sueldo (se sale con 0):");
         sueldo = recibir.nextDouble();
         while (sueldo!=0) {
             if (sueldo>0) {
