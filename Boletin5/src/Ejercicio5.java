@@ -3,7 +3,7 @@ import java.util.Scanner;
  * Permite ingresar los sueldos de varios trabajadores (cada sueldo es un trabajador)
  * y calcula el porcentaje de trabajadores que ganan entre 1,000 y 1,750 y los que ganan menos de 1,000.
  * Se utiliza un valor de 0 como señal de terminación para dejar de ingresar sueldos.
- * El programa excluye sueldos negativos y muestra un mensaje de error si no se han introducido trabajadores válidos.
+ * El programa excluye sueldos negativos y muestra un mensaje de error si no se ha introducido un sueldo valido que haga que haya al menos un trabajador.
  * @author Oscar Rodriguez
  * @version 1.0
  */
