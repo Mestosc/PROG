@@ -27,7 +27,8 @@ public class Ejercicio6 {
 
     /**
      * Comprobamos si los dos numeros son amigos
-     * se entiende que son amigos
+     * se entiende que son amigos si la suma de los divisores de uno es igual al otro numero
+     * ejemplo divisores de num1 = num2
      * @param num1 el primer numero a introducir
      * @param num2 el segundo numero a introducir
      * @return nos dice si son amigos
