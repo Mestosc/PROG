@@ -1,14 +1,18 @@
 import java.util.Scanner;
-
+/**
+ * Esta clase nos solcita un numero para saber de que caso se trata el calculo y la longitud del lado
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio3 {
     public static void main(String[] args) {
-        int caso, longitud;
+        int tareaHacer, longitud; //Declaramos las variables operacionales
         Scanner datos = new Scanner(System.in);
-        System.out.print("Indica si deseas calcular area o volumen usando numeros 1(area), 2(volumen):");
-        caso = datos.nextInt();
-        System.out.print("Indicame la longitud del cuadrado:");
+        System.out.print("Indica si deseas calcular area o volumen usando numeros 1(area), 2(volumen):"); // Informamos las opciones que hayy que se introduzcan
+        tareaHacer = datos.nextInt(); // Solcitamos el numero de tarea
+        System.out.print("Indicame la longitud del cubo:"); // Pedimos que se nos indique la longitud del cubo
         longitud = datos.nextInt();
-        calcularCubo(caso, longitud);
+        calcularCubo(tareaHacer, longitud); //Aplicamos el metodo para obtener segun cada caso una u otra cosa
 
     }
 
