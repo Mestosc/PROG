@@ -1,11 +1,12 @@
 # Ejercicios Programacion
 Aqui estoy incluyendo los ejercicios más pequeños que nos manda hacer el profesor tipo boletines u otros ejercicios cosas más grandes que se puedan necesitar en repositorios diferentes seran añadidas en esos repositorios cuando sea necesario, si son ejercicios más grande se hara en un proyecto en especifico
-## Boletines realizados
-Estos son los boletines que han sido realizados
 
 > [!IMPORTANT]
 > He estado haciendo los boletines en mi portatil y ahi tengo git configurado con el correo personal por lo que si me olvido algun ejercicio
 > puede aparecer como una contribucion desde mi cuenta personal
+
+## Boletines realizados
+Estos son los boletines que han sido realizados
 
 - [Boletin 1](Boletin1/src)
 - [Boletin 2](Boletin2/src)
