@@ -6,9 +6,19 @@ import java.util.Scanner;
  * @version 1.0
  * **/
 public class Ejercicio5 {
-
     public static void main(String[] args) {
-
+        int horaPrimera, minutoPrimero, horaSegunda, minutoSegundo, diferenciaMinutos; //Declaramos las variables donde guardaremos ambos intervalos de tiempo
+        Scanner obtener = new Scanner(System.in); // Declaramos un Scanner para acceder a la informacion
+        System.out.println("Introduzca la primera cantidad en horas:"); // Indicamos que se introduzca la primera hora
+        horaPrimera = obtener.nextInt(); // Solicitamos la primera hora
+        System.out.println("Introduzca la primera cantidad en minutos:"); // Indicamos que se introduzca el primer minuto
+        minutoPrimero = obtener.nextInt(); // Solicitamos la segunda hora
+        System.out.println("Introduzca la segunda cantidad en horas:"); // Indicamos que se introduzca la segunda hora
+        horaSegunda = obtener.nextInt(); // Solicitamos la primera hora
+        System.out.println("Introduzca la segunda cantidad en minutos:"); // Indicamos que se introduzca el segundo minuto
+        minutoSegundo = obtener.nextInt(); // Solicitamos el segundo minuto
+        diferenciaMinutos = diferenciaMin(horaPrimera,minutoPrimero,horaSegunda,minutoSegundo); // Obtenemos el valor de la diferenciaMinutos en minutos
+        System.out.println("La diferenciaMinutos entre el intervalo " + horaPrimera + ":" + minutoPrimero + " " + horaSegunda + ":" + minutoSegundo + " es de " + diferenciaMinutos + " minutos" ); //Imprimimos la diferenciaMinutos y estilizamos un poco eso
     }
 
     /**
