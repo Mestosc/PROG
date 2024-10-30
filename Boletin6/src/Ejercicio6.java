@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Sirve para obtener determinados numeros(que la suma de dos divisores propios diferentes del mismo es numero1=numero2)
  * esta operacion se hace mediante el metodo especifico para ello
@@ -7,12 +9,19 @@
  *  **/
 public class Ejercicio6 {
     public static void main(String[] args) {
-        boolean sonAmigos = numerosAmigos(220,284);
-        if (sonAmigos == true) {
-            System.out.println("Los numeros son amigos");
+        int primerNumero,segundoNumero; // Declaramos
+        Scanner introducir = new Scanner(System.in); // Creando instancia de la clase Scanner
+        System.out.print("Introducir primer numero:");
+        primerNumero = introducir.nextInt();
+        System.out.print("Introducir segundo numero:");
+        segundoNumero = introducir.nextInt();
+        boolean sonAmigos = numerosAmigos(primerNumero,segundoNumero); // Llamar a numerosAmigos para obtener si dos numeros son amigos
+
+        if (sonAmigos) { // En caso de que sean amigos mostraremos eso
+            System.out.println("Los numeros "); // Mensaje de que los numeros son amigos
         }
-        else {
-            System.out.println("No son amigos");
+        else { // En caso de que los numeros no sean amigos
+            System.out.println("No son amigos"); // Mensaje de que no son amigos
         }
     }
 
@@ -25,7 +34,7 @@ public class Ejercicio6 {
      */
     static boolean numerosAmigos(int num1, int num2) {
         int sumaDivisores1 = 0,sumaDivisores2 = 0; // Aqui se guardara la suma de los divisores de ambos numeros para realizar la comprobacion
-        boolean comprobarDivisores1 = true, comprobarDivisores2 = false, sonAmigos; /* Incializamos la variable para comprobar si los numeros son divisores
+        boolean sonAmigos; /* Incializamos la variable para comprobar si los numeros son divisores
          tambien inicializamos la variable para saber si son amigos*/
         for (int i = 1; i < num1;i++) { //
             if (num1 % i == 0) { // Verificamos si la cantidad es divisor viendo si el residuo de num1 / i es 0
