@@ -8,8 +8,11 @@
 public class Ejercicio6 {
     public static void main(String[] args) {
         boolean sonAmigos = numerosAmigos(220,284);
-        if (sonAmigos) {
+        if (sonAmigos == true) {
             System.out.println("Los numeros son amigos");
+        }
+        else {
+            System.out.println("No son amigos");
         }
     }
 
@@ -21,23 +24,21 @@ public class Ejercicio6 {
      * @return nos dice si son amigos
      */
     static boolean numerosAmigos(int num1, int num2) {
+        int sumaDivisores1 = 0,sumaDivisores2 = 0; // Aqui se guardara la suma de los divisores de ambos numeros para realizar la comprobacion
         boolean comprobarDivisores1 = true, comprobarDivisores2 = false, sonAmigos; /* Incializamos la variable para comprobar si los numeros son divisores
          tambien inicializamos la variable para saber si son amigos*/
-        for (int i = 1; i > num1 || i < num1 && i < num2; ) { // Iteramos una cantidad de veces mayor al primer numero y menor al segundo
+        for (int i = 1; i < num1;i++) { //
             if (num1 % i == 0) { // Verificamos si la cantidad es divisor viendo si el residuo de num1 / i es 0
-                i += i; // En cuyo caso sumamos
-                comprobarDivisores1 = i == num2; // Si verificamos que la suma es igual a num
+                sumaDivisores1 += i; // En cuyo caso sumamos
             }
+
         }
-        for (int j = 1; j < num2 || j > num2 && j < num1; ) { // Iteramos una cantidad de veces mayor al segundo y menor al primero
+        for (int j = 1; j < num2;j++) { // Iteramos desde 1 hasta un numero menos que num2
             if (num2 % j == 0) {
-                j += j;
-                comprobarDivisores1 = j == num1;
+                sumaDivisores2 += j;
             }
-
-
         }
-        sonAmigos = comprobarDivisores1 && comprobarDivisores2;
+        sonAmigos = sumaDivisores1 == num2 && sumaDivisores2 == num1; // Verificamos si son Amigos
         return sonAmigos;
     }
 }
