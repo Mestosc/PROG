@@ -27,7 +27,7 @@ public class Ejercicio3 {
             case 1->{ // Si se aplica el primer caso mostramos mostramos el mensaje correspondiente junto con el calculo
                 System.out.println("El area del cubo cuyo lado es " + longitudLado + ": " + (6*(longitudLado*longitudLado)));
             }
-            case 2-> { // Si se aplica el segundo caso no lo haremos
+            case 2->{ // Si se aplica el segundo caso no lo haremos
                 System.out.println("El volumen del cubo cuyo lado es " + longitudLado + ": " + (longitudLado*longitudLado*longitudLado));
         }}
     }
