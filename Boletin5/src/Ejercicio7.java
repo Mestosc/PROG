@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ejercicio7 {
     public static void main(String[] args) {
         Scanner pedir = new Scanner(System.in);
-        String caract ="";
+        System.out.println("Introduzca un numero:");
         int numero = pedir.nextInt();
         for (int i=1;i<=numero;i++) {
             for (int x = numero - i;x>0;x--) {
