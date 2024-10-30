@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/** Si le introducimos un numero nos indica cuantos numeros hay entre esos dos
+ * @author Oscar Rodriguez
+ * @version 1.0
+ * **/
 public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner introduccionDato = new Scanner(System.in);
@@ -7,10 +10,10 @@ public class Ejercicio1 {
         int numero1 = introduccionDato.nextInt();
         System.out.println("Introduzca otro numero:");
         int numero2 = introduccionDato.nextInt();
-        funcionNumerosEntre(numero1,numero2);
+        numerosEntre(numero1,numero2);
 
     }
-    static void funcionNumerosEntre(int num1, int num2) {
+    static void numerosEntre(int num1, int num2) {
         if (num1>num2) {
             int aux = num1; // Declaramos que numero 1 es igual a aux
             num1 = num2; // Numero 1 es igual a numero 2
