@@ -9,9 +9,9 @@ public class Ejercicio4 {
         int dias,horas,minutos,segundos; //Declaramos las variables basicas que necesitaremos
         Scanner obtencion = new Scanner(System.in);
         System.out.print("Indicame una cantidad de dias:");
-        dias = obtencion.nextInt();
+        dias = obtencion.nextInt(); //Indicamos la cantidad de dias
         System.out.print("Indicame la cantidad de horas:");
-        horas = obtencion.nextInt();
+        horas = obtencion.nextInt(); // Indicamos la cantidad de horas
         System.out.print("Indicame la cantidad de minutos:");
         minutos = obtencion.nextInt();
         segundos = conversionSegundos(dias,horas,minutos);
@@ -21,10 +21,10 @@ public class Ejercicio4 {
 
     /**
      * El siguiente metodo muestra la cantidad de segundos en dias,horas y minutos
-     * @param dias
-     * @param horas
-     * @param minutos
-     * @return
+     * @param dias la cantidad de dias con la que trabajaremos
+     * @param horas la cantidad de horas
+     * @param minutos la cantidad de horas
+     * @return la cantidad de segundos total de las anteriores
      */
     static int conversionSegundos(int dias,int horas, int minutos) {
         int diasSegundos = dias*86400;
