@@ -19,7 +19,7 @@ public class Ejercicio7 {
            */
                 System.out.print("* "); // Imprime un asterisco seguido de un espacio
             }
-            System.out.println();
+            System.out.println(); // Imprime un salto de linea despues de que se imprimen los espacios y asteriscos
         }
     }
 }
