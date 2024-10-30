@@ -18,7 +18,7 @@ public class Ejercicio6 {
         boolean sonAmigos = numerosAmigos(primerNumero,segundoNumero); // Llamar a numerosAmigos para obtener si dos numeros son amigos
 
         if (sonAmigos) { // En caso de que sean amigos mostraremos eso
-            System.out.println("Los numeros "); // Mensaje de que los numeros son amigos
+            System.out.println("Los numeros " + primerNumero + " y " + segundoNumero + " son amigos"); // Mensaje de que los numeros son amigos
         }
         else { // En caso de que los numeros no sean amigos
             System.out.println("No son amigos"); // Mensaje de que no son amigos
