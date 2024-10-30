@@ -11,7 +11,12 @@ public class Ejercicio1 {
 
     }
     static void funcionNumerosEntre(int num1, int num2) {
-        for (int i = num1+1; i>=num1 && i<=num2;i++) {
+        if (num1>num2) {
+            int aux = num1; // Declaramos que numero 1 es igual a aux
+            num1 = num2; // Numero 1 es igual a numero 2
+            num2 = aux; // Numero 2 es igual a auxiliar asi cambiamos el orden de numero y no hay que repetir el bucle
+        }
+        for (int i = num1+1; i<num2;i++) {
             System.out.println(i);
         }
     }
