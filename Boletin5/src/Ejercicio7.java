@@ -1,6 +1,10 @@
 import java.util.Scanner;
-
+/** Permite hacer un triangulo cuya altura sea igual al numero escrito en teclado usando asteriscos
+ * @author Oscar
+ * @version 1.0
+ * **/
 public class Ejercicio7 {
+
     public static void main(String[] args) {
         Scanner pedir = new Scanner(System.in);
         System.out.println("Introduzca un numero:");
