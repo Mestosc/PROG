@@ -10,7 +10,7 @@ public class Ejercicio1 {
         int numero1 = introduccionDato.nextInt(); // Solicitar numero
         System.out.println("Introduzca otro numero:");
         int numero2 = introduccionDato.nextInt(); // Solicitar numero
-        numerosEntre(numero1,numero2);
+        numerosEntre(numero1,numero2); // Llamando al metodo numerosEntre
 
     }
 

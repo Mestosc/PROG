@@ -6,7 +6,7 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         System.out.println("Introduzca un numero");
         Scanner introduccion = new Scanner(System.in);
-        eco(introduccion.nextInt());
+        eco(introduccion.nextInt()); // Llamando al metodo eco
         introduccion.close();
     }
 
