@@ -6,7 +6,7 @@ public class Ejercicio7 {
         System.out.println("Introduzca un numero:");
         int numero = pedir.nextInt();
         for (int i=1;i<=numero;i++) { // Este bucle for verifica si la variable de control es menor o igual al numero
-            for (int x = numero - i;x>0;x--) { /* Este bucle imprime espacios en cada iteración, calculando (numero-i) para determinar cuántos espacios se imprimen.
+            for (int x = numero - i;x>0;x--) { /* Este bucle imprime espacios en cada iteración, calculando (numero-i) para determinar cuántos espacios se imprimen en una linea.
             La variable de control decrementa en cada ciclo para reducir los espacios impresos progresivamente.*/
                 System.out.print(" ");
             }
