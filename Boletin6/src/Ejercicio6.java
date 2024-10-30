@@ -48,6 +48,6 @@ public class Ejercicio6 {
             }
         }
         sonAmigos = sumaDivisores1 == num2 && sumaDivisores2 == num1; // Verificamos si son Amigos
-        return sonAmigos;
+        return sonAmigos; // Obtenemos si es verdadero o falso
     }
 }
