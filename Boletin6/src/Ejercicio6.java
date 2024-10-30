@@ -43,8 +43,8 @@ public class Ejercicio6 {
 
         }
         for (int j = 1; j < num2;j++) { // Iteramos desde 1 hasta un numero menos que num2
-            if (num2 % j == 0) {
-                sumaDivisores2 += j;
+            if (num2 % j == 0) { // Verificamos si la cantidad es divisor viendo si el residuo de num2 / i es 0
+                sumaDivisores2 += j; // Lo añadimos a la suma de divisores
             }
         }
         sonAmigos = sumaDivisores1 == num2 && sumaDivisores2 == num1; // Verificamos si son Amigos
