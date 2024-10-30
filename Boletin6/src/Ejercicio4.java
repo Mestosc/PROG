@@ -14,7 +14,7 @@ public class Ejercicio4 {
         horas = obtencion.nextInt(); // Indicamos la cantidad de horas
         System.out.print("Indicame la cantidad de minutos:");
         minutos = obtencion.nextInt();
-        segundos = conversionSegundos(dias,horas,minutos);
+        segundos = conversionSegundos(dias,horas,minutos); // Llamando a conversionSegundos para obtener cantidad en segundos
         System.out.println("Con una cantidad de " + dias + " dias " + horas + " horas y " + minutos + " minutos tenemos un total de " + segundos + " segundos");
 
     }
