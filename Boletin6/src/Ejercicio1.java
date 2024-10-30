@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/** Si le introducimos un numero nos indica cuantos numeros hay entre esos dos
+/** Nos solicita dos numeros
  * @author Oscar Rodriguez
  * @version 1.0
  * **/
@@ -13,6 +13,12 @@ public class Ejercicio1 {
         numerosEntre(numero1,numero2);
 
     }
+
+    /**
+     * Nos solicita dos numeros y nos dice cuantos hay entre ellos
+     * @param num1 es el primer valor solicitado
+     * @param num2 es el segundo valor solicitado
+     */
     static void numerosEntre(int num1, int num2) {
         if (num1>num2) {
             int aux = num1; // Declaramos que numero 1 es igual a aux
