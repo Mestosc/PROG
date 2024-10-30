@@ -13,7 +13,7 @@ public class Ejercicio3 {
     }
 
     /**
-     * Esta funcion calculara el area o el volumen, segun lo que se indique y necesitaremos pasarle la longitud del lado
+     * Calculara el area o el volumen, segun lo que se indique y necesitaremos pasarle la longitud del lado
      * @param caso si calculamos area o volumen
      * @param longitudLado la longitud del lado del cubo
      */
