@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/** Nos solicita dos numeros
+/** Nos solicita dos numeros y luego realiza operaciones usando el metodo numerosEntre
  * @author Oscar Rodriguez
  * @version 1.0
  * **/
@@ -7,9 +7,9 @@ public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner introduccionDato = new Scanner(System.in);
         System.out.println("Introduzca un numero:");
-        int numero1 = introduccionDato.nextInt();
+        int numero1 = introduccionDato.nextInt(); // Solicitar numero
         System.out.println("Introduzca otro numero:");
-        int numero2 = introduccionDato.nextInt();
+        int numero2 = introduccionDato.nextInt(); // Solicitar numero
         numerosEntre(numero1,numero2);
 
     }
