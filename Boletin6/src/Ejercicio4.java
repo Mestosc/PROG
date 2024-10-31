@@ -27,9 +27,9 @@ public class Ejercicio4 {
      * @return la cantidad de segundos total de las anteriores
      */
     static int conversionSegundos(int dias,int horas, int minutos) {
-        int diasSegundos = dias*86400;
-        int horasSegundos = horas*3600;
-        int minutosSegundos = minutos*60;
-        return diasSegundos+horasSegundos+minutosSegundos;
+        int diasSegundos = dias*86400; //Convirtiendo dias a segundos y guardandolo
+        int horasSegundos = horas*3600; // Convirtiendo horas a segundos y guardandolo
+        int minutosSegundos = minutos*60; // Convirtiendo minutos a segundos
+        return diasSegundos+horasSegundos+minutosSegundos; // Devolviendo la suma total de segundos
     }
 }
