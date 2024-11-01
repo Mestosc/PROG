@@ -54,3 +54,57 @@ graph TD
 
 ```
 
+## Ejercicio 4
+Introduciendo una cantidad en dias otra en horas y otra en minutos obtenemos
+la cantidad total de segundos
+```mermaid
+graph TD
+    A[Inicio] --> B[Solicitar cantidad de dias]
+    B --> C[Solicitar cantidad de horas]
+    C --> D[Solicitar cantidad de minutos]
+    D --> E[Llamar al metodo conversionSegundos con dias, horas y minutos]
+    E --> F[Calcular dias en segundos: dias * 86400]
+    F --> G[Calcular horas en segundos: horas * 3600]
+    G --> H[Calcular minutos en segundos: minutos * 60]
+    H --> I[Sumar todos los segundos]
+    I --> J[Retornar la cantidad total de segundos]
+    J --> K[Mostrar el resultado en pantalla]
+    K --> L[Fin del programa]
+
+```
+## Ejercicio 5
+Nos muestra la diferencia en minutos de dos intervalos de tiempo en horas y minutos
+```mermaid
+graph TD
+    A[Inicio] --> B[Solicitar la primera cantidad en horas]
+    B --> C[Solicitar la primera cantidad en minutos]
+    C --> D[Solicitar la segunda cantidad en horas]
+    D --> E[Solicitar la segunda cantidad en minutos]
+    E --> F[Llamar al metodo diferenciaMin con las horas y minutos introducidos]
+    F --> G[Convertir hora1 a minutos y guardarlo en minutosHora1]
+    G --> H[Convertir hora2 a minutos y guardarlo en minutosHora2]
+    H --> I[Calcular totalMinutos1 como minutosHora1 + minuto1]
+    I --> J[Calcular totalMinutos2 como minutosHora2 + minuto2]
+    J --> K[Calcular diferenciaTotal usando condicional ternario]
+    K --> L[Retornar diferenciaTotal]
+    L --> M[Mostrar la diferencia en minutos]
+    M --> N[Fin del programa]
+
+```
+## Ejercicio 6
+Nos muestra si dos numeros son Amigos esto ocurre cuando la suma de los divisores de un numero es igual al otro numero y viceversa
+```mermaid
+graph TD
+    A[Inicio] --> B[Solicitar primer numero]
+    B --> C[Solicitar segundo numero]
+    C --> D[Llamar al metodo numerosAmigos]
+    D --> E[Calcular suma de divisores de primerNumero]
+    E --> F[Calcular suma de divisores de segundoNumero]
+    F --> G[Verificar si sumaDivisores1 es igual a segundoNumero y sumaDivisores2 es igual a primerNumero]
+    G --> H{Son amigos?}
+    H -- Si --> I[Mostrar que los numeros son amigos]
+    H -- No --> J[Mostrar que no son amigos]
+    I --> K[Fin]
+    J --> K[Fin]
+
+```
