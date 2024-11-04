@@ -19,7 +19,7 @@ public class Ejercicio1 {
      * @param num1 es el primer valor solicitado
      * @param num2 es el segundo valor solicitado
      */
-    static void numerosEntre(int num1, int num2) {
+    public static void numerosEntre(int num1, int num2) {
         if (num1>num2) {
             int aux = num1; // Declaramos que numero 1 es igual a aux
             num1 = num2; // Numero 1 es igual a numero 2
