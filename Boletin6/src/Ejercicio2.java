@@ -1,6 +1,8 @@
 import java.util.Scanner;
 /**
  * Nos solicita un numero y nos permite imprimir Eco... varias veces con una funcion
+ * @author Oscar Rodriguez
+ * @version 1.0
  * **/
 public class Ejercicio2 {
     public static void main(String[] args) {
