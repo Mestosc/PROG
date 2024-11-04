@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 /**
  * Calcular mediante un metodo la potencia n de m
+ * @author Oscar Rodriguez
  */
 public class Ejercicio8 {
     public static void main(String[] args) {
-        int numero,exponente,potencia;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduzca base de la potencia:");
-        numero = scanner.nextInt();
-        System.out.print("Introduzca exponente de la potencia:");
-        exponente = scanner.nextInt();
-        potencia = calcularPotencia(numero,exponente);
-        System.out.println("La potencia de " + numero + " elevado a " + exponente + " :" + potencia);
+        int numero,exponente,potencia; // Declaramos variables para los numeros que deberemos almacenar para hacer el tratamiento correspondiente de datos
+        Scanner scanner = new Scanner(System.in); // Definimos un objeto de la clase Scanner para obtener entrada del usuario
+        System.out.print("Introduzca base de la potencia:"); // Informamos de introducir la base de la potencia
+        numero = scanner.nextInt(); // Solicitamos la informacion
+        System.out.print("Introduzca exponente de la potencia:"); // Hacemos lo mismo pero el exponente
+        exponente = scanner.nextInt(); // Lo mismo al anterior scanner pero para el exponente
+        potencia = calcularPotencia(numero,exponente); // Aplicamos metodo de calculo de Potencia para saber la potencia y lo guardamos
+        System.out.println("La potencia de " + numero + " elevado a " + exponente + " :" + potencia); // Indicamos que la potencia de un numero elevado a otro es ...
     }
 
     /**
