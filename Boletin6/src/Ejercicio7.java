@@ -1,6 +1,16 @@
+import java.util.Scanner;
+
+/**
+ * Calculo
+ */
 public class Ejercicio7 {
     public static void main(String[] args) {
-
+        int numero,resultado; // Definimos algunas variables utiles
+        Scanner scanner = new Scanner(System.in); // Creamos objeto de la clase Scanner para la recojida de datos
+        System.out.println("Indicamos introducir el numero:");// Indicamos los datos que queremos recojer
+        numero = scanner.nextInt();
+        resultado = calculoFactorial(numero);
+        System.out.println("El factorial de " + numero + " es " + resultado);
     }
 
     /**
