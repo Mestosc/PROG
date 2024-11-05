@@ -1,3 +1,8 @@
+/**
+ * Calcular numero de la serie Fibonnacci mediante un metodo
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio9 {
     public static void main(String[] args) {
         System.out.println(mostrarFibonnaci(10));
