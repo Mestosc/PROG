@@ -4,8 +4,8 @@ public class Ejercicio9 {
     }
 
     /**
-     * Funcion para devolver los numeros de Fibonnaci
-     * @param num1 el numero del que queremos sacar la serie
+     * Funcion para devolver los numeros de Fibonnaci, en una posicion determinada
+     * @param num1 la posicion en la serie Fibonnacci
      * @return Los numeros de la serie de Fibonnaci
      */
     static int mostrarFibonnaci(int num1) {
