@@ -14,12 +14,13 @@ public class Ejercicio9 {
      * @return Los numeros de la serie de Fibonnaci
      */
     static int mostrarFibonnaci(int num1) {
-        if (num1==0) {
-            return 0;
+        if (num1==0) { // Si el numero es 0 en la serie de Fibonnaci es el 0
+            return 0; // Devuelve 0
         }
-        else if (num1==1){
-            return 1;
+        else if (num1==1){ // Si el numero es 1 en la serie de Fibonnaci es el 1
+            return 1; // Devuelve 1
         }
-        return mostrarFibonnaci(num1-1) + mostrarFibonnaci(num1-2);
+        return mostrarFibonnaci(num1-1) + mostrarFibonnaci(num1-2); /* Sumamos el (numero1-1) + (numero1-2)
+        cuando hasta que el numero sea algunos de los valores*/
     }
 }
