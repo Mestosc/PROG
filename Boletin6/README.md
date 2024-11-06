@@ -43,9 +43,9 @@ graph TD
     B --> C[Solicitar longitud del cubo]
     C --> D[Llamar al metodo calcularCubo con tareaHacer y longitud]
     D --> E{tareaHacer == 1}
-    E -->|Si| F[Calcular area: 6 * longitud²]
+    E -->|Si| F[Calcular area: 6 * longitud elevado a 2]
     E -->|No| H
-    H[Calcular volumen: longitud³]
+    H[Calcular volumen: longitud elvado a 3]
     F --> I[Mostrar resultado del area]
     H --> J[Mostrar resultado del volumen]
     I --> K[Fin del metodo calcularCubo]
