@@ -1,3 +1,8 @@
+/**
+ * Clase que hace el calculo de maximo divisor mediante un metodo especifico
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio10 {
     public static void main(String[] args) {
         int valor1 = 20; // Definiendo variables para probar el primer valor
