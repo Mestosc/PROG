@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 /**
- * Calculo
+ * Calculo de factorial mediante metodo
+ * @author Oscar Rodriguez
+ * @version 1.0
  */
 public class Ejercicio7 {
     public static void main(String[] args) {
