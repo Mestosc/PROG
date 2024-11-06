@@ -109,4 +109,4 @@ graph TD
 
 ```
 
-Esto es una prueba de concepto de diagramas de flujo hechos en Mermaid con ChatGPT
+Esto es una prueba de concepto de diagrama de flujo en Mermaid usando ChatGPT

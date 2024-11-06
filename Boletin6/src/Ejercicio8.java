@@ -3,6 +3,7 @@ import java.util.Scanner;
 /**
  * Calcular mediante un metodo la potencia n de m
  * @author Oscar Rodriguez
+ * @version 1.0
  */
 public class Ejercicio8 {
     public static void main(String[] args) {
