@@ -108,3 +108,5 @@ graph TD
     J --> K[Fin]
 
 ```
+
+Esto es una prueba de concepto de diagramas de flujo hechos en Mermaid con ChatGPT
