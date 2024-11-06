@@ -1,9 +1,9 @@
 public class Ejercicio10 {
     public static void main(String[] args) {
-        int valor1 = 20;
-        int valor2 = 30;
-        int resultado = maximoDivisorComun(valor1,valor2);
-        System.out.println(resultado);
+        int valor1 = 20; // Definiendo variables para probar el primer valor
+        int valor2 = 30; // Definiendo variable para el segundo valor
+        int resultado = maximoDivisorComun(valor1,valor2); // Llamando a funcion para calcular el maximo Divisor comun y lo devuelve
+        System.out.println(resultado); // Imprimiendo el resultado por pantalla
     }
 
     /**
