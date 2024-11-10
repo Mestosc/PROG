@@ -1,3 +1,8 @@
+/**
+ * Mostrar una lista de numeros aleatorios desde el ultimo al primero
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio1 {
     public static void main(String[] args) {
         int[] numeros = new int[6]; // Estableciendo lista de numeros
