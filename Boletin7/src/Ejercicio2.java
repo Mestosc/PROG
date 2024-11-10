@@ -4,7 +4,7 @@ public class Ejercicio2 {
         int[] notas = {5,2,9,3,4,5,6,1,5,6,7,2,4,3,2,5,4,7,8,9,10,4,2,6,1,6,3,6,4,3};
         int mayor=notas[0]; // Asumimos que la nota mayor es el primer elemento
         for (int nota : notas) {
-                if (nota > mayor) { /*Si la nota desde el segundo elemento es mayor a la nota del primer elemento que*
+            if (nota > mayor) { /*Si la nota desde el segundo elemento es mayor a la nota del primer elemento que*
             que consideramos mayor mayor sera asginado a ese elemento al iterar eso podremos averiguar cual es el numero mayor*/
                     mayor = nota;
             }
