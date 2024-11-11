@@ -5,7 +5,6 @@ import java.util.Scanner;
  */
 public class Ejercicio3 {
     public static void main(String[] args) {
-        int numeroAprobados=0, numeroSuspensos=0,totalNotas=0;
         Scanner sc = new Scanner(System.in);
         int[] notas = {5,2,8,3,4,5,6,1,5,6,
                 7,2,4,3,2,5,4,7,8,9,
