@@ -15,9 +15,9 @@ public class Ejercicio2 {
                 numeroSuspensos++; // Aumentando cuenta de los suspensos
             }
         }
-        System.out.println("El numero de aprobados es:" + numeroAprobados);
-        System.out.println("El numero de suspensos es:" + numeroSuspensos);
-        System.out.println("La media es de " + ((double) totalNotas / notas.length));
-        System.out.println("La nota mayor es:" + mayor);
+        System.out.println("El numero de aprobados es:" + numeroAprobados); // Mostrar el numero de aprobados
+        System.out.println("El numero de suspensos es:" + numeroSuspensos); // Mostrar el numero de suspensos
+        System.out.println("La media es de " + ((double) totalNotas / notas.length)); // Mostrar la media de notas
+        System.out.println("La nota mayor es:" + mayor); // Mostrar el numero mayor
     }
 }
