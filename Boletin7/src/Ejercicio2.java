@@ -1,3 +1,8 @@
+/**
+ * Mirar numero de aprobados, suspensos, media y la nota mayor
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio2 {
     public static void main(String[] args) {
         int numeroAprobados=0, numeroSuspensos=0,totalNotas=0;
