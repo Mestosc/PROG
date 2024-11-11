@@ -16,7 +16,9 @@ public class Ejercicio3 {
                 "Pablo", "Quintín", "Raquel", "Sofía", "Tomás",
                 "Ulises", "Valeria", "Walter", "Ximena", "Yolanda",
                 "Zacarías", "Andrea", "Bruno", "Carmen", "Diego"};
-
+        int[] mayor = {5,2,8,3,4,5,6,1,5,6,
+                7,2,4,3,2,5,4,7,8,9,
+                10,4,2,6,1,6,3,6,4,3};
         System.out.println("Los siguientes alumnos estan aprobados:");
         for (int i = 0;i<notas.length;i++) { // Iteramos las notas
             if (notas[i]>5) {
@@ -24,6 +26,8 @@ public class Ejercicio3 {
             }
         }
         System.out.println("Lista de notas en orden crecientes");
+        /* TODO Hacer y mostrar ordenacion de notas de menor a mayor
+        * */
 
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
