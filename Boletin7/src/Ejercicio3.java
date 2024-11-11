@@ -27,7 +27,7 @@ public class Ejercicio3 {
         }
         System.out.println("Lista de notas en orden crecientes");
         /* TODO Hacer y mostrar ordenacion de notas de menor a mayor
-        * */
+        * Lo del To-Do es cosa del IDE para registrar que la tarea esta pendiente*/
 
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
