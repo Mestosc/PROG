@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 /**
  * Hace lo mismo que Ejercicio2 pero añadiendo nombres y teniendo tambien otras funcionalidades
+ * @author Oscar Rodriguez
+ * @version 1.0
  */
 public class Ejercicio3 {
     public static void main(String[] args) {
