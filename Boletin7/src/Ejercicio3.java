@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Hace lo mismo que Ejercicio2 pero añadiendo cierta funcionalidad
+ * Hace lo mismo que Ejercicio2 pero añadiendo nombres y teniendo tambien otras funcionalidades
  */
 public class Ejercicio3 {
     public static void main(String[] args) {
@@ -15,9 +15,9 @@ public class Ejercicio3 {
                 "Pablo", "Quintín", "Raquel", "Sofía", "Tomás",
                 "Ulises", "Valeria", "Walter", "Ximena", "Yolanda",
                 "Zacarías", "Andrea", "Bruno", "Carmen", "Diego"};
-       /* int[] mayor = {5,2,8,3,4,5,6,1,5,6,
+        int[] mayor = {5,2,8,3,4,5,6,1,5,6,
                 7,2,4,3,2,5,4,7,8,9,
-                10,4,2,6,1,6,3,6,4,3};*/
+                10,4,2,6,1,6,3,6,4,3};
         System.out.println("Los siguientes alumnos estan aprobados:");
         for (int i = 0;i<notas.length;i++) { // Iteramos las notas
             if (notas[i]>5) {
@@ -26,7 +26,9 @@ public class Ejercicio3 {
         }
         System.out.println("Lista de notas en orden crecientes");
         /* TODO Hacer y mostrar ordenacion de notas de menor a mayor
-        * Lo del To-Do es cosa del IDE para registrar que la tarea esta pendiente*/
+        * Lo del To-Do es cosa del IDE para registrar que la tarea esta pendiente
+        * no encuentro una forma de hacer la ordenacion que coincida con los requisitos
+        * se que hay alguna manera de hacerlo usando la clase Arrays segun he podido ver*/
 
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
