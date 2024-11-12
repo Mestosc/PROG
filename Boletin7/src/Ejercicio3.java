@@ -28,7 +28,7 @@ public class Ejercicio3 {
         /* TODO Hacer y mostrar ordenacion de notas de menor a mayor
         * Lo del To-Do es cosa del IDE para registrar que la tarea esta pendiente
         * no encuentro una forma de hacer la ordenacion que coincida con los requisitos
-        * se que hay alguna manera de hacerlo usando la clase Arrays segun he podido ver*/
+        * se que hay alguna manera de hacerlo usando la clase Arrays*/
 
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
