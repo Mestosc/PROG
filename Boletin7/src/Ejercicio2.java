@@ -18,11 +18,11 @@ public class Ejercicio2 {
             if (nota > mayor) { /*Si la nota desde el segundo elemento es mayor a la nota del primer elemento que*
             que consideramos mayor mayor sera asginado a ese elemento al iterar eso podremos averiguar cual es el numero mayor*/
                 mayor = nota;
-        }
+        }}
         System.out.println("El numero de aprobados es:" + numeroAprobados); // Mostrar el numero de aprobados
         System.out.println("El numero de suspensos es:" + numeroSuspensos); // Mostrar el numero de suspensos
         System.out.println("La media es de " + ((double) totalNotas / notas.length)); // Mostrar la media de notas
         System.out.println("La nota mayor es:" + mayor); // Mostrar el numero mayor
     }
 
-}}
+}
