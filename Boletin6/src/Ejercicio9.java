@@ -5,22 +5,24 @@
  */
 public class Ejercicio9 {
     public static void main(String[] args) {
-        System.out.println(mostrarFibonnaci(10));
+        fibonacci(1,1,10);
     }
 
     /**
-     * Funcion para devolver los numeros de Fibonnaci, en una posicion determinada
-     * @param num1 la posicion en la serie Fibonnacci
-     * @return Los numeros de la serie de Fibonnaci
+     * Muestra de dos numeros la serie de fibonacci con el numero de elementos
+     * seleccionados
+     * @param numero1 el primer numero de la serie de Fibonacci a mostrar
+     * @param numero2 el segundo numero de la serie de Fibonacci a mostrar
+     * @param elementos el numero de elementos a mostrar
      */
-    static int mostrarFibonnaci(int num1) {
-        if (num1==0) { // Si el numero es 0 en la serie de Fibonnaci es el 0
-            return 0; // Devuelve 0
+    static void fibonacci(int numero1,int numero2,int elementos) {
+        if (elementos!=0) { // Mientras los elementos sean distintos de 0 hacemos el proceso
+            int suma = numero1 + numero2; // Hacemos la suma
+            System.out.println(suma); // Imprimimos la suma
+            fibonacci(numero2,suma,elementos-1); /* Luego hacemos una llamada recursiva colocando el segundo
+            numero en el lugar del primero y le restamos los elementos*/
         }
-        else if (num1==1){ // Si el numero es 1 en la serie de Fibonnaci es el 1
-            return 1; // Devuelve 1
+        else {
+            System.out.print(""); // En caso de que no se cumpla la condicion devuelve un print que imprime un String vacio practicamente
         }
-        return mostrarFibonnaci(num1-1) + mostrarFibonnaci(num1-2); /* Sumamos el (numero1-1) + (numero1-2)
-        cuando hasta que el numero sea algunos de los valores*/
-    }
-}
+}}
