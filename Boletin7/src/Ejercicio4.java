@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Nos devuelve la letra del DNI al introducirle el numero
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

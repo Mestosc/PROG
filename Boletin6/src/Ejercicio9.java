@@ -5,7 +5,7 @@
  */
 public class Ejercicio9 {
     public static void main(String[] args) {
-        fibonacci(1,1,10);
+        fibonacci(0,1,10);
     }
 
     /**
