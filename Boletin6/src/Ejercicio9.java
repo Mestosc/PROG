@@ -5,24 +5,27 @@
  */
 public class Ejercicio9 {
     public static void main(String[] args) {
-        fibonacci(0,1,10);
+        int numero1 = 0;
+        int numero2 = 1;
+        System.out.println(numero1);
+        fibonacci(numero1,numero2,10);
     }
 
     /**
-     * Muestra de dos numeros la serie de fibonacci con el numero de elementos
-     * seleccionados
-     * @param numero1 el primer numero de la serie de Fibonacci a mostrar
-     * @param numero2 el segundo numero de la serie de Fibonacci a mostrar
-     * @param elementos el numero de elementos a mostrar
+     * Mostrar los numeros desde el segundo elemento en adelante
+     * @param numero1 El primer elemento de Fibonacci
+     * @param numero2 El segundo elemento de Fibonacci
+     * @param elementos la cantidad de numeros a mostrar
      */
     static void fibonacci(int numero1,int numero2,int elementos) {
-        if (elementos!=0) { // Mientras los elementos sean distintos de 0 hacemos el proceso
-            int suma = numero1 + numero2; // Hacemos la suma
-            System.out.println(suma); // Imprimimos la suma
-            fibonacci(numero2,suma,elementos-1); /* Luego hacemos una llamada recursiva colocando el segundo
-            numero en el lugar del primero y le restamos los elementos*/
+        if (elementos!=0) {
+            int suma = numero1 + numero2;
+            System.out.println(suma);
+            fibonacci(numero2,suma,elementos-1);
         }
         else {
-            System.out.print(""); // En caso de que no se cumpla la condicion devuelve un print que imprime un String vacio practicamente
+            System.out.print("");
         }
-}}
+    }
+
+}
