@@ -16,7 +16,7 @@ public class Ejercicio1 {
 
     /**
      * Obtiene valores aleatorios entre 1 y 50, para lo cual obtenemos valores aleatorios entre 0 y 49 y le sumamos 1 asi
-     * siempre estaran entre 1 y 50 luego los vamos asignando a una lista que le pasaremos y luego devolveremos eso como una lista
+     * siempre estaran entre 1 y 50 luego los vamos asignando a una lista
      * @param num La lista de numeros para obtener los numeros aleatorios
      */
     static void numerosAleatorios(int[] num) {
