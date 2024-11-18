@@ -36,12 +36,21 @@ public class Ejercicio3 {
         var nombreAlumno = sc.next();
         obtenerNombreNotaAlumno(nombreAlumno,alumnos,notas);
     }
+
+    /**
+     * Obtener el nombre y la nota de un alumno especifico, ya que en este caso se asume que la nota
+     * y alumno comparten indice se puede realizar de la siguiente manera pasandole los diferentes datos, basicamente de la lista
+     * de alumnos obtenemos la nota
+     * @param nombre Nombre del alumno del que queremos obtener la nota
+     * @param alumnos la lista de alumnos
+     * @param notas la lista de notas
+     */
     static void obtenerNombreNotaAlumno(String nombre,String[] alumnos,int[] notas) {
         for (int k=0;k<alumnos.length;k++) {/* Para saber si un alumno con un nombre determinado esta aprobado
         iteramos los elementos de la lista de alumnos y vemos si coincide con el nombre introducido
         */
             if (nombre.equalsIgnoreCase(alumnos[k])) { // Verficamos si el nombre introducido coincide con cada alumno de la lista
-                System.out.println("El alumno " + alumnos[k] + " tiene " + notas[k]);
+                System.out.println("El alumno " + nombre + " tiene " + notas[k]);
                 break; /* Como en este caso no se repiten nombres que sean iguales
                 y no es necesario sacar las notas de dos con el mismo nombre exacto
                 se introduce un break para que despues de mostrar la nota salga directamente del bucle*/
