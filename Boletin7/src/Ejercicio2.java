@@ -15,14 +15,22 @@ public class Ejercicio2 {
             } else { // Si no tienen 5 o más estan suspensos y lo contamos
                 numeroSuspensos++; // Aumentando cuenta de los suspensos
             }
-            if (nota > mayor) { /*Si la nota desde el segundo elemento es mayor a la nota del primer elemento que*
-            que consideramos mayor mayor sera asginado a ese elemento al iterar eso podremos averiguar cual es el numero mayor*/
-                mayor = nota;
-        }}
+            mayor = obtenerNotaMayor(mayor,nota);
+        }
         System.out.println("El numero de aprobados es:" + numeroAprobados); // Mostrar el numero de aprobados
         System.out.println("El numero de suspensos es:" + numeroSuspensos); // Mostrar el numero de suspensos
         System.out.println("La media es de " + ((double) totalNotas / notas.length)); // Mostrar la media de notas
         System.out.println("La nota mayor es:" + mayor); // Mostrar el numero mayor
+         }
+
+    /**
+     * Obtener el numero mayor de dos numeros diferentes
+     * @param mayor Indicamos un numero que asumimos como mayor
+     * @param nota Indicamos el valor que en este caso es nota
+     * @return Nos devuelve el valor de nota que sea mayor
+     */
+    static int obtenerNotaMayor(int mayor,int nota) {
+        return (nota>mayor) ? nota:mayor;
     }
 
 }

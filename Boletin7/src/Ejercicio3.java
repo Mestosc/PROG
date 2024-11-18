@@ -34,10 +34,13 @@ public class Ejercicio3 {
 
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
+        obtenerNombreNotaAlumno(nombreAlumno,alumnos,notas);
+    }
+    static void obtenerNombreNotaAlumno(String nombre,String[] alumnos,int[] notas) {
         for (int k=0;k<alumnos.length;k++) {/* Para saber si un alumno con un nombre determinado esta aprobado
         iteramos los elementos de la lista de alumnos y vemos si coincide con el nombre introducido
         */
-            if (nombreAlumno.equalsIgnoreCase(alumnos[k])) { // Verficamos si el nombre introducido coincide con cada alumno de la lista
+            if (nombre.equalsIgnoreCase(alumnos[k])) { // Verficamos si el nombre introducido coincide con cada alumno de la lista
                 System.out.println("El alumno " + alumnos[k] + " tiene " + notas[k]);
                 break; /* Como en este caso no se repiten nombres que sean iguales
                 y no es necesario sacar las notas de dos con el mismo nombre exacto
