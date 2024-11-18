@@ -6,8 +6,8 @@
 public class Ejercicio1 {
     public static void main(String[] args) {
         int[] numeros = new int[6]; // Estableciendo lista de numeros
-        numeros = numerosAleatorios(numeros);
-        for (int i = numeros.length-1;i>0;i--){ /* Hacer un bucle for
+        numerosAleatorios(numeros);
+        for (int i = numeros.length-1;i>=0;i--){ /* Hacer un bucle for
         para iterar de forma inversa los numeros del array para obtener las posiciones al reves
         */
             System.out.println(numeros[i]); //Mostrar cada uno de los numeros de la lista
