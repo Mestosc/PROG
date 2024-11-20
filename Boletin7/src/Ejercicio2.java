@@ -27,7 +27,7 @@ public class Ejercicio2 {
      * Obtener el numero mayor de dos numeros diferentes
      * @param mayor Indicamos un numero que asumimos como mayor
      * @param nota Indicamos el valor que en este caso es nota
-     * @return Nos devuelve el valor de nota que sea mayor
+     * @return Nos devuelve el valor que sea mayor
      */
     static int obtenerNotaMayor(int mayor,int nota) {
         return (nota>mayor) ? nota:mayor;

@@ -21,11 +21,7 @@ public class Ejercicio3 {
                 7,2,4,3,2,5,4,7,8,9,
                 10,4,2,6,1,6,3,6,4,3};
         System.out.println("Los siguientes alumnos estan aprobados:");
-        for (int i = 0;i<notas.length;i++) { // Iteramos las notas
-            if (notas[i]>5) { // Si las notas superan 5 entonces estan aprobados
-                System.out.println(alumnos[i]);
-            }
-        }
+        mostrarAprobados(notas, alumnos);
         System.out.println("Lista de notas en orden crecientes");
         /* TODO Hacer y mostrar ordenacion de notas de menor a mayor
         * Lo del To-Do es cosa del IDE para registrar que la tarea esta pendiente
@@ -35,6 +31,19 @@ public class Ejercicio3 {
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
         obtenerNombreNotaAlumno(nombreAlumno,alumnos,notas);
+    }
+
+    /**
+     * Mostrar los alumnos aprobados pasando la lista de notas y de alumnos
+     * @param notas las notas de los alumnos
+     * @param alumnos los nombres de los alumnos
+     */
+    private static void mostrarAprobados(int[] notas, String[] alumnos) {
+        for (int i = 0; i< notas.length; i++) { // Iteramos las notas
+            if (notas[i]>5) { // Si las notas superan 5 entonces estan aprobados
+                System.out.println(alumnos[i]);
+            }
+        }
     }
 
     /**
