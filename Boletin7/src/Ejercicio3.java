@@ -63,7 +63,6 @@ public class Ejercicio3 {
                 }
             }
             }
-    }
 
     /**
      * Mostrar los alumnos aprobados pasando la lista de notas y de alumnos
