@@ -55,8 +55,7 @@ public class Ejercicio3 {
      * @param list la lista de numeros a ordenar
      */
     static void ordenarCantidadesMenorMayor(int[] list) {
-        for (int i = 0; i< list.length; i++){
-            for (int j = 0; j<list.length-1-i; j++) {
+            for (int j = 0; j<list.length-1; j++) {
                 if (list[j]> list[j+1]) {
                     int temp = list[j];
                     list[j] = list[j+1];
