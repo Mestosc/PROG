@@ -17,9 +17,8 @@ public class Ejercicio3 {
                 "Pablo", "Quintín", "Raquel", "Sofía", "Tomás",
                 "Ulises", "Valeria", "Walter", "Ximena", "Yolanda",
                 "Zacarías", "Andrea", "Bruno", "Carmen", "Diego"}; // Lista de alumnos
-        int[] mayor = {5,2,8,3,4,5,6,1,5,6,
-                7,2,4,3,2,5,4,7,8,9,
-                10,4,2,6,1,6,3,6,4,3};
+        int[] mayor = new int[notas.length];
+        mayor = notas;
         System.out.println("Los siguientes alumnos estan aprobados:");
         mostrarAprobados(notas, alumnos);
         System.out.println("Lista de notas en orden crecientes");

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; // Importamos la clase Scanner para poder ingresar entrada en el programa
 
 /**
  * Nos devuelve la letra del DNI al introducirle el numero
