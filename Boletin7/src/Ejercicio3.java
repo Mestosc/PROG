@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Hace lo mismo que Ejercic3io2 pero añadiendo nombres y teniendo tambien otras funcionalidades
+ * Hace lo mismo que Ejercicio2 pero añadiendo nombres y teniendo tambien otras funcionalidades
  * @author Oscar Rodriguez
  * @version 1.0
  */
