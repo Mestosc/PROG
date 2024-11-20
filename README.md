@@ -6,7 +6,7 @@ Aqui estoy incluyendo los ejercicios más pequeños que nos manda hacer el profe
 > puede aparecer como una contribucion desde mi cuenta personal
 
 ## Boletines realizados
-Estos son los boletines que han sido realizados
+Estos son los boletines que han sido realizados hasta la fecha
 
 - [Boletin 1](Boletin1/src)
 - [Boletin 2](Boletin2/src)
@@ -15,6 +15,7 @@ Estos son los boletines que han sido realizados
 - [Boletin 4](Boletin4/src)
 - [Boletin 5](Boletin5/src)
 - [Boletin 6](Boletin6/src)
+- [Boletin 7](Boletin7/src)
   
 ## Boletines en proceso...
 Estos son los boletines que han sido subidos pero no han sido finalizados.
