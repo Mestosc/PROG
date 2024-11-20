@@ -47,6 +47,7 @@ public class Ejercicio3 {
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
         obtenerNombreNotaAlumno(nombreAlumno,alumnos,notas);
+        sc.close();
     }
 
     /**
