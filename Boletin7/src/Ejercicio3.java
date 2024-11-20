@@ -59,7 +59,7 @@ public class Ejercicio3 {
         iteramos los elementos de la lista de alumnos y vemos si coincide con el nombre introducido
         */
             if (nombre.equalsIgnoreCase(alumnos[k])) { // Verficamos si el nombre introducido coincide con cada alumno de la lista
-                System.out.println("El alumno " + nombre + " tiene " + notas[k]);
+                System.out.println("El alumno " + alumnos[k] + " tiene " + notas[k]);
                 break; /* Como en este caso no se repiten nombres que sean iguales
                 y no es necesario sacar las notas de dos con el mismo nombre exacto
                 se introduce un break para que despues de mostrar la nota salga directamente del bucle*/
