@@ -7,6 +7,7 @@ import java.util.Scanner;
  */
 public class Ejercicio3 {
     public static void main(String[] args) {
+        int totalNotas=0,numeroAprobados=0,numeroSuspensos=0;
         Scanner sc = new Scanner(System.in);
         int[] notas = {5,2,8,3,4,5,6,1,5,6,
                 7,2,4,3,2,5,4,7,8,9,
@@ -17,19 +18,51 @@ public class Ejercicio3 {
                 "Pablo", "Quintín", "Raquel", "Sofía", "Tomás",
                 "Ulises", "Valeria", "Walter", "Ximena", "Yolanda",
                 "Zacarías", "Andrea", "Bruno", "Carmen", "Diego"}; // Lista de alumnos
-        int[] mayor = new int[notas.length];
-        mayor = notas;
+        int[] mayor = {5,2,8,3,4,5,6,1,5,6,
+                7,2,4,3,2,5,4,7,8,9,
+                10,4,2,6,1,6,3,6,4,3}; // Copiar valores lista de notas
+        int mayorN=notas[0]; // Asumimos que la nota mayor es el primer elemento
+        for (int nota : notas) {
+            totalNotas += nota; // Haciendo la suma de todas las notas para la media
+            if (nota >= 5) { // Si tienen 5 o mas estan aprobados y lo contamos
+                numeroAprobados++; // Aumentando cuenta de los aprobados
+            } else { // Si no tienen 5 o más estan suspensos y lo contamos
+                numeroSuspensos++; // Aumentando cuenta de los suspensos
+            }
+            mayorN = Ejercicio2.obtenerNotaMayor(mayorN,nota);
+        }
+        System.out.println("El numero de aprobados es:" + numeroAprobados); // Mostrar el numero de aprobados
+        System.out.println("El numero de suspensos es:" + numeroSuspensos); // Mostrar el numero de suspensos
+        System.out.println("La media es de " + ((double) totalNotas / notas.length)); // Mostrar la media de notas
+        System.out.println("La nota mayor es:" + mayorN); // Mostrar el numero mayor
+        System.out.println();
         System.out.println("Los siguientes alumnos estan aprobados:");
         mostrarAprobados(notas, alumnos);
         System.out.println("Lista de notas en orden crecientes");
-        /* TODO Hacer y mostrar ordenacion de notas de menor a mayor
-        * Lo del To-Do es cosa del IDE para registrar que la tarea esta pendiente
-        * no encuentro una forma de hacer la ordenacion que coincida con los requisitos
-        * se que hay alguna manera de hacerlo usando la clase Arrays*/
+        ordenarCantidadesMenorMayor(mayor);
+        for (int mayo : mayor) {
+            System.out.println(mayo);
+        }
 
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
         obtenerNombreNotaAlumno(nombreAlumno,alumnos,notas);
+    }
+
+    /**
+     * Ordena cantidades en una lista de menor a mayor
+     * @param list la lista de numeros a ordenar
+     */
+    static void ordenarCantidadesMenorMayor(int[] list) {
+        for (int i = 0; i< list.length; i++){
+            for (int j = 0; j<list.length-1-i; j++) {
+                if (list[j]> list[j+1]) {
+                    int temp = list[j];
+                    list[j] = list[j + 1];
+                    list[j+1] = temp;
+                }
+            }
+            }
     }
 
     /**
