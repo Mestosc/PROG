@@ -55,12 +55,12 @@ public class Ejercicio3 {
      * @param list la lista de numeros a ordenar
      */
     static void ordenarCantidadesMenorMayor(int[] list) {
-        for (int i = 0;i<list.length;i++) {
-            for (int j = 0; j<list.length-1-i; j++) {
-                if (list[j]> list[j+1]) {
-                    int temp = list[j];
-                    list[j] = list[j+1];
-                    list[j+1] = temp;
+        for (int i = 0;i<list.length;i++) { // El bucle pasara por cada elemento de la lista una vez
+            for (int j = 0; j<list.length-1-i; j++) { // Buscara por todos los valores de la lista menos 1 y el indice
+                if (list[j]> list[j+1]) { // Si el elemento actual es menor que el siguiente realizamos la siguiente operacion
+                    int temp = list[j]; // Guardamos el valor del elemento actual en una variable temporal
+                    list[j] = list[j+1]; // Cambiamos el valor del elemento actual con el del siguiente
+                    list[j+1] = temp; // Cambiamos el siguiente elemento por el valor de temp
                 }
             }}
             }
