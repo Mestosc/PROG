@@ -73,9 +73,19 @@ public class Obtenerindice {
             return mitad;
         }
         else {
-            for (int i = 0;i<mitad;i++) {
-                if (lista[i]==num) {
-                    return i;
+            if (num>mitadD) {
+                for (int i = mitadD+1;i<mitad;i++) {
+                    if (lista[i]==num) {
+                        return i;
+                    }
+                }
+            }
+            else if (num==mitadD) return mitadD;
+            else {
+                for (int i = 0;i<mitadD;i++) {
+                    if (lista[i]==num) {
+                        return i;
+                    }
                 }
             }
         }
