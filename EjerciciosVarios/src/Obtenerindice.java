@@ -4,7 +4,7 @@
 public class Obtenerindice {
     public static void main(String[] args) {
         int[] prueba = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22};
-        System.out.println(obtenerIndiceListaOrdenados(prueba,6));
+        System.out.println(obtenerIndiceListaOrdenados(prueba,3));
         int[] tablaD;
         tablaD = dividirTabla(prueba);
 
@@ -56,8 +56,8 @@ public class Obtenerindice {
      */
     static int obtenerIndiceListaOrdenados(int[] lista, int num) {
         int mitad = lista.length / 2; // La mitad de la lista
-        int mitadD = mitad+(mitad/2); // La mitad de la derecha
         int mitadI = mitad/2;
+        int mitadD = mitad+mitadI; // La mitad de la derecha
         if (lista[mitad]<num) { // Si el numero es mayor a lo que hay en la mitad de la lista
             if (lista[mitadD]<num) { // Verificaremos primero si es mayor a lo que hay en la segunda mitad de la mitad derecha de la lista
                 for (int i = mitadD+1;i<lista.length;i++) { // Si asi es procederemos a iterar desde un numero mas que la segunda mitad hasta el final de la lista
