@@ -18,15 +18,13 @@ public class Ejercicio8 {
      */
     static int[] numerosPares(int[] lista) {
         int numPares=0;
-        for (int j : lista) {
-            if (j % 2 == 0) {
-                numPares++;
-            }
+        for (int numero : lista) {
+            if (numero % 2 == 0) numPares++;
         }
         int[] pares = new int[numPares]; // Crea una lista a partir de cuantos pares hay en la lista
         for (int i = 0, j = 0;i<lista.length;i++) {
             if (lista[i] % 2 == 0) {
-                pares[j] = lista[i];
+                pares[j] = lista[i]; // Igualar un valor de pares al valor par de lista correspondiente
                 j++; // Incrementar el valor j cada vez que haya un par para que revise la lista si el numero es par lo añade a los pares y aumenta el indice de pares
             }
         }
