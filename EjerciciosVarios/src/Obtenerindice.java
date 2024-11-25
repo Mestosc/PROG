@@ -56,7 +56,7 @@ public class Obtenerindice {
      */
     static int obtenerIndiceListaOrdenados(int[] lista, int num) {
         int mitad = lista.length / 2; // La mitad de la lista
-        int mitadI = mitad/2;
+        int mitadI = mitad/2; // La mitad desde el lado izquierdo
         int mitadD = mitad+mitadI; // La mitad de la derecha
         if (lista[mitad]<num) { // Si el numero es mayor a lo que hay en la mitad de la lista
             if (lista[mitadD]<num) { // Verificaremos primero si es mayor a lo que hay en la segunda mitad de la mitad derecha de la lista
@@ -70,7 +70,7 @@ public class Obtenerindice {
                 return mitadD;
             }
             else {
-                for (int i = mitad+1;i<lista.length-mitadD;i++) {
+                for (int i = mitad+1;i<mitadD;i++) {
                     if (lista[i]==num) {
                         return i;
                     }
