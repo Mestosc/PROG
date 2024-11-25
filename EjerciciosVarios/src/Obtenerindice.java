@@ -37,16 +37,6 @@ public class Obtenerindice {
         }
         return nueva;
     }
-    static void ordenarCantidadesMenorMayor(int[] list) {
-        for (int i = 0;i<list.length;i++) { // El bucle pasara por cada elemento de la lista una vez
-            for (int j = 0; j<list.length-1-i; j++) { // Buscara por todos los valores de la lista menos 1 y el indice
-                if (list[j]> list[j+1]) { // Si el elemento actual es menor que el siguiente realizamos la siguiente operacion
-                    int temp = list[j]; // Guardamos el valor del elemento actual en una variable temporal
-                    list[j] = list[j+1]; // Cambiamos el valor del elemento actual con el del siguiente
-                    list[j+1] = temp; // Cambiamos el siguiente elemento por el valor de temp
-                }
-            }}
-    }
 
     /**
      * De una lista de numeros enteros ordenados saca el indice del numero deseado
@@ -57,7 +47,7 @@ public class Obtenerindice {
     static int obtenerIndiceListaOrdenados(int[] lista, int num) {
         int mitad = lista.length / 2; // La mitad de la lista
         int mitadI = mitad/2; // La mitad desde el lado izquierdo
-        int mitadD = mitad+mitadI; // La mitad de la derecha
+        int mitadD = mitad+mitadI; // La mitad de la derecha para lo cual hay que sumarle mitad + mitad izquierda
         if (lista[mitad]<num) { // Si el numero es mayor a lo que hay en la mitad de la lista
             if (lista[mitadD]<num) { // Verificaremos primero si es mayor a lo que hay en la segunda mitad de la mitad derecha de la lista
                 for (int i = mitadD+1;i<lista.length;i++) { // Si asi es procederemos a iterar desde un numero mas que la segunda mitad hasta el final de la lista
@@ -66,9 +56,9 @@ public class Obtenerindice {
                     }
                 }
             }
-            else if (lista[mitadD]==num) { // Si el numero es igual a la segunda mitad devolvemos eso
+            else if (lista[mitadD]==num) // Si el numero es igual a la segunda mitad devolvemos eso
                 return mitadD;
-            }
+
             else {
                 for (int i = mitad+1;i<mitadD;i++) {
                     if (lista[i]==num) {
@@ -77,9 +67,8 @@ public class Obtenerindice {
                 }
 
             }
-        } else if (lista[mitad]==num) {
-            return mitad;
-        }
+        } else if (lista[mitad]==num) return mitad; // Si el numero es igual a lo que hay en la mitad de la lista entonces devuelve la mitad
+
         else {
             if (num>lista[mitadI]) {
                 for (int i = mitadI+1;i<mitad;i++) {
