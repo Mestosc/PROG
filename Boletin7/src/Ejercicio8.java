@@ -5,7 +5,7 @@
  */
 public class Ejercicio8 {
     public static void main(String[] args) {
-        int[] numeros = {23,12,54,67,8,9,10};
+        int[] numeros = {23,12,54,67,8,9,10,16,20,100};
         for (int numero : numerosPares(numeros)) {
             System.out.println(numero);
         }
