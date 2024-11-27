@@ -7,7 +7,7 @@ public class Ejercicio10 {
     }
 
     /**
-     * Elimina un valor n de una lista tambien incluye repeticiones del mismo valor
+     * Elimina un valor n de una lista incluyendo repeticiones del mismo valor
      * @param lista la lista de la que queremos eliminar los valores
      * @param valor el valor que queremos eliminar
      * @return una lista que tiene todos los valores excepto el definido en el parametro valor
