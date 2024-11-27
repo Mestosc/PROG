@@ -12,7 +12,6 @@ public class Ejercicio9 {
         int[] temp = new int[0];
         for (int num:lista) {
             if (binarySearch(temp,num)<0) {
-                System.out.println("Repetido: " + num);
                 int[] novo = new int [temp.length+1];
                 for (int i = 0;i<temp.length;i++) {
                     novo[i] = temp[i];

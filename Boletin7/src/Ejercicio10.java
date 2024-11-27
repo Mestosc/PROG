@@ -1,6 +1,6 @@
 public class Ejercicio10 {
     public static void main(String[] args) {
-        int[] num = {2,13,5,6,8,9,4};
+        int[] num = {2,13,5,6,8,2,4};
         for (int num1 : eliminarValor(num,5)){
             System.out.println(num1);
         }
@@ -16,11 +16,11 @@ public class Ejercicio10 {
         int[] nueva;
         int contador = 0;
         for (int num : lista) {
-                if (num != valor) {
+                if (num == valor) {
                     contador++;
                 }
             }
-        nueva = new int[contador];
+        nueva = new int[lista.length-contador];
         for (int i = 0,j=0;i<lista.length;i++) { /* Hacemos un bucle for que itere la lista principal
         le añadimos una variable para iterar la nueva lista y el bucle acabara cuando la variable que itera la principal y la variable
         que itera la secundaria sean igual
