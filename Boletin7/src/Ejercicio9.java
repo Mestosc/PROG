@@ -1,3 +1,4 @@
+import static java.util.Arrays.binarySearch;
 
 public class Ejercicio9 {
     public static void main(String[] args) {
@@ -9,9 +10,9 @@ public class Ejercicio9 {
     }
     static int[] LocalizarRepeticion(int[]lista) {
         int[] temp = new int[0];
-        int contRepet=0;
         for (int num:lista) {
-            if (Ejercicio5.obtenerIndiceLista(temp,num)==-1) {
+            if (binarySearch(temp,num)<0) {
+                System.out.println("Repetido: " + num);
                 int[] novo = new int [temp.length+1];
                 for (int i = 0;i<temp.length;i++) {
                     novo[i] = temp[i];

@@ -20,6 +20,5 @@ public class EliminarRepeticiones {
                 }
         }
     }
-
-    }
-}
+        return repeticiones;
+}}
