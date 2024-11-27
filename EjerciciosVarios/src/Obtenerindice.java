@@ -7,26 +7,6 @@ public class Obtenerindice {
         //System.out.println(obtenerIndiceListaOrdenados(prueba,3));
         int[] tablaD;
         tablaD = dividirTabla(prueba);
-        System.out.println(obtenerIndiceLista(tablaD,2));
-    }
-
-    /**
-     * Obtiene el indice de una lista si no obtiene -1
-     * @param lista la lista de numeros de la que sacar numeros
-     * @param num el numero que queremos comparar con los elementos de la lista
-     * @return el numero del indice
-     */
-    static int obtenerIndiceLista(int[] lista, int num) {
-        //int indiceElementos=0; // La inicializo como cero ya que si no al hacer el return o print si es una funcion vacia que hace eso no funciona correctamente
-        for (int i = 0;i<lista.length;i++) {
-            if (lista[i]==num) {
-                return i;
-            }
-            else {
-                return -1;
-            }
-        }
-        return 0;
     }
 
     static int[] dividirTabla(int[]list) {
