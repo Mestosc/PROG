@@ -9,7 +9,7 @@ public class Ejercicio5 {
      * @param num el numero que queremos comparar con los elementos de la lista
      * @return el numero del indice
      */
-    static int obtenerIndiceLista(int[] lista, int num) {
+    public static int obtenerIndiceLista(int[] lista, int num) {
         //int indiceElementos=0; // La inicializo como cero ya que si no al hacer el return o print si es una funcion vacia que hace eso no funciona correctamente
         for (int i = 0;i<lista.length;i++) {
             if (lista[i]==num) {
