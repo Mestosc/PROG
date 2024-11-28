@@ -9,7 +9,7 @@ public class Ejercicio6 {
      * De una lista de numeros enteros ordenados saca el indice del numero deseado
      *
      * @param lista la lista de enteros de la que queremos saber un indice de numeros
-     * @param num   el numero del que queremos saber el indice
+     * @param num el numero del que queremos saber el indice
      * @return el indice del numero
      */
     static int obtenerIndiceListaOrdenados(int[] lista, int num) {
