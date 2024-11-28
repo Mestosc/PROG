@@ -25,10 +25,11 @@ public class Ejercicio10 {
         le añadimos una variable para iterar la nueva lista y el bucle acabara cuando la variable que itera la principal y la variable
         que itera la secundaria sean igual
         */
-            if (lista[i]!=valor) { // Si un elemento de la lista es diferente al valor definido a eliminar
-                nueva[j] = lista[i]; // Hacemos que el valor de la nueva lista en un indice sea igual al de la lista principal en otro
-                j++;// El valor del indice de la nueva lista solo se actualiza si se añade un elemento
+            if (lista[i]==valor) { // Si un elemento de la lista es igual al valor definido a eliminar volvemos al principio del bucle
+                continue;
             }
+            nueva[j] = lista[i]; // Hacemos que el valor de la nueva lista en un indice sea igual al de la lista principal en otro
+            j++;// El valor del indice de la nueva lista solo se actualiza si se añade un elemento
         }
         return nueva;
         }
