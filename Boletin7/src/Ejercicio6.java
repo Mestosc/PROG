@@ -15,7 +15,7 @@ public class Ejercicio6 {
     static int obtenerIndiceListaOrdenados(int[] lista, int num) {
         int mitad = lista.length / 2; // La mitad de la lista
         int mitadI = mitad / 2; // La mitad desde el lado izquierdo
-        int mitadD = mitad + mitadI; // La mitad de la derecha para lo cual hay que sumarle mitad + mitad izquierda
+        int mitadD = mitad + mitadI; // La mitad de la derecha para lo cual hay que sumarle mitad + mitad izquierda, dado a que en este caso lo que obtenemos es el indice hay que desplazarlo a la derecha
         if (lista[mitad] < num) { // Si el numero es mayor a lo que hay en la mitad de la lista
             if (lista[mitadD] < num) { // Verificaremos primero si es mayor a lo que hay en la segunda mitad de la mitad derecha de la lista
                 for (int i = mitadD + 1; i < lista.length; i++) { // Si asi es procederemos a iterar desde un numero mas que la segunda mitad hasta el final de la lista
