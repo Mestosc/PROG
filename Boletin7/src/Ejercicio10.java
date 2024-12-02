@@ -1,3 +1,8 @@
+/**
+ * Trabajando con valores en listas (Eliminacion)
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio10 {
     public static void main(String[] args) {
         int[] num = {2,13,5,6,8,2,4};
