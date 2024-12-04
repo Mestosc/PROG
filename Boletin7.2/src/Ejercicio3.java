@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Recreacion del juego hundir la flota
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,7 +15,7 @@ public class Ejercicio3 {
         mostrarTablero(barcos); // Mostrar tablero sin barcos solo como agua
         iniciarJuego(sc,barcos); // Iniciamos el juego pasando el tablero y el Scanner
         finalizacion(barcos); // Como proceder cuando finaliza
-        sc.close();
+        sc.close(); // Cerrando el Scanner
     }
 
     /**
