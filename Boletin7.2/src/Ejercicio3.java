@@ -49,6 +49,12 @@ public class Ejercicio3 {
         }
         return 0; // Si no se cumple la condicion detonante
     }
+
+    /**
+     * Saber si disparamos a un barco
+     * @param valorCoordenadas el valor de las coordenadas donde esta lo que queremos comprobar
+     * @return verdadero si es un barco falso si no
+     */
     static boolean saberNave(String valorCoordenadas) {
         return valorCoordenadas.equals("B");
     }
