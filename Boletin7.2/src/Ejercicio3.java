@@ -81,7 +81,7 @@ public class Ejercicio3 {
                 }
                 System.out.print("~"); // En todos los demás casos mostramos agua
             }
-            System.out.println();
+            System.out.println(); // Añadiendo los saltos de linea
         }
     }
 
