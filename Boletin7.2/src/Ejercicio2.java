@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Ejercicio2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[][] habitaculo = {{"Entrada","Dormitorio","Trampa"},
-                                {"Trampa","Trampa","Dormitorio","Trampa","Tesoro"}};
+        String[][] habitaculo = {{"Tramapa","Dormitorio","Trampa"},{"Tesoro","Entrada","Trampa"},{"Tesoro","Trampa","Trampa"}};
         System.out.println("Tenga en cuenta que las coordenadas son desde 0");
         System.out.println("Introduzca fila");
         var coordenada1 = sc.nextInt();
