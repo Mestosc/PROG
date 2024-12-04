@@ -17,6 +17,12 @@ public class Ejercicio3 {
         finalizacion(barcos); // Como proceder cuando finaliza
         sc.close(); // Cerrando el Scanner
     }
+
+    /**
+     * Cuenta los espacios en los que hay barcos
+     * @param tablero el tablero en el que queremos ver si hay barcos
+     * @return el numero de barcos
+     */
     static int contarEspaciosNave(String[][] tablero) {
         int contarEspaciosBarcos=0;
         for (String[] tabl : tablero) {
@@ -26,7 +32,7 @@ public class Ejercicio3 {
                 }
             }
         }
-        return contarEspaciosBarcos;
+        return contarEspaciosBarcos; // Devolvemos los espacios en los que hay barcos ubicados
     }
     /**
      * Funcion principal de Juego
@@ -37,10 +43,12 @@ public class Ejercicio3 {
         int numBarcos = contarEspaciosNave(barcos);
         int contador=0;
         do {
-        System.out.println("Introduzca primera coordenada para disparar:");
+        System.out.println("Introduzca primera coordenada para disparar (fila):");
         int coordenada1 = sc.nextInt();
-        System.out.println("Introduzca segunda coordenada para disparar:");
+        coordenada1 -= 1;
+        System.out.println("Introduzca segunda coordenada para disparar (columna):");
         int coordenada2 = sc.nextInt();
+        coordenada2 -= 1;
         contador += disparar(barcos,coordenada1,coordenada2);
         } while (contador<numBarcos); // Hacer que el contador deba ser menor al numero de representaciones que sean barcos
     }
@@ -52,7 +60,7 @@ public class Ejercicio3 {
     static void mostrarTablero(String[][] tablero) {
         for (String[] strings : tablero) {
             for (int j = 0; j < strings.length; j++) {
-                System.out.print("~");
+                System.out.print("~ ");
             }
             System.out.print("\n");
         }
@@ -86,9 +94,9 @@ public class Ejercicio3 {
         for (String[] strings : tablero) { // Recorremos filas
             for (String string : strings) { // Recorremos columnas
                 if (string.equals("X")) { // Si lo que hay en la fila y columna es X
-                    System.out.print("X"); // Mostramos X
+                    System.out.print("X "); // Mostramos X
                 }
-                System.out.print("~"); // En todos los demás casos mostramos agua
+                System.out.print("~ "); // En todos los demás casos mostramos agua
             }
             System.out.println(); // Añadiendo los saltos de linea
         }
