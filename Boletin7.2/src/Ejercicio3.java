@@ -7,12 +7,17 @@ public class Ejercicio3 {
                 {"~", "B", "~", "~"},
                 {"B", "B", "B", "B"},
                 {"~", "B", "~", "~"}};
-        mostrarTablero(barcos);
-        iniciarJuego(sc,barcos);
-        finalizacion(barcos);
+        mostrarTablero(barcos); // Mostrar tablero sin barcos solo como agua
+        iniciarJuego(sc,barcos); // Iniciamos el juego pasando el tablero y el Scanner
+        finalizacion(barcos); // Como proceder cuando finaliza
         sc.close();
     }
 
+    /**
+     * Funcion principal de Juego
+     * @param sc le pasamos el scanner declarado en la principal lo hago así para no liarme con declararlo en el metodo
+     * @param barcos el tablero con los barcos
+     */
     static void iniciarJuego(Scanner sc, String[][] barcos) {
         int contador=0;
         do {
@@ -24,6 +29,10 @@ public class Ejercicio3 {
         } while (contador <7);
     }
 
+    /**
+     * Mostramos el tablero sin los barcos para que se vea como es
+     * @param tablero el tablero es necesario para poder obtener las dimensiones del mismo e ir mostrando
+     */
     static void mostrarTablero(String[][] tablero) {
         for (String[] strings : tablero) {
             for (int j = 0; j < strings.length; j++) {
@@ -63,13 +72,18 @@ public class Ejercicio3 {
     static boolean saberNave(String valorCoordenadas) {
         return valorCoordenadas.equals("B");
     }
+
+    /**
+     * Funcion de finalizacion
+     * @param tablero le pasamos el tablero para que muestre el resultado final
+     */
     static void finalizacion(String[][] tablero) {
-        for (String[] strings : tablero) {
-            for (String string : strings) {
+        for (String[] strings : tablero) { // Recorremos el tablero haciendo que cada una de las filas sean cojidas como una lista de String
+            for (String string : strings) { // Y el contenido de cada fila como un string
                 System.out.print(string);
             }
             System.out.println();
         }
-        System.out.println("Enorabuena has ganado");
+        System.out.println("Enorabuena has avatido todos los barcos");
     }
 }
