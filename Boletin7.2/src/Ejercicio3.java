@@ -60,21 +60,25 @@ public class Ejercicio3 {
             System.out.println("Ha disparado a el barco ubicando en las coordenadas " + coordenada1 + " " + coordenada2);
             tablero[coordenada1][coordenada2] = "X"; // Cambiamos el valor del tablero en esas coordenadas a "X"
             cont++; // Aumentamos el contador
-            for (String[] strings : tablero) {
-                for (String string : strings) {
-                    if (string.equals("X")) {
-                        System.out.print("X");
-                    }
-                    System.out.print("~");
-                }
-                System.out.println();
-            }
+            actualizarTablero(tablero); // Actualizamos el tablero
             return cont; // Devolvemos el valor final del contador
         }
         else {
             System.out.println("Ha disparado a agua"); // Indicamos que disparamos a agua
         }
         return 0; // Si no se cumple la condicion detonante
+    }
+
+    static void actualizarTablero(String[][] tablero) {
+        for (String[] strings : tablero) { // Recorremos filas
+            for (String string : strings) { // Recorremos columnas
+                if (string.equals("X")) { // Si lo que hay en la fila y columna es X
+                    System.out.print("X"); // Mostramos X
+                }
+                System.out.print("~"); // En todos los demás casos mostramos agua
+            }
+            System.out.println();
+        }
     }
 
     /**
