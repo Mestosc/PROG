@@ -17,13 +17,24 @@ public class Ejercicio3 {
         finalizacion(barcos); // Como proceder cuando finaliza
         sc.close(); // Cerrando el Scanner
     }
-
+    static int contarEspaciosNave(String[][] tablero) {
+        int contarEspaciosBarcos=0;
+        for (String[] tabl : tablero) {
+            for (String tab : tabl) {
+                if (saberNave(tab)) {
+                    contarEspaciosBarcos++;
+                }
+            }
+        }
+        return contarEspaciosBarcos;
+    }
     /**
      * Funcion principal de Juego
      * @param sc le pasamos el scanner declarado en la principal lo hago así para no liarme con declararlo en el metodo
      * @param barcos el tablero con los barcos
      */
     static void iniciarJuego(Scanner sc, String[][] barcos) {
+        int numBarcos = contarEspaciosNave(barcos);
         int contador=0;
         do {
         System.out.println("Introduzca primera coordenada para disparar:");
@@ -31,7 +42,7 @@ public class Ejercicio3 {
         System.out.println("Introduzca segunda coordenada para disparar:");
         int coordenada2 = sc.nextInt();
         contador += disparar(barcos,coordenada1,coordenada2);
-        } while (contador <7);
+        } while (contador<numBarcos); // Hacer que el contador deba ser menor al numero de representaciones que sean barcos
     }
 
     /**
@@ -55,13 +66,11 @@ public class Ejercicio3 {
      * @return El valor del contador
      */
     static int disparar(String[][] tablero, int coordenada1, int coordenada2) {
-        int cont=0;
         if (saberNave(tablero[coordenada1][coordenada2])){
             System.out.println("Ha disparado a el barco ubicando en las coordenadas " + coordenada1 + " " + coordenada2);
             tablero[coordenada1][coordenada2] = "X"; // Cambiamos el valor del tablero en esas coordenadas a "X"
-            cont++; // Aumentamos el contador
             actualizarTablero(tablero); // Actualizamos el tablero
-            return cont; // Devolvemos el valor final del contador
+            return 1; // Devolvemos el valor final del contador
         }
         else {
             System.out.println("Ha disparado a agua"); // Indicamos que disparamos a agua
