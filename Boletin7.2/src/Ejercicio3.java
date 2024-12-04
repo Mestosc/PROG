@@ -20,8 +20,8 @@ public class Ejercicio3 {
     }
 
     static void mostrarTablero(String[][] tablero) {
-        for (int i = 0; i < tablero.length; i++) {
-            for (int j = 0; j < tablero[i].length; j++) {
+        for (String[] strings : tablero) {
+            for (int j = 0; j < strings.length; j++) {
                 System.out.print("~");
             }
             System.out.print("\n");
