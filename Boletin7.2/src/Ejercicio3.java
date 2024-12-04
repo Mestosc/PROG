@@ -69,6 +69,10 @@ public class Ejercicio3 {
         return 0; // Si no se cumple la condicion detonante
     }
 
+    /**
+     * Mostrar cambio en tablero al abatir un barco
+     * @param tablero le pasamos el tablero
+     */
     static void actualizarTablero(String[][] tablero) {
         for (String[] strings : tablero) { // Recorremos filas
             for (String string : strings) { // Recorremos columnas
