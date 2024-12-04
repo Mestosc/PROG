@@ -14,7 +14,7 @@ public class Ejercicio3 {
         int coordenada1 = sc.nextInt();
         System.out.println("Introduzca segunda coordenada para disparar:");
         int coordenada2 = sc.nextInt();
-        contador = disparar(barcos,coordenada1,coordenada2,contador);
+        contador += disparar(barcos,coordenada1,coordenada2);
         } while (contador<7);
         finalizacion(barcos);
     }
@@ -27,18 +27,27 @@ public class Ejercicio3 {
             System.out.print("\n");
         }
     }
-    static int disparar(String[][] tablero, int coordenada1, int coordenada2,int cont) {
+
+    /**
+     * Disparar a un barco, en el juego hundir la flota
+     * @param tablero el tablero donde jugamos
+     * @param coordenada1 La fila a la que disparamos
+     * @param coordenada2 La columna a la que disparamos
+     * @return El valor del contador
+     */
+    static int disparar(String[][] tablero, int coordenada1, int coordenada2) {
+        int cont=0;
         if (saberNave(tablero[coordenada1][coordenada2])){
             System.out.println("Ha disparado a el barco ubicando en las coordenadas " + coordenada1 + " " + coordenada2);
-            tablero[coordenada1][coordenada2] = "X";
-            cont++;
+            tablero[coordenada1][coordenada2] = "X"; // Cambiamos el valor del tablero en esas coordenadas a "X"
+            cont++; // Aumentamos el contador
             // TODO Hacer que muestre el tablero solo con el agua y los barcos
-            return cont;
+            return cont; // Devolvemos el valor final del contador
         }
         else {
-            System.out.println("Ha disparado a agua");
+            System.out.println("Ha disparado a agua"); // Indicamos que disparamos a agua
         }
-        return 0;
+        return 0; // Si no se cumple la condicion detonante
     }
     static boolean saberNave(String valorCoordenadas) {
         return valorCoordenadas.equals("B");
