@@ -6,7 +6,7 @@
 public class Ejercicio10 {
     public static void main(String[] args) {
         int[] num = {2,13,5,6,8,2,4};
-        Ejercicio3.ordenarCantidadesMenorMayor(num);
+        //Ejercicio3.ordenarCantidadesMenorMayor(num); // Ordenacion de la lista.
         for (int num1 : eliminarValor(num,5)){
             System.out.println(num1);
         }
@@ -19,10 +19,10 @@ public class Ejercicio10 {
      * @return una lista que tiene todos los valores excepto el definido en el parametro valor
      */
     static int[] eliminarValor(int[]lista,int valor) {
-        int[] nueva;
-        nueva = obtnerNuevaLista(lista, valor);
-        asignacionValoresNueva(lista, valor, nueva);
-        return nueva;
+        int[] nueva; // La nueva lista para añadirle sin el valor
+        nueva = obtnerNuevaLista(lista, valor); // Obtenemos la nueva lista que queremos tener sin el valor a eliminar
+        asignacionValoresNueva(lista, valor, nueva); // Asignamos a la nueva lista los valores de la anterior excepto el que queremos borrar
+        return nueva; // Devolvemos los valores de la nueva lista
         }
 
     /**
@@ -52,13 +52,13 @@ public class Ejercicio10 {
      */
     static int[] obtnerNuevaLista(int[] lista, int valor) {
         int[] nueva;
-        int contador = 0;
+        int contador = 0; //Declaramos un contador para contar la cantidad de veces que esta el valor a eliminar
         for (int num : lista) {
-                if (num == valor) {
-                    contador++;
+                if (num == valor) { // Si el numero es igual al valor a eliminar, incrementar contador
+                    contador++; // Incrementar contador
                 }
             }
-        nueva = new int[lista.length-contador];
-        return nueva;
+        nueva = new int[lista.length-contador]; // Estableciendo la lista nueva restando a la longitud de la lista el contador
+        return nueva; // Devolver nueva
     }
 }
