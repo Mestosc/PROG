@@ -1,11 +1,11 @@
-import java.util.Scanner;
+import java.util.Scanner; // Importando el Scanner para obtener entrada
 
 /**
  * Recreacion del juego hundir la flota
  * @author Oscar Rodriguez
  * @version 1.0
  */
-public class Ejercicio3 {
+public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[][] barcos = {{"~", "B", "~", "~"},
