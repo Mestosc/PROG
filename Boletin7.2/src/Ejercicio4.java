@@ -27,8 +27,8 @@ public class Ejercicio4 {
         int contarEspaciosBarcos=0;
         for (String[] tabl : tablero) {
             for (String tab : tabl) {
-                if (saberNave(tab)) {
-                    contarEspaciosBarcos++;
+                if (saberNave(tab)) { // Saber si la coordenada es una nave (barco)
+                    contarEspaciosBarcos++; // Contar los espacios en los que hay barcos
                 }
             }
         }
@@ -45,12 +45,11 @@ public class Ejercicio4 {
         do {
         System.out.println("Introduzca primera coordenada para disparar (fila):");
         int coordenada1 = sc.nextInt();
-        coordenada1 -= 1;
+        coordenada1 -= 1; // Igualar coordenadas al indice
         System.out.println("Introduzca segunda coordenada para disparar (columna):");
         int coordenada2 = sc.nextInt();
-        coordenada2 -= 1;
-        contador += disparar(barcos,coordenada1,coordenada2);
-       // actualizarTablero(barcos);
+        coordenada2 -= 1; // Igualar coordenadas al indice
+        contador += disparar(barcos,coordenada1,coordenada2); // Funcion para disparar
         } while (contador<numBarcos); // Hacer que el contador deba ser menor al numero de representaciones que sean barcos
     }
 
