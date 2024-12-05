@@ -11,7 +11,7 @@ public class Ejercicio3 {
         String[][] barcos = {{"~", "B", "~", "~"},
                 {"~", "B", "~", "~"},
                 {"B", "B", "B", "B"},
-                {"~", "B", "~", "~"}};
+                {"~", "B", "~", "~"}}; // Array bidimensional para especificar el tablero
         mostrarTablero(barcos); // Mostrar tablero sin barcos solo como agua
         iniciarJuego(sc,barcos); // Iniciamos el juego pasando el tablero y el Scanner
         finalizacion(barcos); // Como proceder cuando finaliza
