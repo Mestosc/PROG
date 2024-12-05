@@ -40,10 +40,6 @@ public class Ejercicio3 {
         mostrarAprobados(notas, alumnos);
         System.out.println("Lista de notas en orden crecientes");
         ordenarCantidadesMenorMayor(mayor);
-        for (int mayo : mayor) {
-            System.out.println(mayo);
-        }
-
         System.out.println("Introduzca el nombre de un alumno del que quiera saber la nota:");
         var nombreAlumno = sc.next();
         obtenerNombreNotaAlumno(nombreAlumno,alumnos,notas);
