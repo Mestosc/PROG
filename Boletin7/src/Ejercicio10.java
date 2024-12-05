@@ -21,11 +21,17 @@ public class Ejercicio10 {
     static int[] eliminarValor(int[]lista,int valor) {
         int[] nueva;
         nueva = obtnerNuevaLista(lista, valor);
-        asignacionParametrosNueva(lista, valor, nueva);
+        asignacionValoresNueva(lista, valor, nueva);
         return nueva;
         }
 
-    private static void asignacionParametrosNueva(int[] lista, int valor, int[] nueva) {
+    /**
+     * Asignando valores a la nueva lista
+     * @param lista la lista original de la que queremos pasar los valores
+     * @param valor el valor que quiero que no aparezca en la nueva
+     * @param nueva la lista a la queremos añadir los valores
+     */
+    static void asignacionValoresNueva(int[] lista, int valor, int[] nueva) {
         for (int i = 0, j = 0; i< lista.length; i++) { /* Hacemos un bucle for que itere la lista principal
         le añadimos una variable para iterar la nueva lista y el bucle acabara cuando la variable que itera la principal y la variable
         que itera la secundaria sean igual
@@ -38,6 +44,12 @@ public class Ejercicio10 {
         }
     }
 
+    /**
+     * Obtenemos un nuevo Array que sea la lista original quitandole el valor a eliminar
+     * @param lista la lista orignial
+     * @param valor el valor a borrar
+     * @return la nueva lista sin las posiciones del valor original
+     */
     static int[] obtnerNuevaLista(int[] lista, int valor) {
         int[] nueva;
         int contador = 0;
