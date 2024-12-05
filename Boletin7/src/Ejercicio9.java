@@ -1,4 +1,3 @@
-import static java.util.Arrays.binarySearch;
 
 public class Ejercicio9 {
     public static void main(String[] args) {
