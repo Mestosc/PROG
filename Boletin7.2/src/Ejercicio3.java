@@ -50,6 +50,7 @@ public class Ejercicio3 {
         int coordenada2 = sc.nextInt();
         coordenada2 -= 1;
         contador += disparar(barcos,coordenada1,coordenada2);
+       // actualizarTablero(barcos);
         } while (contador<numBarcos); // Hacer que el contador deba ser menor al numero de representaciones que sean barcos
     }
 
@@ -80,7 +81,10 @@ public class Ejercicio3 {
             actualizarTablero(tablero); // Actualizamos el tablero
             return 1; // Devolvemos el valor final del contador
         }
-        else {
+        else if (tablero[coordenada1][coordenada2].equals("X")) {
+            System.out.println("Ya has disparado aqui");
+        }
+        else{
             System.out.println("Ha disparado a agua"); // Indicamos que disparamos a agua
         }
         return 0; // Si no se cumple la condicion detonante
