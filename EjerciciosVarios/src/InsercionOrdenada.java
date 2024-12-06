@@ -1,5 +1,8 @@
 import java.util.Arrays;
 
+/**
+ * Pruebas insercion de valores en lista ordenada
+ */
 public class InsercionOrdenada {
     public static void main(String[] args) {
         int[] lista = {1,2,3,4,6,7,8,9};
@@ -8,23 +11,33 @@ public class InsercionOrdenada {
             System.out.println(nueva);
         }
     }
+
+    /**
+     * Insertar valor en una lista ordenada
+     * @param list la lista a la que queremos introducir un nuevo valor
+     * @param valor el valor que queremos introducir
+     * @return si el valor no existe devuelve una copia de la lista con el nuevo valor
+     * si existe devuelve una copia exacta de la lista
+     */
     static int[] insertarValor(int[] list,int valor) {
-        int[] nuevaLista = new int[list.length+1];
-        int busqueda = Arrays.binarySearch(list,valor);
-        int indiceNuevo = -(busqueda+1);
+        int[] nuevaLista = new int[list.length+1]; // Creamos una copia de la lista a la cual le añadimos 1 al indice
+        int busqueda = Arrays.binarySearch(list,valor); // Hacemos la busqueda y guardamos el valor
         if (busqueda<0) {
-            for (int i = 0; i < indiceNuevo; i++) {
-                nuevaLista[i] = list[i];
+            int indiceNuevo = -(busqueda+1); // Obtenemos el indice en el que iria el nuevo numero
+            for (int i = 0; i < indiceNuevo; i++) { // Recorremos el bucle hasta el indice del nuevo elemento
+                nuevaLista[i] = list[i]; // Añadimos los elementos de lista a nueva lista
             }
-            nuevaLista[indiceNuevo] = valor;
-            for (int j = indiceNuevo; j < list.length; j++) {
-                nuevaLista[j+1] = list[j];
+            nuevaLista[indiceNuevo] = valor; // Añadimos el nuevo valor que deseamos
+            for (int j = indiceNuevo; j < list.length; j++) { /* Aqui viene el problema el indice al que añadir el nuevo valor
+            existe en ambas listas por eso iteramos desde el indiceNuevo hasta el final de la lista original*/
+                nuevaLista[j+1] = list[j]; /* Luego añadimos a la nuevaLista en j+1 que es indiceNuevo+1 al principio
+                el valor de lista en j*/
             }
         }
-        else {
-            System.out.println("Ya existe");
-            return list;
+        else { // En caso contrario indicara que ya existe
+            System.out.println("Ya existe"); // Mostramos que existe
+            return list; // Devolvemos la lista original
         }
-        return nuevaLista;
+        return nuevaLista;// Devolvemos la nueva lista
     }
 }
