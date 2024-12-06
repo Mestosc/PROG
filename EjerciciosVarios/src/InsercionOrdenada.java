@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class InsercionOrdenada {
     public static void main(String[] args) {
         int[] lista = {1,2,3,4,6,7,8,9};
-        int[] nuevas = insertarValor(lista,5);
+        int[] nuevas = insertarValor(lista,0);
         for (int nueva : nuevas) {
             System.out.println(nueva);
         }
@@ -23,6 +23,7 @@ public class InsercionOrdenada {
         }
         else {
             System.out.println("Ya existe");
+            return list;
         }
         return nuevaLista;
     }
