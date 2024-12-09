@@ -32,7 +32,7 @@ public class InsercionOrdenada {
             for (int j = indiceNuevo; j < list.length; j++) { /* Aqui viene el problema el indice al que añadir el nuevo valor
             existe en ambas listas por eso iteramos desde el indiceNuevo hasta el final de la lista original*/
                 nuevaLista[j+1] = list[j]; /* Luego añadimos a la nuevaLista en j+1 que es indiceNuevo+1 al principio
-                el valor de lista en j*/
+                el valor de lista en j para que de esa manera indice nuevo tenga en la nueva lista el valor que debe tener y en las otras posiciones igual*/
             }
         }
         else { // En caso contrario indicara que ya existe
