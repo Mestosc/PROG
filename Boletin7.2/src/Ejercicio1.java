@@ -49,7 +49,7 @@ public class Ejercicio1 {
         String anadir = sc.next();
         for (int i = 0; i < horario.length; i++) {
             for (int j = 0; j < horario[i].length; j++) {
-                if (horario[i][j].equals("")) {
+                if (horario[i][j].isEmpty()) {
                     horario[i][j] = anadir;
                     System.out.println("Desea añadir otra actividad");
                     String anadirOtra = sc.next();
