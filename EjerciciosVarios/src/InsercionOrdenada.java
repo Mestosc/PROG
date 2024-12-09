@@ -16,8 +16,8 @@ public class InsercionOrdenada {
      * Insertar valor en una lista ordenada
      * @param list la lista a la que queremos introducir un nuevo valor
      * @param valor el valor que queremos introducir
-     * @return si el valor no existe devuelve una copia de la lista con el nuevo valor
-     * si existe devuelve una copia exacta de la lista
+     * @return si el valor existe devuelve una copia de la lista con el nuevo valor
+     * si no existe devuelve una copia exacta de la lista a copiar originalmente
      */
     static int[] insertarValor(int[] list,int valor) {
         int[] nuevaLista = new int[list.length+1]; // Creamos una copia de la lista a la cual le añadimos 1 al indice
