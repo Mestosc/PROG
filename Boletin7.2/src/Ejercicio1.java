@@ -21,7 +21,7 @@ public class Ejercicio1 {
             } else if (opcion==2) {
                 anadirActividad(horario,sc);
             }
-        } while (opcion==3);
+        } while (opcion<3);
     }
     static void mostrarHorario(String[][] horario) {
         for (int i = 0; i < horario.length; i++) {
