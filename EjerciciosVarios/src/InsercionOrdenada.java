@@ -20,9 +20,10 @@ public class InsercionOrdenada {
      * si no existe devuelve una copia exacta de la lista a copiar originalmente
      */
     static int[] insertarValor(int[] list,int valor) {
-        int[] nuevaLista = new int[list.length+1]; // Creamos una copia de la lista a la cual le añadimos 1 al indice
+        int[] nuevaLista; // Creamos una copia de la lista a la cual le añadimos 1 al indice
         int busqueda = Arrays.binarySearch(list,valor); // Hacemos la busqueda y guardamos el valor
         if (busqueda<0) { // Si el indice de busqueda es menor que 0 sabemos que el numero no existe y lo añadimos
+            nuevaLista = new int[list.length+1];
             int indiceNuevo = -(busqueda+1); // Obtenemos el indice en el que iria el nuevo numero
             for (int i = 0; i < indiceNuevo; i++) { // Recorremos el bucle hasta el indice del nuevo elemento
                 nuevaLista[i] = list[i]; // Añadimos los elementos de lista a nueva lista
