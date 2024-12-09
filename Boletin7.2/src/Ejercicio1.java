@@ -26,9 +26,8 @@ public class Ejercicio1 {
     static void mostrarHorario(String[][] horario) {
         for (int i = 0; i < horario.length; i++) {
             for (int j = 0; j < horario[i].length; j++) {
-                System.out.print(horario[i][j]);
+                System.out.println(horario[i][j]);
             }
-            System.out.println();
         }
     }
     static void cambiarActividad(String[][] horario,Scanner sc) {
