@@ -10,6 +10,12 @@ public class Ejercicio1 {
         mostrarMenu(horario,sc);
         sc.close();
     }
+
+    /**
+     * La funcion de muestra del menu
+     * @param horario le pasamos el horario a revisar
+     * @param sc le pasamos el Scanner
+     */
     static void mostrarMenu(String[][] horario, Scanner sc) {
         int opcion;
         do {
@@ -23,6 +29,11 @@ public class Ejercicio1 {
             }
         } while (opcion<3);
     }
+
+    /**
+     * Muestra el horario
+     * @param horario el horario en el que queremos ver las asignaturas
+     */
     static void mostrarHorario(String[][] horario) {
         for (int i = 0; i < horario.length; i++) {
             for (int j = 0; j < horario[i].length; j++) {
@@ -30,6 +41,12 @@ public class Ejercicio1 {
             }
         }
     }
+
+    /**
+     * Cambiar una actividad por otra
+     * @param horario el horario
+     * @param sc le paso un Scanner para obtener datos necesarios a posteriori
+     */
     static void cambiarActividad(String[][] horario,Scanner sc) {
         System.out.println("Introduzca la actividad que desea sustituir:");
         String actividadCambiar = sc.next();
@@ -44,6 +61,12 @@ public class Ejercicio1 {
             }
         }
     }
+
+    /**
+     * Añadir una nueva Actividad a una vacia preguntando si se desea añadir otra
+     * @param horario el horario que que queremos verificar
+     * @param sc otra vez un Scanner para la obtencion de datos
+     */
     static void anadirActividad(String[][] horario,Scanner sc) {
         System.out.println("Introduzca actividad a añadir");
         String anadir = sc.next();

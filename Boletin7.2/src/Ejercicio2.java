@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Juego tesoro basico
+ * @author Oscar Rodriguez
+ * @version 1.0
+ */
 public class Ejercicio2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -11,6 +16,13 @@ public class Ejercicio2 {
         var coordenada2 = sc.nextInt();
         elegirHabitaculo(habitaculo,coordenada1,coordenada2);
     }
+
+    /**
+     * Seleccionar la habitacion a verificar
+     * @param habitaciones le pasamos la lista de habitaciones a comprobar
+     * @param coordenada1 la primera coordenada en la tabla
+     * @param coordenada2 la segunda coordenada en la tabla
+     */
     static void elegirHabitaculo(String[][] habitaciones,int coordenada1, int coordenada2){
         if (habitaciones[coordenada1][coordenada2].equalsIgnoreCase("Tesoro")) {
             System.out.println("Enorabuena has ganado");

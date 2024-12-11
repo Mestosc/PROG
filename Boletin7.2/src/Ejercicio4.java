@@ -84,7 +84,8 @@ public class Ejercicio4 {
             System.out.println("Ya has disparado aqui");
         }
         else{
-            System.out.println("Ha disparado a agua"); // Indicamos que disparamos a agua
+            tablero[coordenada1][coordenada2] = "O";
+            actualizarTablero(tablero);
         }
         return 0; // Si no se cumple la condicion detonante
     }
