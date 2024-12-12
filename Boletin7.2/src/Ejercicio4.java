@@ -100,6 +100,7 @@ public class Ejercicio4 {
                 if (string.equals("X")) { // Si lo que hay en la fila y columna es X
                     System.out.print("X "); // Mostramos X
                 }
+                else if (string.equals("O")) System.out.print("O ");
                 System.out.print("~ "); // En todos los demás casos mostramos agua
             }
             System.out.println(); // Añadiendo los saltos de linea
