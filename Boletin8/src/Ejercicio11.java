@@ -7,11 +7,9 @@ public class Ejercicio11 {
         int cantidadLetras=0,cantidadNumeros=0,cantidadEspacios=0;
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
-            boolean esLetra = Character.isLetter(c);
-            boolean esNumero = Character.isDigit(c);
-            if (esLetra) {
+            if (Character.isLetter(c)) {
                 cantidadLetras++;
-            } else if (esNumero) {
+            } else if (Character.isDigit(c)) {
                 cantidadNumeros++;
             } else if (c==' ') {
                 cantidadEspacios++;
