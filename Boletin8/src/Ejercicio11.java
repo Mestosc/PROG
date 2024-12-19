@@ -3,6 +3,11 @@ public class Ejercicio11 {
         String texto = "Ola, son alumno de DAM1, e son programador desde o 2024";
         contarDiferentesTiposCaracteres(texto);
     }
+
+    /**
+     * Cuenta y muestra por pantalla la cantidad de letras numeros o espacios que haya en un texto
+     * @param text el texto del que queremos hacer la cuenta
+     */
     static void contarDiferentesTiposCaracteres(String text) {
         int cantidadLetras=0,cantidadNumeros=0,cantidadEspacios=0;
         for (int i = 0; i < text.length(); i++) {
