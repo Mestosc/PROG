@@ -14,14 +14,13 @@ public class Ejercicio5 {
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
             boolean esVocal = c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
-            if (esVocal) {
-                contadorVocales++;
-                continue;
-            }
-            else if (c==' ') {
-                continue;
-            }
+            if (Character.isLetter(c)) {
+                if (esVocal) {
+                    contadorVocales++;
+                    continue;
+                }
             contadorConsonantes++;
+            }
         }
         System.out.println("Hay " + contadorConsonantes + " consonantes");
         System.out.println("Hay " + contadorVocales + " vocales");
