@@ -13,8 +13,8 @@ public class Ejercicio5 {
         text = text.toLowerCase();
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
-            boolean esVocal = c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
             if (Character.isLetter(c)) {
+                boolean esVocal = c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
                 if (esVocal) {
                     contadorVocales++;
                     continue;
