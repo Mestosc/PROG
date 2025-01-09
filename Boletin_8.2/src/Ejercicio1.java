@@ -1,5 +1,6 @@
 public class Ejercicio1 {
     public static void main(String[] args) {
+        String cadena = "Hola señor como se encuentra usted en este dia";
     }
     static void imprimirPrimerosCaracteres(String texto) {
         System.out.println(texto.substring(0,2));
