@@ -1,6 +1,6 @@
 public class Ejercicio5 {
     public static void main(String[] args) {
-        System.out.println(obtenerPrimerasLetras("Universal Serial Bus"));
+        System.out.println(obtenerPrimerasLetras("universal serial bus"));
         System.out.println(capitalizar("república arxentina"));
     }
 
@@ -23,13 +23,12 @@ public class Ejercicio5 {
         return nuevaCadena.toString();
     }
     static String obtenerPrimerasLetras(String cadena) {
+        String[] partes = cadena.split(" ");
         StringBuilder caden = new StringBuilder();
-        for (int i = 0; i < cadena.length(); i++) {
-            char c = cadena.charAt(i);
-            if (Character.isUpperCase(c)) {
-                caden.append(c);
-            }
+        for (String parte : partes) {
+            char primera = parte.charAt(0);
+            caden.append(primera);
         }
-        return caden.toString();
+        return caden.toString().toUpperCase();
     }
 }
