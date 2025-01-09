@@ -1,6 +1,9 @@
 public class Ejercicio1 {
     public static void main(String[] args) {
         String cadena = "Hola señor como se encuentra usted en este dia";
+        imprimirCadaDos(cadena);
+        imprimirPrimerosCaracteres(cadena);
+        imprimirTresUltimosCaracteres(cadena);
     }
     static void imprimirPrimerosCaracteres(String texto) {
         System.out.println(texto.substring(0,2));
@@ -14,5 +17,6 @@ public class Ejercicio1 {
             char c = texto.charAt(i);
             System.out.print(c);
         }
+        System.out.println();
     }
 }
