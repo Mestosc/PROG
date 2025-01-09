@@ -4,6 +4,18 @@ public class Ejercicio2 {
         System.out.println(anadirComaEntreCaracteres(cadena));
         String cadena2 = "meu arquivo de texto.txt";
         System.out.println(cadena2.replace(" ","\\_"));
+        String cadena3 = "1540";
+        System.out.println(reemplazarNumerosPorX(cadena3));
+    }
+    static String reemplazarNumerosPorX(String texto) {
+        String nuevo_texto = "";
+        for (int i = 0; i < texto.length(); i++) {
+            char c = texto.charAt(i);
+            if (Character.isDigit(c)) {
+                nuevo_texto += "X";
+            }
+        }
+        return nuevo_texto;
     }
     static String anadirComaEntreCaracteres(String cadena) {
         StringBuilder cadena_nueva = new StringBuilder();
