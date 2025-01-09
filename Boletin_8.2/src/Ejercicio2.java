@@ -1,11 +1,11 @@
 public class Ejercicio2 {
     public static void main(String[] args) {
         String cadena = "separar";
-        System.out.println(anadirCaracterEntreCaracteres(cadena));
+        System.out.println(anadirComaEntreCaracteres(cadena));
         String cadena2 = "meu arquivo de texto.txt";
         System.out.println(cadena2.replace(" ","\\_"));
     }
-    static String anadirCaracterEntreCaracteres(String cadena) {
+    static String anadirComaEntreCaracteres(String cadena) {
         StringBuilder cadena_nueva = new StringBuilder();
         for (int i = 0; i < cadena.length(); i++) {
             char c = cadena.charAt(i);
