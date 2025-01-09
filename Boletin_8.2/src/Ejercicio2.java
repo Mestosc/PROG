@@ -2,6 +2,8 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         String cadena = "separar";
         System.out.println(anadirCaracter(cadena,','));
+        String cadena2 = "meu arquivo de texto.txt";
+        System.out.println(cadena2.replace(" ","\\_"));
     }
     static String anadirCaracter(String cadena, char caracter) {
         StringBuilder cadena_nueva = new StringBuilder();
