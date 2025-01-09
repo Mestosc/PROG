@@ -2,7 +2,7 @@ public class Ejercicio5 {
     public static void main(String[] args) {
         System.out.println(obtenerPrimerasLetras("universal serial bus"));
         System.out.println(capitalizar("república arxentina"));
-        System.out.println(obtener_palabras_empiecen_A("Antes de abrir"));
+        System.out.println(obtener_palabras_empiecen_A("Al menos vivo de la mar y su amor me hace mejor"));
     }
 
     /**
