@@ -9,4 +9,10 @@ public class Ejercicio1 {
         int longitud = texto.length();
         System.out.println(texto.substring(longitud-3,longitud));
     }
+    static void imprimirCadaDos(String texto) {
+        for (int i = 0;i<texto.length();i+=2) {
+            char c = texto.charAt(i);
+            System.out.print(c);
+        }
+    }
 }
