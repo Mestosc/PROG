@@ -15,6 +15,7 @@ public class Ejercicio2 {
             }
             cadena_nueva.append(caracter);
         }
-        return cadena_nueva.toString();
+        return cadena_nueva.toString(); /* Tambien se podria hacer con String concatenandolo yo al final lo hice asi
+        el IDE no se me queja y funciona bien ya que simplemente va añadiendo al final el caracter y luego la coma yo lo hice asi por que de la otra manera me lie luego lo hice asi en el main y asi se quedo*/
     }
 }
