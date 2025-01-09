@@ -6,6 +6,20 @@ public class Ejercicio2 {
         System.out.println(cadena2.replace(" ","\\_"));
         String cadena3 = "1540";
         System.out.println(reemplazarNumerosPorX(cadena3));
+        String cadena4 = "2552552550";
+        System.out.println(insertarPuntoTresCaracteres(cadena4));
+
+    }
+    static String insertarPuntoTresCaracteres(String texto) {
+        String cadena_final = "";
+        for (int i = 0,j = 1; i < texto.length(); i++,j++) {
+            char c = texto.charAt(i);
+            cadena_final += c;
+            if (j%3==0) {
+                cadena_final += ".";
+            }
+        }
+        return cadena_final;
     }
     static String reemplazarNumerosPorX(String texto) {
         String nuevo_texto = "";
