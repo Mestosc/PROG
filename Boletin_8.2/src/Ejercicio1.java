@@ -4,6 +4,7 @@ public class Ejercicio1 {
         imprimirCadaDos(cadena);
         imprimirPrimerosCaracteres(cadena);
         imprimirTresUltimosCaracteres(cadena);
+        imprimirNormaleInverso(cadena);
     }
     static void imprimirPrimerosCaracteres(String texto) {
         System.out.println(texto.substring(0,2));
@@ -18,5 +19,10 @@ public class Ejercicio1 {
             System.out.print(c);
         }
         System.out.println();
+    }
+    static void imprimirNormaleInverso(String texto) {
+        System.out.print(texto);
+        String invertido = new StringBuilder(texto).reverse().toString();
+        System.out.println(invertido);
     }
 }
