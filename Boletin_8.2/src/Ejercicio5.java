@@ -2,6 +2,7 @@ public class Ejercicio5 {
     public static void main(String[] args) {
         System.out.println(obtenerPrimerasLetras("universal serial bus"));
         System.out.println(capitalizar("república arxentina"));
+        System.out.println(obtener_palabras_empiecen_A("Antes de abrir"));
     }
 
     /**
@@ -30,5 +31,20 @@ public class Ejercicio5 {
             caden.append(primera);
         }
         return caden.toString().toUpperCase();
+    }
+    static String obtener_palabras_empiecen_A(String texto) {
+        String[] texto2 = texto.split(" ");
+        StringBuilder cadenaFinal = new StringBuilder();
+        for (int i = 0; i < texto2.length; i++) {
+            char primera = texto2[i].charAt(0);
+            if (primera == 'a' || primera == 'A') {
+                cadenaFinal.append(texto2[i]);
+                if (i==texto2.length-1) {
+                    break;
+                }
+                cadenaFinal.append(" ");
+            }
+        }
+        return cadenaFinal.toString();
     }
 }
