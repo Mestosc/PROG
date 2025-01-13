@@ -1,7 +1,16 @@
 
 public class Ejercicio7 {
     public static void main(String[] args) {
-        System.out.println(entreDosAnteriorOrdenAlfabetico("gnome","kde"));
+        String cadena1 = "gnome";
+        String cadena2 = "kde";
+        if (cadena1.compareTo(cadena2)<0) {
+            System.out.println(cadena1);
+        }
+        else {
+            System.out.println(cadena2);
+        }
+        //System.out.println(entreDosAnteriorOrdenAlfabetico(cadena1,cadena2));
+        System.out.println();
         System.out.println(obtenerSiSubcadena("subcadea","cadea"));
     }
     static boolean obtenerSiSubcadena(String cadena1,String cadena2) {
