@@ -46,7 +46,7 @@ public class Ejercicio6 {
         return cadena.toString();
     }
     static boolean saberPalindromo(String texto) {
-        texto = texto.replace(" ","");
+        texto = texto.strip();
         String inverso = new StringBuilder(texto).reverse().toString();
         return texto.equalsIgnoreCase(inverso);
     }
