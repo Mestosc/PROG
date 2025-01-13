@@ -3,7 +3,7 @@ public class Ejercicio7 {
     public static void main(String[] args) {
         String cadena1 = "gnome";
         String cadena2 = "kde";
-        if (cadena1.compareTo(cadena2)<0) {
+        if (cadena1.compareToIgnoreCase(cadena2)<0) {
             System.out.println(cadena1);
         }
         else {
