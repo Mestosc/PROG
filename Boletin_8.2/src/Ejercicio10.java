@@ -22,7 +22,7 @@ public class Ejercicio10 {
      */
     static boolean validarContrasena(String contrasena,int mayusculas, int minusculas, int numero,int longitud) {
         if (contrasena.length()>=longitud) {
-            int cuentaMayusuclas=0,cuentaNumero=0,minuscula=0,especial=0;
+            int cuentaMayusuclas=0,cuentaNumero=0,minuscula=0;
             for (int i = 0; i < contrasena.length(); i++) {
                 char c = contrasena.charAt(i);
                 if (Character.isUpperCase(c)) {
