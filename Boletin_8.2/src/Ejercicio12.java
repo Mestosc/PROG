@@ -15,12 +15,8 @@ public class Ejercicio12 {
      * @return el numero de palabras
      */
     static int contarPalabras(String[] palabras) {
-        int contador = 0;
-        for (String palabra : palabras) {
-            if (palabra.length() <= 1) continue;
-            contador++;
-        }
-        return contador;
+        //int contador = 0;
+        return palabras.length;
     }
     static void eliminarSignosRaros(String[] palabras) {
         for (int i = 0;i<palabras.length;i++) {
