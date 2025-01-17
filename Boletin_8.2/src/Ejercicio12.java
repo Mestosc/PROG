@@ -10,7 +10,7 @@ public class Ejercicio12 {
     }
 
     /**
-     * Funcion contar palabras
+     * Contar palabras, cuenta las palabras que hay
      * @param palabras palabras a contar
      * @return el numero de palabras
      */
