@@ -8,8 +8,18 @@ public class Ejercicio12 {
     static String[] palabrasDivididas(String texto) {
        return texto.split(" ");
     }
+
+    /**
+     * Funcion contar palabras
+     * @param palabras palabras a contar
+     * @return el numero de palabras
+     */
     static int contarPalabras(String[] palabras) {
         int contador = 0;
+        for (String palabra : palabras) {
+            if (palabra.length() <= 1) continue;
+            contador++;
+        }
         return contador;
     }
     static void eliminarSignosRaros(String[] palabras) {
