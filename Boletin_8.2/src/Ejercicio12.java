@@ -30,6 +30,12 @@ public class Ejercicio12 {
             palabras[i] = nueva;
         }
     }
+
+    /**
+     * Obtener la palabra más larga del texto
+     * @param palabra la lista de palabras
+     * @return la palabra más larga
+     */
     static String palabraMasLarga(String[] palabra) {
         eliminarSignosRaros(palabra);
         int masLarga = 0;
