@@ -1,12 +1,13 @@
 public class Ejercicio12 {
     public static void main(String[] args) {
-        String texto = "Unha frase para comparar palabras en lonxitude";
+        String texto = "Hace mucho mucho tiempo, vivio una persona muy especial y espectacular";
         analizadorResultado(texto);
     }
     static void analizadorResultado(String texto) {
         String[] palabras = palabrasDivididas(texto);
-        System.out.println(contarPalabras(palabras));
-        System.out.println(palabraMasLarga(palabras));
+        eliminarSignosRaros(palabras);
+        System.out.println("Cantidad de palabras: "  + contarPalabras(palabras));
+        System.out.println("Palabra más larga: " + palabraMasLarga(palabras));
         System.out.println("Caracteres totales: " + contarCaracteres(palabras));
     }
     static String[] palabrasDivididas(String texto) {
@@ -53,7 +54,6 @@ public class Ejercicio12 {
      * @return la palabra más larga
      */
     static String palabraMasLarga(String[] palabra) {
-        eliminarSignosRaros(palabra);
         int masLarga = 0;
         for (int i = 1; i < palabra.length; i++) {
             if (palabra[masLarga].length()<palabra[i].length()) {
