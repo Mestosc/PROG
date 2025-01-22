@@ -9,7 +9,7 @@ public class Ejercicio11 {
     }
 
     /**
-     * Convierte la primera letra en mayuscula y la devuelve
+     * Convierte la primera letra en mayuscula devuelve la palabra estando el resto en minuscula
      * @param palabra la palabra de la que quiero tener su primera letra en mayscula
      * @return la palabra con la primera letra en mayuscula
      */
