@@ -1,6 +1,6 @@
 public class Ejercicio11 {
     public static void main(String[] args) {
-        System.out.println(formatearNombre("OsCar","rodRiguez"));
+        System.out.println(formatearNombre(" osCaR  ","rodRigUez   "));
     }
     static String formatearNombre(String nombre, String apellido) {
         nombre = nombre.trim();
