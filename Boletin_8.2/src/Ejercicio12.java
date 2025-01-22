@@ -1,6 +1,6 @@
 public class Ejercicio12 {
     public static void main(String[] args) {
-        String texto = "Hola como estas bello amigo, tu presencia me es grata";
+        String texto = "Unha frase para comparar palabras en lonxitude";
         String[] palabras = palabrasDivididas(texto);
         System.out.println(contarPalabras(palabras));
         System.out.println(palabraMasLarga(palabras));
@@ -39,7 +39,7 @@ public class Ejercicio12 {
     static String palabraMasLarga(String[] palabra) {
         eliminarSignosRaros(palabra);
         int masLarga = 0;
-        for (int i = 0; i < palabra.length; i++) {
+        for (int i = 1; i < palabra.length; i++) {
             if (palabra[masLarga].length()<palabra[i].length()) {
                 masLarga = i;
             }
