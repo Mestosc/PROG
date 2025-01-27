@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
-        String palabra = "frigorífico";
-        System.out.println(secuenciaFinal(obtenerSecuenciaLetras(palabra,4)));
+        String palabra = "casa";
+        System.out.println(secuenciaFinal(obtenerSecuenciaLetras(palabra,3)));
     }
-    static String secuenciaFinal(ArrayList<String> secuencia) {
+    static String secuenciaFinal(String[] secuencia) {
         String cadenaFinal="";
         for (String cadena : secuencia) {
             cadenaFinal += cadena + ",";
@@ -18,12 +18,12 @@ public class Ejercicio1 {
      * @param numCaracteresSecuencia el numero de caracteres de cada secuencia
      * @return la lista de letras
      */
-    static ArrayList<String> obtenerSecuenciaLetras(String palabra, int numCaracteresSecuencia) {
-        ArrayList<String> resultado = new ArrayList<>();
-        for (int i = 0; i < palabra.length(); i++) {
+    static String[] obtenerSecuenciaLetras(String palabra, int numCaracteresSecuencia) {
+        int secuencias = palabra.length()-(numCaracteresSecuencia-1);
+        String[] resultado = new String[secuencias];
+        for (int i = 0;i<resultado.length;i++) {
             String sub = palabra.substring(i,numCaracteresSecuencia+i);
-            resultado.add(sub);
-            if (i==7) break;
+            resultado[i] = sub;
         }
         return resultado;
     }
