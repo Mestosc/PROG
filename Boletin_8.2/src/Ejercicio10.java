@@ -5,7 +5,7 @@ public class Ejercicio10 {
         Scanner sc = new Scanner(System.in);
         String contrasena = sc.next();
         if (validarContrasena(contrasena,2,1,3,8)) {
-            System.out.println("La contraseña es Valida");
+            System.out.println("La contraseña es valida");
         }
         else {
             System.out.println("La contraseña no es valida");
