@@ -3,6 +3,12 @@ public class Ejercicio4 {
         String numero = "1234567890";
         System.out.println(anadirSeparacionMiles(numero));
     }
+
+    /**
+     * Añadiendo separacion de miles a un numero como cadena de texto
+     * @param num el numero como cadena de texto
+     * @return el numero con la separacion de miles
+     */
     static String anadirSeparacionMiles(String num) {
         String cadena_nueva = "";
         for (int i = 0; i < num.length(); i++) {
