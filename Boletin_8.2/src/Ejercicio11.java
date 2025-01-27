@@ -14,8 +14,7 @@ public class Ejercicio11 {
      * @return la palabra con la primera letra en mayuscula
      */
     static String capitalizar(String palabra) {
-        palabra = palabra.toLowerCase();
         char primera = palabra.charAt(0);
-        return Character.toUpperCase(primera) + palabra.substring(1);
+        return Character.toUpperCase(primera) + palabra.substring(1).toLowerCase();
     }
 }
