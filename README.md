@@ -16,6 +16,9 @@ Estos son los boletines que han sido realizados hasta la fecha
 - [Boletin 5](Boletin5/src)
 - [Boletin 6](Boletin6/src)
 - [Boletin 7](Boletin7/src)
+- [Boletin 8](Boletin8/src)
+- [Boletin 8.2](Boletin_8.2/src)
+- [Boletin 8.3](Boletin_8.3/src)
   
 ## Boletines en proceso...
 Estos son los boletines que han sido subidos pero no han sido finalizados.
