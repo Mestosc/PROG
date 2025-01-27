@@ -13,7 +13,7 @@ public class Ejercicio2 {
        String textoDespuesSalto = textoWeb.substring(indiceSalto+1);
        textoAntesSalto = "<h1>" + textoAntesSalto + "</h1>";
        textoDespuesSalto = "<p>" + textoDespuesSalto.trim() + "</p>";
-       String textoFinal = "<html>" + "\n " + textoAntesSalto + "\n " + textoDespuesSalto + "\n" + "</html>";
+       String textoFinal = "<html>" + "\n   " + textoAntesSalto + "\n   " + textoDespuesSalto + "\n" + "</html>";
        System.out.println(textoFinal);
 
     }
