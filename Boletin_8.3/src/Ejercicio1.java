@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
-        String palabra = "casa";
-        System.out.println(secuenciaFinal(obtenerSecuenciaLetras(palabra,3)));
+        String palabra = "sentimentalismo";
+        System.out.println(secuenciaFinal(obtenerSecuenciaLetras(palabra,4)));
     }
     static String secuenciaFinal(String[] secuencia) {
         String cadenaFinal="";
@@ -22,8 +22,7 @@ public class Ejercicio1 {
         int secuencias = palabra.length()-(numCaracteresSecuencia-1);
         String[] resultado = new String[secuencias];
         for (int i = 0;i<resultado.length;i++) {
-            String sub = palabra.substring(i,numCaracteresSecuencia+i);
-            resultado[i] = sub;
+            resultado[i] = palabra.substring(i,numCaracteresSecuencia+i);;
         }
         return resultado;
     }
