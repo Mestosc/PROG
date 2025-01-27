@@ -16,7 +16,7 @@ public class Ejercicio5 {
         for (int i = 0;i<partes.length;i++) {
             char primera = partes[i].charAt(0);
             nuevaCadena.append(Character.toUpperCase(primera));
-            nuevaCadena.append(partes[i].substring(1));
+            nuevaCadena.append(partes[i].substring(1).toLowerCase());
             if (i<partes.length-1) {
                 nuevaCadena.append(" ");
             }
