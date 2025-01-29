@@ -17,7 +17,7 @@ public class Ejercicio2 {
        String textoDespuesSalto = textoWeb.substring(indiceSalto+1);
        textoAntesSalto = "<h1>" + textoAntesSalto + "</h1>";
        textoDespuesSalto = "<p>\n" + textoDespuesSalto.trim() + "\n   </p>";
-       String textoFinal = "<html>" + "\n<head></head>\n<body>\n" + textoAntesSalto + "\n   " + textoDespuesSalto + "\n" + " </body>\n</html>";
+       String textoFinal = "<html>" + "\n <head>\n </head>\n<body>\n" + textoAntesSalto + "\n   " + textoDespuesSalto + "\n" + " </body>\n</html>";
        System.out.println(textoFinal);
 
     }
