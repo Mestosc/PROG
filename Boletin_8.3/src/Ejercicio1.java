@@ -4,6 +4,14 @@ public class Ejercicio1 {
         String palabra = "frigorifico";
         System.out.println(secuenciaFinal(obtenerSecuenciaLetras(palabra,4)));
     }
+
+    /**
+     * Obtener la secuencia final como un texto divido por , al estilo de lo siguiente
+     * <br>
+     * <strong><i>frig,rigo,igor,gori,orif,rifi,ific,fico</i></strong>
+     * @param secuencia
+     * @return
+     */
     static String secuenciaFinal(String[] secuencia) {
         String cadenaFinal="";
         for (int i = 0;i<secuencia.length;i++) {
