@@ -8,7 +8,8 @@ public class Ejercicio7 {
     }
 
     /**
-     * Descubrir si una cadena es subcadena de otra, si es subcadena es por que esa cadena es contenida dentro de la otra
+     * Descubrir si una cadena es subcadena de otra, si es subcadena es por que esa cadena es contenida dentro de la otra, por ejemplo
+     * sub<strong>cadena</strong> y <strong>cadena</strong>
      * @param cadena1 cadena con la que se va a comparar
      * @param cadena2 cadena a comparar
      * @return verdadero si es una subcadena
