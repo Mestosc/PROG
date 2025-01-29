@@ -1,13 +1,14 @@
 
 public class Ejercicio1 {
     public static void main(String[] args) {
-        String palabra = "sentimentalismo";
+        String palabra = "frigorifico";
         System.out.println(secuenciaFinal(obtenerSecuenciaLetras(palabra,4)));
     }
     static String secuenciaFinal(String[] secuencia) {
         String cadenaFinal="";
-        for (String cadena : secuencia) {
-            cadenaFinal += cadena + ",";
+        for (int i = 0;i<secuencia.length;i++) {
+            if (i<secuencia.length-1) cadenaFinal += secuencia[i] + ",";
+            else cadenaFinal += secuencia[i];
         }
         return cadenaFinal;
     }
