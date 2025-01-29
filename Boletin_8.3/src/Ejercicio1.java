@@ -9,8 +9,8 @@ public class Ejercicio1 {
      * Obtener la secuencia final como un texto divido por , al estilo de lo siguiente
      * <br>
      * <strong><i>frig,rigo,igor,gori,orif,rifi,ific,fico</i></strong>
-     * @param secuencia
-     * @return
+     * @param secuencia La lista de Strings que contiene las secuencias de caracteres varios
+     * @return La secuencia con el formato descrito anteriormente
      */
     static String secuenciaFinal(String[] secuencia) {
         String cadenaFinal="";
