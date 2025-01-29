@@ -9,16 +9,33 @@ public class Ejercicio2 {
                 El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
                 
                 """;
-        formatear(texto);
+        System.out.println(formatear(texto));
     }
-    static void formatear(String textoWeb) {
-       int indiceSalto = textoWeb.indexOf("\n");
-       String textoAntesSalto = textoWeb.substring(0,indiceSalto);
-       String textoDespuesSalto = textoWeb.substring(indiceSalto+1);
-       textoAntesSalto = "<h1>" + textoAntesSalto + "</h1>";
-       textoDespuesSalto = "<p>\n" + textoDespuesSalto.trim() + "\n   </p>";
-       String textoFinal = "<html>" + "\n <head>\n </head>\n<body>\n" + textoAntesSalto + "\n   " + textoDespuesSalto + "\n" + " </body>\n</html>";
-       System.out.println(textoFinal);
 
+    /**
+     * Formatea un texto como HTML añadiendo las correspondientes etiquetas ofreciendo un resultado como el siguiente
+     * <pre>
+     *  &lt;html&gt;
+     *      &lt;head&gt;
+     *      &lt;/head&gt;
+     *      &lt;body&gt;
+     *         &lt;h1&gt;¿De dónde viene?&lt;/h1&gt;
+     *         &lt;p&gt;
+     *         Amigos mios bienvenidos a mi sitio
+     *         &lt;/p&gt;
+     *      &lt;/body&gt;
+     *  &lt;/html&gt;
+     * </pre>
+     * @param textoWeb
+     * @return el texto con el formato descrito arriba
+     */
+    static String formatear(String textoWeb) {
+       int indiceSalto = textoWeb.indexOf("\n"); // Localizar el primer salto de linea
+       String textoAntesSalto = textoWeb.substring(0,indiceSalto); // Obtener el texto antes del salto de linea
+       String textoDespuesSalto = textoWeb.substring(indiceSalto+1); // Obtener el texto despues del salto de linea
+       textoAntesSalto = "<h1>" + textoAntesSalto + "</h1>"; // Añadiendo la etiqueta <h1> al texto antes del salto
+       textoDespuesSalto = "<p>\n" + textoDespuesSalto.trim() + "\n   </p>"; // Añadiendo etiqueta de parrafo al texto despues del salto y eliminando espacios molestos
+       String textoFinal = "<html>" + "\n <head>\n </head>\n<body>\n" + textoAntesSalto + "\n   " + textoDespuesSalto + "\n" + " </body>\n</html>"; // Añadiendo etiquetas varias como html,head y body
+       return textoFinal;
     }
 }
