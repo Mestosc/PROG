@@ -35,7 +35,7 @@ public class Ejercicio2 {
        String textoDespuesSalto = textoWeb.substring(indiceSalto+1); // Obtener el texto despues del salto de linea
        textoAntesSalto = "<h1>" + textoAntesSalto + "</h1>"; // Añadiendo la etiqueta <h1> al texto antes del salto
        textoDespuesSalto = "<p>\n" + textoDespuesSalto.trim() + "\n   </p>"; // Añadiendo etiqueta de parrafo al texto despues del salto y eliminando espacios molestos
-       String textoFinal = "<html>" + "\n <head>\n </head>\n<body>\n" + textoAntesSalto + "\n   " + textoDespuesSalto + "\n" + " </body>\n</html>"; // Añadiendo etiquetas varias como html,head y body
-       return textoFinal;
+        // Añadiendo etiquetas varias como html,head y body
+        return "<html>" + "\n <head>\n </head>\n<body>\n" + textoAntesSalto + "\n   " + textoDespuesSalto + "\n" + " </body>\n</html>";
     }
 }
