@@ -12,23 +12,21 @@ public class Ejercicio2 {
         System.out.println(formatear(texto));
     }
 
-    /**
-     * Formatea un texto como HTML añadiendo las correspondientes etiquetas ofreciendo un resultado como el siguiente
-     * <pre>
-     *  &lt;html&gt;
-     *      &lt;head&gt;
-     *      &lt;/head&gt;
-     *      &lt;body&gt;
-     *         &lt;h1&gt;¿De dónde viene?&lt;/h1&gt;
-     *         &lt;p&gt;
-     *         Amigos mios bienvenidos a mi sitio
-     *         &lt;/p&gt;
-     *      &lt;/body&gt;
-     *  &lt;/html&gt;
-     * </pre>
-     * @param textoWeb
-     * @return el texto con el formato descrito arriba
-     */
+    /// Formatea un texto como HTML añadiendo las correspondientes etiquetas ofreciendo un resultado como el siguiente
+    /// ```html
+    ///  <html>
+    ///      <head>
+    ///      </head>
+    ///      <body>
+    ///         <h1>¿De dónde viene?</h1>
+    ///         <p>
+    ///         Amigos mios bienvenidos a mi sitio
+    ///         </p>
+    ///      </body>
+    ///    </html>
+    /// ```
+    /// @param textoWeb
+    /// @return el texto con el formato descrito arriba
     static String formatear(String textoWeb) {
        int indiceSalto = textoWeb.indexOf("\n"); // Localizar el primer salto de linea
        String textoAntesSalto = textoWeb.substring(0,indiceSalto); // Obtener el texto antes del salto de linea
