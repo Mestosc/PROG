@@ -17,7 +17,7 @@ public class Libro {
         this.valoracion = valoracion;
     }
     public void amosar() {
-        System.out.println("El titulo es" + titulo + " su autor es " + autor + " se publico en el año " + ano + " tiene un total de " + numPaginas + " paginas. Su valoracion es de " + valoracion + " estrellas");
+        System.out.println("El titulo es " + titulo + " su autor es " + autor + " se publico en el año " + ano + " tiene un total de " + numPaginas + " paginas. Su valoracion es de " + valoracion + " estrellas");
     }
     public String getTitulo() {
         return titulo;
