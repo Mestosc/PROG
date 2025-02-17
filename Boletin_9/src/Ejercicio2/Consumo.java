@@ -15,7 +15,7 @@ public class Consumo {
         this.prezoGasolina = prezoGasolina;
     }
     public double consumoEuros() {
-        return litros*prezoGasolina;
+        return (litros/km)*velocidadMedia;
     }
     public double getTiempo() {
         return km/velocidadMedia;
