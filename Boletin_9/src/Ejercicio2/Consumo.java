@@ -14,4 +14,5 @@ public class Consumo {
         this.velocidadMedia = velocidadMedia;
         this.prezoGasolina = prezoGasolina;
     }
+
 }
