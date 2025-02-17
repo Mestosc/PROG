@@ -1,10 +1,10 @@
 package Ejercicio2;
 
 public class Consumo {
-    double km;
-    double litros;
+    double km; // Km recorridos
+    double litros; // Son los litros consumidos
     double velocidadMedia;
-    double prezoGasolina;
+    double prezoGasolina; // Precio de la gasolina
 
     public Consumo() {}
 
@@ -14,7 +14,9 @@ public class Consumo {
         this.velocidadMedia = velocidadMedia;
         this.prezoGasolina = prezoGasolina;
     }
-
+    public double consumoEuros() {
+        return litros*prezoGasolina;
+    }
     public double getTiempo() {
         return km/velocidadMedia;
     }
