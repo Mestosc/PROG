@@ -20,4 +20,20 @@ public class Consumo {
     public double getTiempo() {
         return km/velocidadMedia;
     }
+
+    public void setKm(double km) {
+        this.km = km;
+    }
+
+    public void setLitros(double litros) {
+        this.litros = litros;
+    }
+
+    public void setVelocidadMedia(double velocidadMedia) {
+        this.velocidadMedia = velocidadMedia;
+    }
+
+    public void setPrezoGasolina(double prezoGasolina) {
+        this.prezoGasolina = prezoGasolina;
+    }
 }
