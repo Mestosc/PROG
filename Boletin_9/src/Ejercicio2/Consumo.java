@@ -1,10 +1,26 @@
 package Ejercicio2;
 
 public class Consumo {
-    double km; // Km recorridos
-    double litros; // Son los litros consumidos
-    double velocidadMedia;
-    double prezoGasolina; // Precio de la gasolina
+    private double km; // Km recorridos
+    private double litros; // Son los litros consumidos
+    private double velocidadMedia;
+    private double prezoGasolina; // Precio de la gasolina
+
+    public double getKm() {
+        return km;
+    }
+
+    public double getLitros() {
+        return litros;
+    }
+
+    public double getVelocidadMedia() {
+        return velocidadMedia;
+    }
+
+    public double getPrezoGasolina() {
+        return prezoGasolina;
+    }
 
     public Consumo() {}
 
