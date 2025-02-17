@@ -18,7 +18,7 @@ public class Consumo {
         return litros/getTiempo();
     }
     public double consumoEuros() {
-        return consumoMedio()*prezoGasolina;
+        return litros*prezoGasolina;
     }
     public double getTiempo() {
         return km/velocidadMedia;
