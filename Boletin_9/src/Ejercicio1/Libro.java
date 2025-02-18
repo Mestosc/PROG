@@ -26,7 +26,7 @@ public class Libro {
         else if (valoracion>=6) {
             valoracionEscrita = "\033[32m"+valoracion;
         }
-        valoracionEscrita += " estrellas";
+        valoracionEscrita += " \033[0mestrellas";
         System.out.printf("El titulo es " + titulo + " su autor es " + autor + " se publico en el año " + ano + " tiene un total de " + numPaginas + " paginas. Su valoracion es de %s\n",valoracionEscrita);
     }
     public String getTitulo() {
