@@ -17,7 +17,7 @@ public class Libro {
         setValoracion(valoracion);
     }
     public void amosar() {
-        String valoracionEscrita="";
+        String valoracionEscrita=null;
         if (valoracion<=4) {
             valoracionEscrita = "\033[31m"+valoracion;
         } else if (valoracion>5 && valoracion<6) {
