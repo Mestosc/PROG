@@ -8,6 +8,6 @@ public class Main {
         Consumo consumo1 = new Consumo(100,30,30,0.90);
         System.out.println(consumo1.consumoMedio());
         consumo.setLitros(40);
-        System.out.println(consumo1.velocidadMedia);
+        System.out.println(consumo1.getVelocidadMedia());
     }
 }
