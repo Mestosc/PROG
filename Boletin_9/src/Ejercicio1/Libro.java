@@ -14,16 +14,16 @@ public class Libro {
         this.autor = autor;
         this.ano = ano;
         this.numPaginas = numPaginas;
-        this.valoracion = valoracion;
+        setValoracion(valoracion);
     }
     public void amosar() {
-        String valoracionEscrita;
+        String valoracionEscrita="";
         if (valoracion<=4) {
             valoracionEscrita = "\033[31m"+valoracion;
-        } else if (valoracion==5) {
+        } else if (valoracion>5 && valoracion<6) {
             valoracionEscrita = "\033[33m"+valoracion;
         }
-        else {
+        else if (valoracion>=6) {
             valoracionEscrita = "\033[32m"+valoracion;
         }
         valoracionEscrita += " estrellas";
@@ -66,6 +66,8 @@ public class Libro {
     }
 
     public void setValoracion(float valoracion) {
-        this.valoracion = valoracion;
+        if (valoracion<=10) {
+            this.valoracion = valoracion;
+        }
     }
 }
