@@ -18,6 +18,11 @@ public class Libro {
     }
     public void amosar() {
         String valoracionEscrita = "";
+        valoracionEscrita = getValoracionEscrita(valoracionEscrita);
+        System.out.println("El titulo es " + titulo + " su autor es " + autor + " se publico en el año " + ano + " tiene un total de " + numPaginas + " paginas. Su valoracion es de " + valoracionEscrita);
+    }
+
+    private String getValoracionEscrita(String valoracionEscrita) {
         if (valoracion<=4) {
             valoracionEscrita = "\033[31m";
         } else if (valoracion>4 && valoracion<6) {
@@ -28,8 +33,9 @@ public class Libro {
         }
         valoracionEscrita += valoracion;
         valoracionEscrita += " \033[0mestrellas";
-        System.out.println("El titulo es " + titulo + " su autor es " + autor + " se publico en el año " + ano + " tiene un total de " + numPaginas + " paginas. Su valoracion es de " + valoracionEscrita);
+        return valoracionEscrita;
     }
+
     public String getTitulo() {
         return titulo;
     }
