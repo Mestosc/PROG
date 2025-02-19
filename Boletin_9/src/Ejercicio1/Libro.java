@@ -19,7 +19,7 @@ public class Libro {
     public void amosar() {
         String valoracionEscrita = "";
         valoracionEscrita = getValoracionEscrita(valoracionEscrita);
-        System.out.println("El titulo es " + titulo + " su autor es " + autor + " se publico en el año " + ano + " tiene un total de " + numPaginas + " paginas. Su valoracion es de " + valoracionEscrita);
+        System.out.printf("El titulo es " + titulo + " su autor es " + autor + " se publico en el año " + ano + " tiene un total de %s paginas. Su valoracion es de %s\n",numPaginas, valoracionEscrita);
     }
 
     private String getValoracionEscrita(String valoracionEscrita) {
