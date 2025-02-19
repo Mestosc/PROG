@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Libro libro1 = new Libro("Dioses malignos","H.P LofCraft",1990,(short) 200,10);
         libro1.amosar();
-        Libro libro2 = new Libro("Dioses malignos","H.P LofCraft",1990,(short) 200,2);
+        Libro libro2 = new Libro("Dioses antiguos","H.P LofCraft",1993,(short) 300,2);
         libro2.amosar();
     }
 }
