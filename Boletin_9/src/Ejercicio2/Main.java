@@ -9,5 +9,6 @@ public class Main {
         System.out.println(consumo1.consumoMedio());
         consumo.setLitros(40);
         System.out.println(consumo1.getVelocidadMedia());
+        System.out.println(consumo.consumoEuros());
     }
 }
