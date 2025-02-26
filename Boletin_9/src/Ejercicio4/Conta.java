@@ -6,10 +6,14 @@ public class Conta {
     private double tipoInterese;
     private double saldo;
     public Conta() {}
-    public void ingreso(int valor) {
+    public void ingreso(double valor) {
         this.saldo += Math.abs(valor);
     }
-    public void reintegro(int valor) {
+    public void transferencia(Conta contaDestino, double valor) {
+        reintegro(valor);
+        contaDestino.ingreso(valor);
+    }
+    public void reintegro(double valor) {
         if (valor<0) System.out.println("No es posible hacer un reintegro negativo");
         else this.saldo -= valor;
     }
