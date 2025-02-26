@@ -6,7 +6,9 @@ public class Conta {
     private double tipoInterese;
     private double saldo;
     public Conta() {}
-
+    public void ingreso(int valor) {
+        this.saldo += Math.abs(valor);
+    }
     public String getNome() {
         return nome;
     }
