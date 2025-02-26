@@ -9,6 +9,10 @@ public class Conta {
     public void ingreso(int valor) {
         this.saldo += Math.abs(valor);
     }
+    public void reintegro(int valor) {
+        if (valor<0) System.out.println("No es posible hacer un reintegro negativo");
+        else this.saldo -= valor;
+    }
     public String getNome() {
         return nome;
     }
