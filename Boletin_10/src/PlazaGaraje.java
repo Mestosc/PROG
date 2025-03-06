@@ -9,6 +9,9 @@ public class PlazaGaraje extends BienInmob {
         setAncho(ancho);
         setNumeroPlaza(numeroPlaza);
     }
+    public PlazaGaraje(String rua, String operacion, double prezo, String localidade, int numero) {
+        super(rua, operacion, prezo, localidade, numero);
+    }
 
     public double getAncho() {
         return ancho;
