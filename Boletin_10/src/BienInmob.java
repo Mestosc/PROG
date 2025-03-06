@@ -3,7 +3,7 @@ public abstract class BienInmob {
     int numero;
     String localidade;
     double prezo;
-    private Operacion operacion;
+    private boolean operacion;
 
     public String getRua() {
         return rua;
@@ -21,12 +21,12 @@ public abstract class BienInmob {
         this.prezo = prezo;
     }
 
-    public Operacion getOperacion() {
+    public boolean getOperacion() {
         return operacion;
     }
 
     public void setOperacion(String operacion) {
-        this.operacion = Operacion.valueOf(operacion.toUpperCase());
+        this.operacion = operacion.equalsIgnoreCase("venta");
     }
 
     public String getLocalidade() {
