@@ -4,11 +4,9 @@ public class Vivienda extends BienInmob {
     private int numeroHabitaciones;
     PlazaGaraje garaje;
 
-    public Vivienda(String rua, String operacion, double prezo, String localidade, int numero, boolean hayGaraje) {
+    public Vivienda(String rua, String operacion, double prezo, String localidade, int numero, PlazaGaraje garaje) {
         super(rua, operacion, prezo, localidade, numero);
-        if (hayGaraje) {
-            garaje = new PlazaGaraje(rua,operacion,prezo,localidade,numero);
-        }
+        this.garaje = garaje;
     }
     @Override
     public double calcularGanancia() {
