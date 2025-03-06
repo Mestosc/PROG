@@ -44,7 +44,9 @@ public abstract class BienInmob {
     public void setNumero(int numero) {
         this.numero = numero;
     }
-
+    public String toString() {
+        return "El inmueble de la calle %s, nº %d en la localidad %s ".formatted(rua,numero,localidade);
+    }
     public BienInmob(String rua, String operacion, double prezo, String localidade, int numero) {
         this.rua = rua;
         setOperacion(operacion);
