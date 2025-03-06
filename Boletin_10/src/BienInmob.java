@@ -3,6 +3,7 @@ public abstract class BienInmob {
     int numero;
     String localidade;
     double prezo;
+    private Operacion operacion;
 
     public String getRua() {
         return rua;
@@ -18,6 +19,14 @@ public abstract class BienInmob {
 
     public void setPrezo(double prezo) {
         this.prezo = prezo;
+    }
+
+    public Operacion getOperacion() {
+        return operacion;
+    }
+
+    public void setOperacion(String operacion) {
+        this.operacion = Operacion.valueOf(operacion.toUpperCase());
     }
 
     public String getLocalidade() {
@@ -36,8 +45,9 @@ public abstract class BienInmob {
         this.numero = numero;
     }
 
-    public BienInmob(String rua, double prezo, String localidade, int numero) {
+    public BienInmob(String rua, String operacion, double prezo, String localidade, int numero) {
         this.rua = rua;
+        setOperacion(operacion);
         this.prezo = prezo;
         this.localidade = localidade;
         this.numero = numero;
