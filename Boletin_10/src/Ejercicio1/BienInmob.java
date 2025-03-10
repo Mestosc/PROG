@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 public abstract class BienInmob {
     String rua;
     int numero;

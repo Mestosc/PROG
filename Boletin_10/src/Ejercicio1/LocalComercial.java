@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 public class LocalComercial extends BienInmob {
     boolean acondicionado;
     boolean posibleEntradaMerc;

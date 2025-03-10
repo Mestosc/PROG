@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 public class Vivienda extends BienInmob {
     boolean tenAdega;
     String observaciones;

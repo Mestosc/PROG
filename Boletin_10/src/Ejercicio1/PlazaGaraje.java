@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 public class PlazaGaraje extends BienInmob {
     private double ancho;
     private double largo;
