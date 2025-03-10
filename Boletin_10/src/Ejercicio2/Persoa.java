@@ -3,12 +3,10 @@ package Ejercicio2;
 public abstract class Persoa extends Asociacion implements Miembro {
     private String dni;
     private String nome;
-    private String dataIngreso;
 
-    public Persoa(String dni, String nome, String dataIngreso) {
+    public Persoa(String dni, String nome) {
         this.dni = dni;
         this.nome = nome;
-        this.dataIngreso = dataIngreso;
     }
 
     public String getDni() {
@@ -25,14 +23,6 @@ public abstract class Persoa extends Asociacion implements Miembro {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getDataIngreso() {
-        return dataIngreso;
-    }
-
-    public void setDataIngreso(String dataIngreso) {
-        this.dataIngreso = dataIngreso;
     }
 
 }
