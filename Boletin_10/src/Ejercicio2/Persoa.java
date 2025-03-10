@@ -1,11 +1,11 @@
 package Ejercicio2;
 
-public abstract class Trabajador extends Asociacion implements Miembro {
+public abstract class Persoa extends Asociacion implements Miembro {
     private String dni;
     private String nome;
     private String dataIngreso;
 
-    public Trabajador(String dni, String nome, String dataIngreso) {
+    public Persoa(String dni, String nome, String dataIngreso) {
         this.dni = dni;
         this.nome = nome;
         this.dataIngreso = dataIngreso;

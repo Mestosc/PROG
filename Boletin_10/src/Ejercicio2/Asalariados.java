@@ -1,6 +1,6 @@
 package Ejercicio2;
 
-public class Asalariados extends Trabajador {
+public class Asalariados extends Persoa {
     private double sueldo;
     private double porcentajeSS;
     private double porcentajeIRPF;
