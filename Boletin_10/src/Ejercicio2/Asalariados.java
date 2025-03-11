@@ -1,6 +1,6 @@
 package Ejercicio2;
 
-public class Asalariados extends Persoa {
+public class Asalariados extends Trabajador {
     private double sueldo;
     private double porcentajeSS;
     private double porcentajeIRPF;
@@ -10,9 +10,11 @@ public class Asalariados extends Persoa {
         this.porcentajeSS = porcentajeSS;
         this.porcentajeIRPF = porcentajeIRPF;
     }
-
+    public String aCadea() {
+        return super.aCadea() + " Su sueldo es %.2f su porcentaje de Seguridad Social es %.2f y el porcentaje del IRPF es %.2f".formatted(sueldo,porcentajeSS,porcentajeIRPF);
+    }
     @Override
     public void gastosIngresos() {
-        beneficios -= sueldo * (15/100);
+        beneficios -= sueldo * ((double) 15 / 100);
     }
 }

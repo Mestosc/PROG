@@ -24,5 +24,7 @@ public abstract class Persoa extends Asociacion implements Miembro {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
+    public String aCadea() {
+        return "DNI: %s, Nombre:%s".formatted(dni,nome);
+    }
 }
