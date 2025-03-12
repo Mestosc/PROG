@@ -5,7 +5,7 @@ public abstract class Persoa extends Asociacion {
     private String nome;
 
     public Persoa(String dni, String nome) {
-        this.dni = dni;
+        setDni(dni);
         this.nome = nome;
     }
 
@@ -14,7 +14,9 @@ public abstract class Persoa extends Asociacion {
     }
 
     public void setDni(String dni) {
-        this.dni = dni;
+        if (dni.length()==8) {
+            this.dni = dni;
+        }
     }
 
     public String getNome() {
