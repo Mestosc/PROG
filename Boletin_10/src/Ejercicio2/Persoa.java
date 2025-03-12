@@ -14,7 +14,7 @@ public abstract class Persoa extends Asociacion {
     }
 
     public void setDni(String dni) {
-        if (dni.length()==8 && calcularLetraDNI()==dni.charAt(dni.length()-1)) {
+        if (dni.length()==8 && calcularLetraDNI(dni)==dni.charAt(dni.length()-1)) {
             this.dni = dni;
         }
         else {
@@ -26,7 +26,7 @@ public abstract class Persoa extends Asociacion {
      * Calcular la letra del DNI para hacer la insercion
      * @return la letra del DNI que corresponda
      */
-    private char calcularLetraDNI() {
+    private char calcularLetraDNI(String dni) {
         dni = dni.toUpperCase();
         char[] letrasDNI = {
                 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',

@@ -11,7 +11,9 @@ public class Voluntarios extends Trabajador {
         this.profesion = profesion;
         this.horas = horas;
     }
-
+    public String aCadea() {
+        return super.aCadea() + " Edad: %d, Profesion: %s, Horas: %.2f".formatted(edade,profesion,horas);
+    }
     @Override
     public void gastosIngresos() {
         beneficios -= 3;
