@@ -14,7 +14,14 @@ public abstract class Persoa extends Asociacion {
     }
 
     public void setDni(String dni) {
-        if (dni.length()==8) {
+        dni = dni.toUpperCase();
+        char[] letrasDNI = {
+                'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',
+                'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L',
+                'C', 'K', 'E'
+        };
+        int numero = Integer.parseInt(dni.substring(0,dni.length()-1));
+        if (dni.length()==8 && letrasDNI[numero % 23]==dni.charAt(dni.length()-1)) {
             this.dni = dni;
         }
     }
