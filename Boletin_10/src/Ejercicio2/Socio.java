@@ -1,6 +1,6 @@
 package Ejercicio2;
 
-public class Socio extends Persoa {
+public class Socio extends Persoa implements GastosIngresos {
     String direccion;
     double cuotaMensual;
     Fecha dataIngreso;
@@ -16,7 +16,7 @@ public class Socio extends Persoa {
         return super.aCadea() + " Direccion: %s, Cuota: %.2f y la fecha de alta es %s".formatted(direccion,cuotaMensual,dataIngreso.toString());
     }
     @Override
-    public void gastosIngresos() {
-        Asociacion.beneficios += cuotaMensual;
+    public double gastosIngresos() {
+        return cuotaMensual;
     }
 }

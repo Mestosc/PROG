@@ -1,6 +1,6 @@
 package Ejercicio2;
 
-public class Voluntarios extends Trabajador {
+public class Voluntarios extends Trabajador implements GastosIngresos {
     private int edade;
     private String profesion;
     private double horas;
@@ -15,7 +15,7 @@ public class Voluntarios extends Trabajador {
         return super.aCadea() + " Edad: %d, Profesion: %s, Horas: %.2f".formatted(edade,profesion,horas);
     }
     @Override
-    public void gastosIngresos() {
-        beneficios -= 3;
+    public double gastosIngresos() {
+        return -3;
     }
 }

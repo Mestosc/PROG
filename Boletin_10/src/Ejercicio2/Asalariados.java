@@ -13,8 +13,8 @@ public class Asalariados extends Trabajador {
     public String aCadea() {
         return super.aCadea() + " Su sueldo es %.2f su porcentaje de Seguridad Social es %.2f y el porcentaje del IRPF es %.2f".formatted(sueldo,porcentajeSS,porcentajeIRPF);
     }
-    @Override
-    public void gastosIngresos() {
-        beneficios -= sueldo * ((double) 15 / 100);
+
+    public double gastosIngresos() {
+        return -sueldo * ((double) 15 / 100);
     }
 }
