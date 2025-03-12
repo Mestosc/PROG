@@ -15,6 +15,6 @@ public class Asalariados extends Trabajador {
     }
 
     public double gastosIngresos() {
-        return -sueldo * ((double) 15 / 100);
+        return beneficios -= sueldo*(porcentajeSS / 100);
     }
 }

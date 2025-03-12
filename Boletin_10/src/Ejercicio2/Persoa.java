@@ -3,7 +3,7 @@ package Ejercicio2;
 public abstract class Persoa {
     private String dni;
     private String nome;
-
+    protected static double beneficios;
     public Persoa(String dni, String nome) {
         setDni(dni);
         this.nome = nome;
