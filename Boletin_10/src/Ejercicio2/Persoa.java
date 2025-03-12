@@ -1,6 +1,6 @@
 package Ejercicio2;
 
-public abstract class Persoa extends Asociacion implements Miembro {
+public abstract class Persoa extends Asociacion {
     private String dni;
     private String nome;
 
@@ -27,4 +27,5 @@ public abstract class Persoa extends Asociacion implements Miembro {
     public String aCadea() {
         return "DNI: %s, Nombre:%s".formatted(dni,nome);
     }
+    abstract void gastosIngresos();
 }
