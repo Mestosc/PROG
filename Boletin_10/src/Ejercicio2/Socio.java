@@ -1,7 +1,6 @@
 package Ejercicio2;
 
 public class Socio extends Persoa {
-
     String direccion;
     String dataAlta;
     double cuotaMensual;
