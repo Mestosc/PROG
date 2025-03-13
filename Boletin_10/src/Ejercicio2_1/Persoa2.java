@@ -1,10 +1,10 @@
 package Ejercicio2_1;
 
-public abstract class Persoa {
+public abstract class Persoa2 {
     private String dni;
     private String nome;
     protected static double beneficios;
-    public Persoa(String dni, String nome) {
+    public Persoa2(String dni, String nome) {
         setDni(dni);
         this.nome = nome;
     }
