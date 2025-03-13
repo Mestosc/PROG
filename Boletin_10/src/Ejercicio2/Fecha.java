@@ -22,6 +22,33 @@ public class Fecha {
         setMes(mes);
         setDia(dia);
     }
+    private boolean validarFormatoFecha(String data) {
+        return data.contains("-") || data.contains("/");
+    }
+    public Fecha(String data) {
+        String[] divisionFecha;
+        if (data.contains("-") && data.contains("/")) {
+           setAno(1970);
+           setMes(1);
+           setDia(1);
+        }
+        else if (validarFormatoFecha(data)) {
+            if (data.contains("/")) {
+                divisionFecha = data.split("/");
+            }
+            else {
+                divisionFecha = data.split("-");
+            }
+            setAno(Integer.parseInt(divisionFecha[2]));
+            setMes(Integer.parseInt(divisionFecha[1]));
+            setDia(Integer.parseInt(divisionFecha[0]));
+        }
+        else {
+            setAno(1970);
+            setMes(1);
+            setDia(1);
+        }
+    }
 
     /// Sirve para averiguar si el año es bisiesto
     /// ```java
