@@ -17,6 +17,7 @@ public class Socio extends Persoa implements GastosIngresos {
     }
     @Override
     public double gastosIngresos() {
+        beneficios += cuotaMensual;
         return cuotaMensual;
     }
 }

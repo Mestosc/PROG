@@ -8,7 +8,9 @@ public abstract class Persoa {
         setDni(dni);
         this.nome = nome;
     }
-
+    public double getBeneficios() {
+        return beneficios;
+    }
     public String getDni() {
         return dni;
     }
