@@ -28,16 +28,35 @@ public class Fecha {
     private boolean comprobarFormato(String data) {
         return (data.charAt(2) == '-' && data.charAt(5)=='-') || (data.charAt(2)=='/' && data.charAt(5)=='/');
     }
+    private boolean comprobarNumero(String numero) {
+        boolean esNumero = false;
+        for (int i = 0; i < numero.length(); i++) {
+            esNumero = Character.isDigit(numero.charAt(i));
+        }
+        return esNumero;
+    }
+    private String[] obtenerDias(String data) {
+        String[] divisionFecha = new String[0];
+        if (data.length()==10 && comprobarFormato(data)) {
+            divisionFecha = data.split(Character.toString(data.charAt(2)));
+        }
+        return divisionFecha;
+    }
     public Fecha(String data) {
-        String[] divisionFecha;
-        if (data.length()==10) {
-            if (comprobarFormato(data)) {
-                divisionFecha = data.split(data.substring(2,3));
+        String[] divisionFecha = obtenerDias(data);
+        /* Seteamos la fecha por defecto, en primera instancia*/
+        setAno(1970);
+        setMes(1);
+        setDia(1);
+        /* Comprobaremos si la fecha extraida cumple con los requerimientos */
+        if (divisionFecha.length==3) {
+            if (comprobarNumero(divisionFecha[0]) && comprobarNumero(divisionFecha[1]) && comprobarNumero(divisionFecha[2])) {
                 setAno(Integer.parseInt(divisionFecha[2]));
                 setMes(Integer.parseInt(divisionFecha[1]));
                 setDia(Integer.parseInt(divisionFecha[0]));
             }
         }
+
 
 
     }
