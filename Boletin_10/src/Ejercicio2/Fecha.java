@@ -25,29 +25,21 @@ public class Fecha {
     private boolean validarFormatoFecha(String data) {
         return data.contains("-") || data.contains("/");
     }
+    private boolean comprobarFormato(String data) {
+        return (data.charAt(2) == '-' && data.charAt(5)=='-') || (data.charAt(2)=='/' && data.charAt(5)=='/');
+    }
     public Fecha(String data) {
         String[] divisionFecha;
-        if (data.contains("-") && data.contains("/")) {
-           setAno(1970);
-           setMes(1);
-           setDia(1);
-        }
-        else if (validarFormatoFecha(data)) {
-            if (data.contains("/")) {
-                divisionFecha = data.split("/");
+        if (data.length()==10) {
+            if (comprobarFormato(data)) {
+                divisionFecha = data.split(data.substring(2,3));
+                setAno(Integer.parseInt(divisionFecha[2]));
+                setMes(Integer.parseInt(divisionFecha[1]));
+                setDia(Integer.parseInt(divisionFecha[0]));
             }
-            else {
-                divisionFecha = data.split("-");
-            }
-            setAno(Integer.parseInt(divisionFecha[2]));
-            setMes(Integer.parseInt(divisionFecha[1]));
-            setDia(Integer.parseInt(divisionFecha[0]));
         }
-        else {
-            setAno(1970);
-            setMes(1);
-            setDia(1);
-        }
+
+
     }
 
     /// Sirve para averiguar si el año es bisiesto

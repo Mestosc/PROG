@@ -6,8 +6,9 @@ public class Main {
         socio1.gastosIngresos();
         Asalariados asalariados = new Asalariados("2030451X","HLJ","10/07/2023",23.12,14,23);
         asalariados.gastosIngresos();
-        Voluntarios voluntarios = new Voluntarios("2030451X","HLJ","10/07/2023",23,"Contable",10);
+        Voluntarios voluntarios = new Voluntarios("2030451X","HLJ","10-07-2023",23,"Contable",10);
         voluntarios.gastosIngresos();
         System.out.println(Persoa.beneficios);
+        System.out.println(voluntarios.dataAlta);
     }
 }
