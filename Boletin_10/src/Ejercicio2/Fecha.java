@@ -49,7 +49,7 @@ public class Fecha {
         setMes(1);
         setDia(1);
         /* Comprobaremos si la fecha extraida cumple con los requerimientos */
-        if (divisionFecha.length==3) {
+        if (divisionFecha.length>0) {
             if (comprobarNumero(divisionFecha[0]) && comprobarNumero(divisionFecha[1]) && comprobarNumero(divisionFecha[2])) {
                 setAno(Integer.parseInt(divisionFecha[2]));
                 setMes(Integer.parseInt(divisionFecha[1]));
