@@ -14,7 +14,6 @@ public abstract class Persoa2 {
     public String getDni() {
         return dni;
     }
-
     public void setDni(String dni) {
         if (dni.length()==8 && calcularLetraDNI(dni)==dni.charAt(dni.length()-1)) {
             this.dni = dni;

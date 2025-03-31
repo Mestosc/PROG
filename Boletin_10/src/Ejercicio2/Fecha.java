@@ -95,7 +95,7 @@ public class Fecha {
         if (mes < 12) {
             mes += 1;
             if (dia>obtenerDiasMes()) {
-                dia = 1;
+                throw new DiaFueraRango("Has introducido más dias de los que tiene el mes");
             }
         }
         else if (mes==12) {
@@ -146,13 +146,8 @@ public class Fecha {
         if (dia<=diasPorMes && dia>=1) { // Si es menor al limite superior del mes y mayor que uno
             this.dia = dia; //  El dia de la fecha es igual al que pasamos por parametro
         }
-        else if (dia>diasPorMes) { // Si el dia es mayor al limite superior del mes
-            this.dia = 1; // Reseteamos el dia a 1
-            incrementarMes(); // Incrementamos el mes
-        }
-        else { // En caso contrario
-            this.dia = 1; // Reseteamos dia a 1
-            this.mes = 1; // Reseteamos mes a 1
+        else {
+            throw new DiaFueraRango("El dia se encuentra fuera de rango");
         }
     }
 
@@ -164,11 +159,8 @@ public class Fecha {
         if (mes<=12 && mes>=1) {
             this.mes = mes;
         }
-        else if (mes<1) {
-            this.mes = 1;
-        }
         else {
-            incrementarAno();
+            throw new MesFueraRango("Mes fuera del rango de mes");
         }
     }
 
