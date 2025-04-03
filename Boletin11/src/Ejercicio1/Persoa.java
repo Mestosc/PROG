@@ -4,11 +4,11 @@ public class Persoa {
     private String nome;
     private String direccion;
     private String dni;
-
-    public Persoa(String nome, String direccion, String dni) {
+    public Persoa() {}
+    public Persoa(String nome, String direccion, String dni) throws DniNonValido {
         this.nome = nome;
         this.direccion = direccion;
-        this.dni = dni;
+        setDni(dni);
     }
 
     public String getNome() {
