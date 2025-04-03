@@ -24,8 +24,20 @@ public class Persoa {
     public String getDni() {
         return dni;
     }
-
+    private char calcularDNILetra(String dni) {
+        dni = dni.substring(0,8);
+        final char[] LETRAS_DNI = {
+                'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
+                'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'
+        };
+        return LETRAS_DNI[Integer.parseInt(dni)%23];
+    }
     public void setDni(String dni) {
-        this.dni = dni;
+        if (dni.length()==9 && dni.charAt(8)==calcularDNILetra(dni)) {
+            this.dni = dni;
+        }
+        else {
+            throw new DniNonValido();
+        }
     }
 }
