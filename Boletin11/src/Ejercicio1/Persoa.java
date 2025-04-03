@@ -5,6 +5,12 @@ public class Persoa {
     private String direccion;
     private String dni;
 
+    public Persoa(String nome, String direccion, String dni) {
+        this.nome = nome;
+        this.direccion = direccion;
+        this.dni = dni;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -32,7 +38,7 @@ public class Persoa {
         };
         return LETRAS_DNI[Integer.parseInt(dni)%23];
     }
-    public void setDni(String dni) {
+    public void setDni(String dni) throws DniNonValido {
         if (dni.length()==9 && dni.charAt(8)==calcularDNILetra(dni)) {
             this.dni = dni;
         }
