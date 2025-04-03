@@ -55,6 +55,12 @@ public class Fecha {
                 setMes(Integer.parseInt(divisionFecha[1]));
                 setDia(Integer.parseInt(divisionFecha[0]));
             }
+            else {
+                throw new FechaInvalida("Alguno de los parametros de fecha no es un numero");
+            }
+        }
+        else {
+            throw new FechaInvalida("No hay informacion");
         }
 
 
@@ -77,7 +83,7 @@ public class Fecha {
      */
     private int obtenerDiasMes() {
         if (mes < 1 || mes > 12) {
-            return -1;
+            throw new MesFueraRango("Mes fuera de rango no esta entre 1 y 12 que es el rango correcto");
         }
         int[] diasPorMes = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
@@ -95,7 +101,7 @@ public class Fecha {
         if (mes < 12) {
             mes += 1;
             if (dia>obtenerDiasMes()) {
-                throw new DiaFueraRango("Has introducido más dias de los que tiene el mes");
+                dia = 1;
             }
         }
         else if (mes==12) {
@@ -105,8 +111,7 @@ public class Fecha {
         }
     }
     public void incrementarAno() {
-        ano += 1;
-        esBisiesto = isEsBisiesto();
+       setAno(ano+1);
     }
     public int incrementarDia(int diasIncrementar) {
         int diasPorMes = obtenerDiasMes();
@@ -147,7 +152,7 @@ public class Fecha {
             this.dia = dia; //  El dia de la fecha es igual al que pasamos por parametro
         }
         else {
-            throw new DiaFueraRango("El dia se encuentra fuera de rango");
+            throw new DiaFueraRango("El dia se encuentra fuera de rango"); // En caso de que el dia no este en rango se lanza una excepcion
         }
     }
 
@@ -171,6 +176,8 @@ public class Fecha {
     public void setAno(int ano) {
         if (ano>=0) {
             this.ano = ano;
+        } else {
+            throw new AnoInvalido("El año introducido no es valido");
         }
         esBisiesto = isEsBisiesto();
     }
