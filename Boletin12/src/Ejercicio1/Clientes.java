@@ -7,6 +7,9 @@ public class Clientes {
     private ArrayList<Cliente> clientes = new ArrayList<>();
     public Clientes() {
         clientes = leerArchivoClientes();
+        if (clientes==null) {
+            clientes = new ArrayList<>();
+        }
     }
     public Clientes(ArrayList<Cliente> clientes) {
         this.clientes = clientes;
