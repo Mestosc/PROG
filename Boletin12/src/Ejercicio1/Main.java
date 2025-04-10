@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
         Clientes clientes = new Clientes();
         Scanner sc = new Scanner(System.in);
-        int opcion;
         ejecucionPrincipal(sc, clientes);
     }
 
@@ -58,14 +57,18 @@ public class Main {
         var opt2 = sc.nextInt();
         sc.nextLine();
         Cliente clienteModificar = obtenerClienteDesdeNome(clientes,opt1);
-        if (opt2==1 && isValidClient(clienteModificar)) {
-            clienteModificar.setNome(opt1);
-        } else if (opt2==2 && isValidClient(clienteModificar)) {
-            clienteModificar.setTelefono(opt1);
+        modificarClientes(opt2, clienteModificar, opt1);
+        clientes.guardarClientes();
+    }
+
+    private static void modificarClientes(int opcionRealizar, Cliente clienteModificar, String valorEditar) {
+        if (opcionRealizar ==1 && isValidClient(clienteModificar)) {
+            clienteModificar.setNome(valorEditar);
+        } else if (opcionRealizar ==2 && isValidClient(clienteModificar)) {
+            clienteModificar.setTelefono(valorEditar);
         } else {
             System.out.println("Cliente introducido no es valido");
         }
-        clientes.guardarClientes();
     }
 
     private static boolean isValidClient(Cliente clienteModificar) {
