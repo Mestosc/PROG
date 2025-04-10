@@ -61,11 +61,20 @@ public class Main {
         clientes.guardarClientes();
     }
 
-    private static void modificarClientes(int opcionRealizar, Cliente clienteModificar, String valorEditar) {
-        if (opcionRealizar ==1 && isValidClient(clienteModificar)) {
-            clienteModificar.setNome(valorEditar);
+    /// Modificar a los clientes
+    /// @param opcionRealizar la opcion a llevar a cabo
+    /// ```markdown
+    ///   1. Cambiar nombre
+    ///   2. Cambiar telefono
+    /// ```
+    /// @param clienteModificar el cliente sobre el que se aplique la operacion
+    /// @param nuevoValor el nuevo valor sobre el que se aplica
+    ///
+    private static void modificarClientes(int opcionRealizar, Cliente clienteModificar, String nuevoValor) {
+        if (opcionRealizar==1 && isValidClient(clienteModificar)) {
+            clienteModificar.setNome(nuevoValor);
         } else if (opcionRealizar ==2 && isValidClient(clienteModificar)) {
-            clienteModificar.setTelefono(valorEditar);
+            clienteModificar.setTelefono(nuevoValor);
         } else {
             System.out.println("Cliente introducido no es valido");
         }
