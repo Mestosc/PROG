@@ -7,6 +7,11 @@ public class Main {
         Clientes clientes = new Clientes();
         Scanner sc = new Scanner(System.in);
         int opcion;
+        ejecucionPrincipal(sc, clientes);
+    }
+
+    private static void ejecucionPrincipal(Scanner sc, Clientes clientes) {
+        int opcion;
         do {
             System.out.println("1.Engadir novo cliente\n2.Modificar Cliente existente\n3.Dar de baixa\n4.Listar Cliente\n5.Salir");
             opcion = sc.nextInt();
@@ -24,19 +29,26 @@ public class Main {
             modificarClienteExistente(sc, clientes);
         }
         case 3-> {
-            System.out.println("Introduzca el nombre del cliente al que quiera dar de baja:");
-            var nombreCliente = sc.nextLine();
-            var cliente = obtenerClienteDesdeNome(clientes, nombreCliente);
-            clientes.getClientes().remove(cliente);
-            clientes.guardarClientes();
+            darBajaClientes(sc, clientes);
         }
         case 4 -> {
-                for (int i = 0; i < clientes.getClientes().size(); i++) {
-                    System.out.println(clientes.getClientes().get(i).getId() +"." + clientes.getClientes().get(i).getNome());
-                }
-                System.out.println();
-            }
+            listarClientes(clientes);
         }
+        }
+    }
+
+    private static void listarClientes(Clientes clientes) {
+        for (int i = 0; i < clientes.getClientes().size(); i++) {
+            System.out.println(clientes.getClientes().get(i).getId() +"." + clientes.getClientes().get(i).getNome());
+        }
+        System.out.println();
+    }
+
+    private static void darBajaClientes(Scanner sc, Clientes clientes) {
+        System.out.println("Introduzca el nombre del cliente al que quiera dar de baja:");
+        var cliente = obtenerClienteDesdeNome(clientes,sc.nextLine());
+        clientes.getClientes().remove(cliente);
+        clientes.guardarClientes();
     }
 
     private static void modificarClienteExistente(Scanner sc, Clientes clientes) {
@@ -50,6 +62,8 @@ public class Main {
             clienteModificar.setNome(opt1);
         } else if (opt2==2 && isValidClient(clienteModificar)) {
             clienteModificar.setTelefono(opt1);
+        } else {
+            System.out.println("Cliente introducido no es valido");
         }
         clientes.guardarClientes();
     }
@@ -74,7 +88,7 @@ public class Main {
     }
     public static String obtenerUltimoID(Clientes clientes) {
         if (clientes.getClientes().isEmpty()) return "0";
-        return clientes.getClientes().get(clientes.getClientes().size()).getId();
+        return clientes.getClientes().get(clientes.getClientes().size()-1).getId();
     }
     public static Cliente obtenerClienteDesdeNome(Clientes clientes,String nome) {
         for (Cliente cliente : clientes.getClientes()) {
