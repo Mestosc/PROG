@@ -19,6 +19,9 @@ public class Main {
                     var notaEscribir = sc.nextLine();
                     notas.escribirNota(notaEscribir);
                 }
+                case 2-> {
+                    notas.obtenerNotas();
+                }
             }
         } while (opcion!=4);
     }
