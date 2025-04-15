@@ -4,11 +4,15 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Notas {
-    ArrayList<String> notas = new ArrayList<>();
+    ArrayList<String> notas;
     public Notas() {
         notas = leerNotas();
     }
-    public void escribirNotas() {
+    public void escribirNota(String nota) {
+        notas.add(nota);
+        escribirNota();
+    }
+    private void escribirNota() {
         BufferedWriter escritor = null;
         try {
             escritor = new BufferedWriter(new FileWriter("notas.txt"));
