@@ -6,7 +6,8 @@ import java.util.ArrayList;
 public class Notas {
     ArrayList<String> notas;
     public Notas() {
-        notas = leerNotas();
+        if (notas!=null) notas = leerNotas();
+        else notas = new ArrayList<>();
     }
     public void escribirNota(String nota) {
         notas.add(nota);
