@@ -57,15 +57,15 @@ public class Notas {
     }
     public String obtenerNotas(String filter) {
         String not="";
-        for (int i = 0; i < notas.size(); i++) {
-            if (notas.get(i).contains(filter)) not += notas.get(i) + "\n";
+        for (String nota : notas) {
+            if (nota.contains(filter)) not += nota + "\n";
         }
         return not;
     }
     public String obtenerNotas() {
         String not="";
-        for (int i = 0; i < notas.size(); i++) {
-            not += notas.get(i) + "\n";
+        for (String nota : notas) {
+            not += nota + "\n";
         }
         return not;
     }
