@@ -22,7 +22,14 @@ public class Main {
                 var descripcionTar = sc.nextLine();
                 System.out.println("Introduzca el estado de la tarea (Feita, Non Feita):");
                 var estado = sc.nextLine();
-                tareas.anadirTareas(nombreTarea,descripcionTar,estado);
+                if (tareas.anadirTareas(nombreTarea,descripcionTar,estado)) {
+                    System.out.println("Tarea introducida correctamente");
+                } else {
+                    System.out.println("Lo siento la tarea no se ha introducido directamente");
+                }
+            }
+            case 2-> {
+
             }
         }
       } while (opcion!=5);

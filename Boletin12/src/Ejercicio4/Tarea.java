@@ -11,6 +11,23 @@ public class Tarea implements Serializable {
     private String nombreTarea;
     private String descripcion;
     Estado estado;
+
+    public String getNombreTarea() {
+        return nombreTarea;
+    }
+
+    public void setNombreTarea(String nombreTarea) {
+        this.nombreTarea = nombreTarea;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     /**
       * Constructor de tarea
       * @param nombreTarea: El nombre de la tarea

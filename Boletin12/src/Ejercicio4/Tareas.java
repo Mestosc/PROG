@@ -34,6 +34,16 @@ public class Tareas {
     public boolean anadirTareas(String nombre,String descripcion,String estado) {
        return tareas.add(new Tarea(nombre,descripcion,estado));
     }
+    public String obtenerTareas() {
+        String tareasF="";
+        for (Tarea t : tareas) {
+            tareasF += t.estado + ". " + t.getNombreTarea() + " " + t.getDescripcion();
+        }
+        if (tareasF.isEmpty()) {
+            throw new RuntimeException("No se han podido añadir tareas, es posible que no existan o no se hayan podido obtener");
+        }
+        return tareasF;
+    }
     public void escribirTareas(){
         ObjectOutputStream writer = null;
         try {
