@@ -2,6 +2,7 @@ package Ejercicio4;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Tareas {
     ArrayList<Tarea> tareas;
@@ -29,6 +30,9 @@ public class Tareas {
             }
         }
         return tareas1;
+    }
+    public boolean anadirTareas(String nombre,String descripcion,String estado) {
+       return tareas.add(new Tarea(nombre,descripcion,estado));
     }
     public void escribirTareas(){
         ObjectOutputStream writer = null;
