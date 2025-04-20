@@ -41,6 +41,7 @@ public class Tarea implements Serializable {
     }
     public void setEstado(String estado) {
         estado = estado.toUpperCase();
+        estado = estado.replace(" ","_");
         Estado temp = Estado.valueOf(estado);
         if (temp==Estado.FEITA || temp==Estado.NON_FEITA) {
             this.estado = temp;

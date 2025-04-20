@@ -37,10 +37,10 @@ public class Tareas {
     public String obtenerTareas() {
         String tareasF="";
         for (Tarea t : tareas) {
-            tareasF += t.estado + ". " + t.getNombreTarea() + " " + t.getDescripcion();
+            tareasF += t.estado + " " + t.getNombreTarea() + " " + t.getDescripcion();
         }
         if (tareasF.isEmpty()) {
-            throw new RuntimeException("No se han podido añadir tareas, es posible que no existan o no se hayan podido obtener");
+            throw new RuntimeException("No se han podido obtener tareas, es probable que no existan");
         }
         return tareasF;
     }

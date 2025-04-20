@@ -29,6 +29,11 @@ public class Main {
                 }
             }
             case 2-> {
+                try {
+                    System.out.println(tareas.obtenerTareas());
+                } catch (RuntimeException e) {
+                    System.err.println("Ha habido un error al mostrar las tareas " + e.getMessage());
+                }
 
             }
         }
