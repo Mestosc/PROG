@@ -31,6 +31,19 @@ public class Tareas {
         }
         return tareas1;
     }
+    public Tarea obtenerTareaNombre(String nombre) {
+        Tarea te = null;
+        for (Tarea t : tareas) {
+            if (t.getNombreTarea().equals(nombre)) {
+                te = t;
+            }
+        }
+        if (te!=null) {
+            return te;
+        } else {
+            throw new RuntimeException("No se ha encontrado la tarea");
+        }
+    }
     public boolean anadirTareas(String nombre,String descripcion,String estado) {
        return tareas.add(new Tarea(nombre,descripcion,estado));
     }

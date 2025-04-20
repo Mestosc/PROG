@@ -34,6 +34,7 @@ public class Main {
                 } catch (RuntimeException e) {
                     System.err.println("Ha habido un error al mostrar las tareas " + e.getMessage());
                 }
+            } case 3 -> {
 
             }
         }
