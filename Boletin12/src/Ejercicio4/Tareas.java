@@ -44,13 +44,16 @@ public class Tareas {
             throw new RuntimeException("No se ha encontrado la tarea");
         }
     }
+    public void borrarTarea() {
+
+    }
     public boolean anadirTareas(String nombre,String descripcion,String estado) {
        return tareas.add(new Tarea(nombre,descripcion,estado));
     }
     public String obtenerTareas() {
         String tareasF="";
-        for (Tarea t : tareas) {
-            tareasF += t.estado + " " + t.getNombreTarea() + " " + t.getDescripcion();
+        for (int i = 0;i<tareas.size();i++) {
+            tareasF += (i+1) +" " +tareas.get(i).estado + " " + tareas.get(i).getNombreTarea() + " " + tareas.get(i).getDescripcion();
         }
         if (tareasF.isEmpty()) {
             throw new RuntimeException("No se han podido obtener tareas, es probable que no existan");

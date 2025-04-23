@@ -39,6 +39,9 @@ public class Tarea implements Serializable {
         this.descripcion = descripcion;
         setEstado(estado);
     }
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
     public void setEstado(String estado) {
         estado = estado.toUpperCase();
         estado = estado.replace(" ","_");
