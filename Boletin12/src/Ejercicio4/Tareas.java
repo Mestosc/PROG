@@ -2,7 +2,6 @@ package Ejercicio4;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Tareas {
     ArrayList<Tarea> tareas;
@@ -42,9 +41,6 @@ public class Tareas {
         } else {
             throw new RuntimeException("No se ha encontrado la tarea");
         }
-    }
-    public void borrarTarea() {
-
     }
     public boolean anadirTareas(String nombre,String descripcion,String estado) {
         boolean anadir = tareas.add(new Tarea(nombre,descripcion,estado));
