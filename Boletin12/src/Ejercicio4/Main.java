@@ -50,6 +50,11 @@ public class Main {
       } while (opcion!=5);
 }
 
+    /**
+     * Concentra el proceso de editar las tareas
+     * @param sc el scanner para pedir informacion al usuario
+     * @param tareas la lista de tareas
+     */
     private static void editarTarea(Scanner sc, Tareas tareas) {
         try {
             System.out.println(tareas.obtenerTareas());
