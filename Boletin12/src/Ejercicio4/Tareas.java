@@ -7,11 +7,10 @@ import java.util.Scanner;
 public class Tareas {
     ArrayList<Tarea> tareas;
     public Tareas() {
-        if (tareas!=null) tareas = leerTareas();
-        else tareas = new ArrayList<>();
+        tareas = leerTareas();
     }
     public ArrayList<Tarea> leerTareas(){
-        ArrayList<Tarea> tareas1 = null;
+        ArrayList<Tarea> tareas1 = new ArrayList<>();
         ObjectInputStream reader = null;
         try {
             reader = new ObjectInputStream(new FileInputStream("tareas.dat"));
@@ -48,7 +47,9 @@ public class Tareas {
 
     }
     public boolean anadirTareas(String nombre,String descripcion,String estado) {
-       return tareas.add(new Tarea(nombre,descripcion,estado));
+        boolean anadir = tareas.add(new Tarea(nombre,descripcion,estado));
+        escribirTareas();
+        return anadir;
     }
     public String obtenerTareas() {
         String tareasF="";
