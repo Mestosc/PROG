@@ -1,20 +1,22 @@
 package Ejercicio3;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 
-import javax.swing.text.AbstractDocument.LeafElement;
 
 public class Archivo {
 	public Archivo() {
 		BufferedReader bufferedReader = null;
 		try {
+			String cadenaFinal = "";
 			bufferedReader = new BufferedReader(new FileReader("notas.txt"));
 			String linea = bufferedReader.readLine();
 			while (linea != null) {
-				mostrarResult(linea);
+				cadenaFinal += linea + " ";
 				linea = bufferedReader.readLine();
 			}
+			mostrarResult(cadenaFinal);
 		} catch (IOException exception) {
 		    System.err.println("Error no se ha localizado el archivo");
 		} finally {
@@ -28,18 +30,19 @@ public class Archivo {
 		}
 	}
 	public void mostrarResult(String linea) {
-		String[] pal = linea.split(" ");
-			for (int i = 0; i < pal.length;i++) {
-				System.out.printf("%s: %d %n", pal[i], contarPalabras(linea,pal[i]));
-		}
+		String limpia = linea.replaceAll("[^\\p{L}\\p{Nd}]+", " ").trim();
+		String[] pal = limpia.split("\\s+");
+        for (String actual : pal) {
+            System.out.printf("%s: %d %n", actual, contarPalabras(linea,actual));
+        }
 	}
 	public int contarPalabras(String texto, String palabra) {
 	    String[] palbras = texto.split(" ");
 	    int contador=0;
-		for (int i = 0; i < texto.length; i++) {
-			if (palbras.equals(palabra))
-				contador++;
-		}
+        for (String palbra : palbras) {
+            if (palbra.equals(palabra))
+                contador++;
+        }
 		return contador;
     }
 }
