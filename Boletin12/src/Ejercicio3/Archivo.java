@@ -9,14 +9,14 @@ public class Archivo {
 	public Archivo() {
 		BufferedReader bufferedReader = null;
 		try {
-			String cadenaFinal = "";
+			StringBuilder cadenaFinal = new StringBuilder();
 			bufferedReader = new BufferedReader(new FileReader("notas.txt"));
 			String linea = bufferedReader.readLine();
 			while (linea != null) {
-				cadenaFinal += linea + " ";
+				cadenaFinal.append(linea).append(" ");
 				linea = bufferedReader.readLine();
 			}
-			mostrarResult(cadenaFinal);
+			mostrarResult(cadenaFinal.toString());
 		} catch (IOException exception) {
 		    System.err.println("Error no se ha localizado el archivo");
 		} finally {
