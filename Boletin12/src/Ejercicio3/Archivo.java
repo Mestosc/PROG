@@ -30,8 +30,8 @@ public class Archivo {
 		}
 	}
 	public void mostrarResult(String linea) {
-		String limpia = linea.replaceAll("[^\\p{L}\\p{Nd}]+", " ").trim();
-		String[] pal = limpia.split("\\s+");
+		String limpia = linea.replaceAll("[^\\p{L}\\p{Nd}]+", " ").trim(); // Esto lo encontre por ahi es para limpiar el texto de espacios extraños que puedan afectar en la ejecucion
+		String[] pal = limpia.split("\\s+"); // Esto es para tener en cuenta cosas como el doble espacio o la tabulacion segun he encontrado
         for (String actual : pal) {
             System.out.printf("%s: %d %n", actual, contarPalabras(linea,actual));
         }
