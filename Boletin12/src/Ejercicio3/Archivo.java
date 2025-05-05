@@ -4,7 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-
+/**
+* Procesamiento del archivo para buscar
+* @author Oscar Rodriguez
+* @version 1.0
+**/
 public class Archivo {
 	public Archivo() {
 		BufferedReader bufferedReader = null;
