@@ -8,13 +8,15 @@ public class Ejercicio5 {
         System.out.println("Introduzca numeros, se sale con -1:");
         int num;
         List<Integer> enteros = new ArrayList<>();
+        boolean salida;
         do {
             System.out.print("Introduzca numero: ");
             num = sc.nextInt();
-            if (num!=-1) {
+            salida = num !=-1;
+            if (salida) {
                 enteros.add(num);
             }
-        } while (num != -1);
+        } while (salida);
         for (int i = 0;i<enteros.size();i+=2) {
             System.out.println(enteros.get(i)*100);
         }
