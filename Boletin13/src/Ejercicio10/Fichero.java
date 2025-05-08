@@ -1,4 +1,4 @@
-package EjercicioComprobacionExistencias;
+package Ejercicio10;
 
 import java.io.*;
 import java.util.HashMap;
