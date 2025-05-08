@@ -24,7 +24,8 @@ public class Menu {
         var cod = sc.next();
         System.out.println("Digame cuantos obtuvo por cierto la perdida debe expresarla precedida con un -:");
         var new_value = sc.nextInt();
-        map.put(cod,map.get(cod)+new_value);
+        new_value = map.get(cod)+new_value;
+        map.put(cod, new_value <0 ? 0 : new_value);
     }
     public static void menu(Map<String,Integer> map) {
         Scanner sc = new Scanner(System.in);
@@ -52,6 +53,5 @@ public class Menu {
             }
         } while (opt != 5);
         Fichero.guardarFichero("mapaProductos.dat",map);
-        sc.close();
     }
 }
