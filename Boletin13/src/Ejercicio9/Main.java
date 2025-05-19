@@ -27,7 +27,9 @@ public class Main {
                 }
                 case 3 ->
                 {
-                    System.out.println();
+                    System.out.println("Temperatura promedio: " + obtenerPromedio(temperaturas));
+                    System.out.println("Temperatura minima: " + obtenerMinimo(temperaturas));
+                    System.out.println("Temperatura maxima: " + obtenerMaximo(temperaturas));
                 }
             }
         } while (opt!=4);
@@ -41,6 +43,17 @@ public class Main {
         return suma/temp.size();
     }
     static Double obtenerMinimo(ArrayList<Double> temp) {
-        return 0.0;
+        double aux = temp.getFirst();
+        for (int i = 1;i<temp.size();i++) {
+            if (aux>temp.get(i)) aux = temp.get(i);
+        }
+        return aux;
+    }
+    static Double obtenerMaximo(ArrayList<Double> temp) {
+        double aux = temp.getFirst();
+        for (int i = 1;i<temp.size();i++) {
+            if (aux<temp.get(i)) aux = temp.get(i);
+        }
+        return aux;
     }
 }
