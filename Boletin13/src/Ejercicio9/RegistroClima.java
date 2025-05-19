@@ -6,9 +6,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class RegistroClima {
+    static LocalDate fecha = LocalDate.now();
+    static DateTimeFormatter dat = DateTimeFormatter.ofPattern("yyyyMMdd");
+
     public static boolean crearFichero(ArrayList<Double> temperaturas) {
-        var fecha = LocalDate.now();
-        DateTimeFormatter dat = DateTimeFormatter.ofPattern("yyyyMMdd");
         fecha.format(dat);
         ObjectOutputStream objectOutputStream = null;
         try {
@@ -22,8 +23,6 @@ public class RegistroClima {
     }
     public static ArrayList<Double> obtenerArchivo() {
         ObjectInputStream objectInputStream = null;
-        var fecha = LocalDate.now();
-        DateTimeFormatter dat = DateTimeFormatter.ofPattern("yyyyMMdd");
         fecha.format(dat);
         try {
             objectInputStream = new ObjectInputStream(new FileInputStream(fecha + ".dat"));
