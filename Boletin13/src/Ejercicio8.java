@@ -11,7 +11,7 @@ public class Ejercicio8 {
         pe.add(20);
         pe.add(50);
         pe.add(1);
-        Set<Integer> resutl = interseccion(pr,pe);
+        Set<Integer> resutl = interseccion1(pr,pe);
         System.out.println(resutl);
     }
     static <E> Set <E> interseccion (Set<E> conxunto1, Set<E> conxunto2) {
@@ -19,4 +19,12 @@ public class Ejercicio8 {
         resultado.retainAll(conxunto2);
         return resultado;
     }
+    static <E> Set <E> interseccion1 (Set<E> conxunto1, Set<E> conxunto2) {
+        Set<E> conxunto = new HashSet<>(); // Debido a que los HashSet o bueno los elementos tipo set no aceptan valores duplicados es posible usar este metodo para obtener los valores comunes
+        for (E elemento : conxunto1) {
+            if (conxunto2.contains(elemento)) conxunto.add(elemento);
+        }
+        return conxunto;
+    }
+
 }
