@@ -9,7 +9,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int opt;
         do {
-            System.out.println("1.Novo rexistro\n2.Listar rexistros\n3.Mostrar estadistica");
+            System.out.println("1.Novo rexistro\n2.Listar rexistros\n3.Mostrar estadistica\n4.Salir");
             System.out.print("Digame que accion va realizar: ");
             opt = sc.nextInt();
             sc.nextLine();

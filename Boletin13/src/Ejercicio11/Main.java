@@ -4,8 +4,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Map<Character,Academico> academia = new HashMap<>();
-        Academico academico0 = new Academico("Abel del Sn",1900);
-        Academico academico1 = new Academico("Ana de la rosa",1999);
+        Academico academico0 = new Academico("Abel del Sn",1999);
+        Academico academico1 = new Academico("Ana de la rosa",2003);
         Academico academico2 = new Academico("Jorge de la piedra",2001);
         nuevoAcademico(academia,academico0,'Z');
         if (nuevoAcademico(academia,academico1,'S')) {
@@ -14,7 +14,18 @@ public class Main {
         nuevoAcademico(academia,academico2,'R');
         System.out.println(academia);
         List<Academico> academicos = new ArrayList<>(List.copyOf(academia.values()));
-        Collections.sort(academicos);
+        System.out.println(academicos);
+        Collections.sort(academicos, new Comparator<Academico>() {
+            @Override
+            public int compare(Academico academico, Academico t1) {
+                int nomNum1 = (int) academico.nome.charAt(0) + academico.nome.charAt(1);
+                int nomNum2 = (int) t1.nome.charAt(0) + t1.nome.charAt(1);
+                int num1 = academico.anoIngreso + nomNum1;
+                int num2 = t1.anoIngreso + nomNum2;
+                return Integer.compare(num1,num2);
+            }
+        });
+        System.out.println("Despues de aplicar el orden por nombre y años sin letras");
         System.out.println(academicos);
     }
 
