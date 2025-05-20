@@ -4,8 +4,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Map<Character,Academico> academia = new HashMap<>();
-        Academico academico0 = new Academico("Abel del Sn",1999);
-        Academico academico1 = new Academico("Ana de la rosa",2003);
+        Academico academico0 = new Academico("Abel del Sn",2012);
+        Academico academico1 = new Academico("Ana de la rosa",2000);
         Academico academico2 = new Academico("Jorge de la piedra",2001);
         nuevoAcademico(academia,academico0,'Z');
         if (nuevoAcademico(academia,academico1,'S')) {
@@ -18,11 +18,19 @@ public class Main {
         academicos.sort(new Comparator<Academico>() {
             @Override
             public int compare(Academico academico, Academico t1) {
-                int nomNum1 = (int) academico.nome.charAt(0) + academico.nome.charAt(1);
-                int nomNum2 = (int) t1.nome.charAt(0) + t1.nome.charAt(1);
+                int nomNum1 = obtenerNumeroNombre(academico.nome);
+                int nomNum2 = obtenerNumeroNombre(t1.nome);
                 int num1 = academico.anoIngreso + nomNum1;
                 int num2 = t1.anoIngreso + nomNum2;
                 return Integer.compare(num1, num2);
+            }
+            private int obtenerNumeroNombre(String nombre) {
+                nombre = nombre.strip().trim();
+                int numNombre = 0;
+                for (int i = 0; i < nombre.length(); i++) {
+                    numNombre += (int) nombre.charAt(i);
+                }
+                return numNombre;
             }
         });
         System.out.println("Despues de aplicar el orden por nombre y años sin letras");
