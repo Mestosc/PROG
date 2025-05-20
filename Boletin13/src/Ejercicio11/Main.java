@@ -15,14 +15,14 @@ public class Main {
         System.out.println(academia);
         List<Academico> academicos = new ArrayList<>(List.copyOf(academia.values()));
         System.out.println(academicos);
-        Collections.sort(academicos, new Comparator<Academico>() {
+        academicos.sort(new Comparator<Academico>() {
             @Override
             public int compare(Academico academico, Academico t1) {
                 int nomNum1 = (int) academico.nome.charAt(0) + academico.nome.charAt(1);
                 int nomNum2 = (int) t1.nome.charAt(0) + t1.nome.charAt(1);
                 int num1 = academico.anoIngreso + nomNum1;
                 int num2 = t1.anoIngreso + nomNum2;
-                return Integer.compare(num1,num2);
+                return Integer.compare(num1, num2);
             }
         });
         System.out.println("Despues de aplicar el orden por nombre y años sin letras");
