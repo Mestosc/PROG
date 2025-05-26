@@ -19,7 +19,8 @@ public class Main {
         System.out.println(academia);
         List<Academico> academicos = new ArrayList<>(List.copyOf(academia.values()));
 	List<Map.Entry<Character, Academico>> academicosOrdenLetra = new ArrayList<>(academia.entrySet());
-	academicosOrdenLetra.sort(new Comparator<Map.Entry<Character,Academico>>() {
+    System.out.println(academicosOrdenLetra);
+	academicosOrdenLetra.sort(new Comparator<Map.Entry<Character,Academico>>() { // Aqui he ordenado un poco con un batiburrilo de los criterios
         @Override
         public int compare(Map.Entry<Character, Academico> characterAcademicoEntry, Map.Entry<Character, Academico> t1) {
             int letraPA = (int) characterAcademicoEntry.getKey();
@@ -31,6 +32,7 @@ public class Main {
             return Integer.compare(PA,resultT1);
         }
     });
+        System.out.println(academicosOrdenLetra);
         System.out.println(academicos);
         academicos.sort(new Comparator<Academico>() {
             @Override
