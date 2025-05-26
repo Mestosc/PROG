@@ -20,6 +20,7 @@ Estos son los boletines que han sido realizados hasta la fecha
 - [Boletin 8.2](Boletin_8.2/src)
 - [Boletin 8.3](Boletin_8.3/src)
 - [Boletin 9](Boletin_9/src)
+- [Boletin 13](Boletin13/src)
   
 ## Boletines en proceso...
 Estos son los boletines que han sido subidos pero no han sido finalizados.
@@ -29,3 +30,7 @@ Aqui van los ejercicios hechos que no son boletines pero no son tan grandes como
 ser un proyecto aparte.
 
 - [Ejercicios Varios](EjerciciosVarios/src)
+
+### Otros
+Aqui pongo ejercicios que hicimos cuando empezamos con la POO y que no forman parte de los boletines, incluyendo algunas propuestas
+- [Introduccion_POO](https://github.com/Mestosc/Introduccion_POO)
