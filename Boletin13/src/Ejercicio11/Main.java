@@ -1,5 +1,9 @@
+
 package Ejercicio11;
+
 import java.util.*;
+
+import Ejercicio11.Academico;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +18,19 @@ public class Main {
         nuevoAcademico(academia,academico2,'R');
         System.out.println(academia);
         List<Academico> academicos = new ArrayList<>(List.copyOf(academia.values()));
+	List<Map.Entry<Character, Academico>> academicosOrdenLetra = new ArrayList<>(academia.entrySet());
+	academicosOrdenLetra.sort(new Comparator<Map.Entry<Character,Academico>>() {
+        @Override
+        public int compare(Map.Entry<Character, Academico> characterAcademicoEntry, Map.Entry<Character, Academico> t1) {
+            int letraPA = (int) characterAcademicoEntry.getKey();
+            int nombreFechaPA = obtenerNumeroNombre(characterAcademicoEntry.getValue().nome) + characterAcademicoEntry.getValue().anoIngreso;
+            int letraT1 = (int) t1.getKey();
+            int PA = letraPA + nombreFechaPA;
+            int nombreFechaT1 = obtenerNumeroNombre(t1.getValue().nome) + t1.getValue().anoIngreso;
+            int resultT1 = letraT1 + nombreFechaT1;
+            return Integer.compare(PA,resultT1);
+        }
+    });
         System.out.println(academicos);
         academicos.sort(new Comparator<Academico>() {
             @Override
@@ -24,14 +41,7 @@ public class Main {
                 int num2 = t1.anoIngreso + nomNum2;
                 return Integer.compare(num1, num2);
             }
-            private int obtenerNumeroNombre(String nombre) {
-                nombre = nombre.strip().trim();
-                int numNombre = 0;
-                for (int i = 0; i < nombre.length(); i++) {
-                    numNombre += (int) nombre.charAt(i);
-                }
-                return numNombre;
-            }
+
         });
         System.out.println("Despues de aplicar el orden por nombre y años sin letras");
         System.out.println(academicos);
@@ -51,5 +61,16 @@ public class Main {
             return true;
         }
         return false;
+    }
+    static private int obtenerNumeroNombre(String nombre) {
+        int numNombre = 0;
+        if (nombre!=null) {
+            nombre = nombre.strip().trim();
+            for (int i = 0; i < nombre.length(); i++) {
+                if (Character.isWhitespace(nombre.charAt(i))) continue;
+                numNombre += (int) nombre.charAt(i);
+            }
+        }
+        return numNombre;
     }
 }
