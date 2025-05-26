@@ -3,7 +3,6 @@ package Ejercicio11;
 
 import java.util.*;
 
-import Ejercicio11.Academico;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ public class Main {
         List<Academico> academicos = new ArrayList<>(List.copyOf(academia.values()));
 	List<Map.Entry<Character, Academico>> academicosOrdenLetra = new ArrayList<>(academia.entrySet());
     System.out.println(academicosOrdenLetra);
-	academicosOrdenLetra.sort(new Comparator<Map.Entry<Character,Academico>>() { // Aqui he ordenado un poco con un batiburrilo de los criterios
+	academicosOrdenLetra.sort(new Comparator<>() { // Aqui he ordenado un poco con un batiburrilo de los criterios
         @Override
         public int compare(Map.Entry<Character, Academico> characterAcademicoEntry, Map.Entry<Character, Academico> t1) {
             int letraPA = (int) characterAcademicoEntry.getKey();
@@ -34,7 +33,7 @@ public class Main {
     });
         System.out.println(academicosOrdenLetra);
         System.out.println(academicos);
-        academicos.sort(new Comparator<Academico>() {
+        academicos.sort(new Comparator<>() {
             @Override
             public int compare(Academico academico, Academico t1) {
                 int nomNum1 = obtenerNumeroNombre(academico.nome);
