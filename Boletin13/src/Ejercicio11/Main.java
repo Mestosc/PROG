@@ -69,7 +69,7 @@ public class Main {
             nombre = nombre.strip().trim();
             for (int i = 0; i < nombre.length(); i++) {
                 if (Character.isWhitespace(nombre.charAt(i))) continue;
-                numNombre += (int) nombre.charAt(i);
+                numNombre += nombre.charAt(i);
             }
         }
         return numNombre;
